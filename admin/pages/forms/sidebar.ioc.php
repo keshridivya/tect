@@ -12,6 +12,18 @@ while($row=mysqli_fetch_array($sql)){
             </a>
           </li>
           <?php } ?>
+          <li class="nav-item">
+<a class="nav-link" href="userRole.php">
+<i class="mdi mdi-radioactive menu-icon"></i>
+<span class="menu-title">Activities Log</span>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="logout.php">
+<i class="mdi mdi-logout menu-icon"></i>
+<span class="menu-title">Log Out</span>
+</a>
+</li>
          <!-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
