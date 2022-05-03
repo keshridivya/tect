@@ -50,35 +50,22 @@ $id=$_GET['id'];
     </div>
     <div class="col-md-8">
      <div class="card-body lang-switch">
-     <?php
-if(isset($_POST['sub'])){
-  $list=$_POST['list'];
-  $name=$_POST['endi'];
-  $sql=mysqli_query($conn,"UPDATE `category` SET `status`='$name' WHERE list='$list'");
-  if($sql){
-    echo "<script>alert('$list');</script>";
-  }else{
-    echo "<script>alert('Failed');</script>";
-  }
-}
-
-$sql=mysqli_query($conn,"select * from category");
-while($res=mysqli_fetch_array($sql)){
+     
+<form action="" method="post">
+<?php
+$sql=mysqli_query($conn,"select * from sidebar where id='$id'");
+while($row=mysqli_fetch_array($sql)){
+  
 ?>
-<h5><?php echo $res['list']; ?></h5>
-<form method="post">
-  <input type="hidden" name="list" value="<?php echo $res['list']; ?>">
-  <select name="endi">
-    <option value="1"><?php echo $res['status'] ?></option>
-    <option value="enable">enable</option>
-    <option value="disable">disable</option>
-    </select>
-    <input type="submit" name="sub" value="submit">
+  <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> >
+  
+  <?php } ?>
 </form>
 
 
 
-<?php } ?>
+
+
 
          <h5 class="card-title">Card title</h5>
         <!--<button id="button">enable</button>-->
