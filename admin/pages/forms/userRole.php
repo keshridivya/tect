@@ -147,7 +147,6 @@ $res=mysqli_fetch_array($sql);
 $res['status'];
 $res['list'];
 if($res['status']=="enable"){?>
-  //$(".company").
  <script>$(".company").css("display","block");</script> 
  <?php
 }else{
