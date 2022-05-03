@@ -43,6 +43,16 @@ $id=$_GET['id'];
 <div class="main-panel">
 <div class="content-wrapper">
 <div class="row">
+  <form>
+   
+    <select>
+    <?php $que=mysqli_query($conn,"select role from userlogin");
+    while($row=mysqli_fetch_array($que)){ ?>
+      <option value="<?php  echo $row['role'] ?>"><?php  echo $row['role'] ?></option>
+      
+      <?php } ?>
+    </select>
+</form>
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4" style="font-size:18px;line-height:10rem">
