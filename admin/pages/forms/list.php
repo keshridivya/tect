@@ -1,0 +1,46 @@
+<?php
+$id='';
+$service_list='';
+$core_feature='';
+$title='';
+$short_description='';
+$up_list_1='';
+$up_list_2='';
+$up_list_4='';
+$long_desc='';
+$image1='';
+$image2='';
+$meta_title='';
+$meta_short='';
+$point='';
+$point2='';
+$point3='';
+$point4='';
+$meta_lis='';
+$meta_long='';
+if(isset($_POST['submit'])){
+$selectlist=$_POST['selectlist'];
+$sql=mysqli_query($conn,"select * from servicelist where service_list='$selectlist'");
+while($arr=mysqli_fetch_assoc($sql)){ 
+    $id=$arr['id'];
+    $service_list=$arr['service_list'];
+    $core_feature=$arr['core_feature'];
+    $title=$arr['title'];
+    $short_description=$arr['short_description'];
+    $up_list_1=$arr['up_list_1'];
+    $up_list_2=$arr['up_list_2'];
+    $up_list_3=$arr['up_list_3'];
+    $up_list_4=$arr['up_list_4'];
+    $long_desc=$arr['long_desc'];
+    $image1=$arr['image1'];
+    $image2=$arr['image2'];
+    $meta_title=$arr['meta_title'];
+    $meta_short=$arr['meta_short'];
+    $point=$arr['point'];
+    $point2=$arr['point2'];
+    $point3=$arr['point3'];
+    $point4=$arr['point4'];
+    $meta_lis=$arr['meta_lis'];
+    $meta_long=$arr['meta_long'];
+}
+}?>
