@@ -87,7 +87,6 @@ if($res['status']=="enable"){?>
  <?php
 }else{
   ?>
-  //$(".company").
  <script>$(".company").css("display","none");</script> 
  <?php
 }
