@@ -58,9 +58,10 @@ while($row=mysqli_fetch_array($sql)){
   
 ?>
   <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> ><?php echo $row['name']; ?><br>
-  <input type="submit" name="submit" value="Submit">
+  
 
   <?php } ?>
+  <input type="submit" class="btn btn-primary" name="submit" value="Submit">
 </form>
 
 
