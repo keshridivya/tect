@@ -58,7 +58,7 @@ while($row=mysqli_fetch_array($sql)){
   
 ?>
   <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> >
-  
+
   <?php } ?>
 </form>
 
@@ -67,21 +67,7 @@ while($row=mysqli_fetch_array($sql)){
 
 
 
-         <h5 class="card-title">Card title</h5>
-        <!--<button id="button">enable</button>-->
-        <ul class="dd">
-        <li id="button1 " class="hello">enable</li>
-        <li id="button2 " class="hello active">disable</li>
-</ul>
-      </div>
-
-      <div style="margin-top: 20px; margin-left: 40px;"><p> Show All Conferences </p>
-            
-            <form method="POST">
-                <div class="tab-content">
-                <button style="margin-left: 35px;" type="submit" name="submitBtn" class="btn btn-primary" data-toggle="button"> On </button>
-                <button style="margin-left: -8px;" type="submit" name="submitBtn2" class="btn btn-secondary" data-toggle="button"> Off </button>
-            </form></div>
+         
             
             </div>
             
