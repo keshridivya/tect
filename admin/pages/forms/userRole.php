@@ -48,7 +48,7 @@ $id=$_GET['id'];
     <select>
     <?php $que=mysqli_query($conn,"select roles from permission_role");
     while($row=mysqli_fetch_array($que)){ ?>
-      <option value="<?php  echo $row['roles'] ?>"><?php  echo $row['role'] ?></option>
+      <option value="<?php  echo $row['roles'] ?>"><?php  echo $row['roles'] ?></option>
       
       <?php } ?>
     </select>
