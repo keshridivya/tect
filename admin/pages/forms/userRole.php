@@ -58,12 +58,40 @@ while($row=mysqli_fetch_array($sql)){
   
 ?>
   <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> ><?php echo $row['name']; ?><br>
+  <input type="submit" name="submit" value="Submit">
 
   <?php } ?>
 </form>
 
 
+<?php
+if(isset($_POST['submit'])){
+  $status=$_POST['check_list'];
+$chk='';
+foreach($status as $chk1){
+  $chk.=$chk1.",";
+}
+$sql=mysqli_query($conn,"update sidebar set status=1 where id in ($chk)");
+if($sql){
+  echo "updated";
+}
+}
 
+$sql=mysqli_query($conn,"select * from sidebar");
+$res=mysqli_fetch_array($sql);
+$res['status'];
+$res['list'];
+if($res['status']=="enable"){?>
+ <script>$(".company").css("display","block");</script> 
+ <?php
+}else{
+  ?>
+  //$(".company").
+ <script>$(".company").css("display","none");</script> 
+ <?php
+}
+
+?>
 
 
 
@@ -114,51 +142,7 @@ function checkDelete(){
 <script src="../../js/file-upload.js"></script>
 <script src="../../js/typeahead.js"></script>
 <script src="../../js/select2.js"></script>
-<?php
-$sql=mysqli_query($conn,"select * from category");
-$res=mysqli_fetch_array($sql);
-$res['status'];
-$res['list'];
-if($res['status']=="enable"){?>
- <script>$(".company").css("display","block");</script> 
- <?php
-}else{
-  ?>
-  //$(".company").
- <script>$(".company").css("display","none");</script> 
- <?php
-}
 
-?>
-<script>
-
-
-    $(document).ready(function(){
-        $("#button").click(function(){
-            $(this).text($(this).text()=='enable'?'disable':'enable');
-            $(".company").toggle();
-        });
-    });
-
-let header = document.getElementById("dd");
-let btns = header.getElementsByClassName("hello");
-let btn1=document.getElementById("button1");
-let btn2=document.getElementById("button2");
-for (let i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
-if(btn1.className=="hello active"){
-  $(".company").css("display","none");
-}
-if(btn2.className=="hello active"){
-  $(".company").css("display","block");
-}
-    
-</script>
 
 
 
