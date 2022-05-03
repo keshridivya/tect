@@ -1,12 +1,16 @@
+<?php
+$sql=mysqli_query($conn,"select * from sidebar");
+while($row=mysqli_fetch_array($sql)){
+?>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
+            <a class="nav-link" href="<?= $row['link']; ?>">
+              <i class="<?= $row['icon']; ?>"></i>
+              <span class="menu-title"><?= $row['name']; ?></span>
             </a>
           </li>
-          <li class="nav-item">
+         <!-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
               <span class="menu-title">Pages</span>
@@ -66,6 +70,7 @@
               <i class="menu-icon mdi mdi-layers-outline"></i>
               <span class="menu-title">Activities Log</span>
             </a>
-          </li>
+          </li>-->
         </ul>
       </nav>
+      <?php } ?>
