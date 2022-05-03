@@ -72,7 +72,7 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1.",";
 }
-$sql=mysqli_query($conn,"update sidebar set status=1 where id in ($chk)");
+$sql=mysqli_query($conn,"update sidebar set status=0 where id in ($chk)");
 if($sql){
   echo "updated";
 }
