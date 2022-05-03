@@ -1,15 +1,17 @@
-<?php
+
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+        <?php
 $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
 ?>
-<nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="<?php echo $row['link']; ?>">
               <i class="<?php echo $row['icon']; ?>"></i>
               <span class="menu-title"><?php echo $row['name']; ?></span>
             </a>
           </li>
+          <?php } ?>
          <!-- <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
@@ -73,4 +75,4 @@ while($row=mysqli_fetch_array($sql)){
           </li>-->
         </ul>
       </nav>
-      <?php } ?>
+     
