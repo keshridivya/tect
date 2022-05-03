@@ -53,11 +53,11 @@ $id=$_GET['id'];
      
 <form action="" method="post">
 <?php
-$sql=mysqli_query($conn,"select * from sidebar");
+$sql=mysqli_query($conn,"select * from sidebar where id='0'");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
-  <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> ><?php echo $row['name']; ?><br>
+  <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" ><?php echo $row['name']; ?><br>
   
 
   <?php } ?>
