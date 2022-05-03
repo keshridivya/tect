@@ -53,7 +53,7 @@ $id=$_GET['id'];
      
 <form action="" method="post">
 <?php
-$sql=mysqli_query($conn,"select * from sidebar where id='0'");
+$sql=mysqli_query($conn,"select * from sidebar where id='1'");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
