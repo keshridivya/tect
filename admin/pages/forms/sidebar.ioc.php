@@ -5,9 +5,9 @@ while($row=mysqli_fetch_array($sql)){
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="<?= $row['link']; ?>">
-              <i class="<?= $row['icon']; ?>"></i>
-              <span class="menu-title"><?= $row['name']; ?></span>
+            <a class="nav-link" href="<?php echo $row['link']; ?>">
+              <i class="<?php echo $row['icon']; ?>"></i>
+              <span class="menu-title"><?php echo $row['name']; ?></span>
             </a>
           </li>
          <!-- <li class="nav-item">
