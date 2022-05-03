@@ -57,7 +57,7 @@ $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
-  <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> ><?php echo $row['name']; ?>
+  <input type="checkbox" name="check_list[]" value="<?php echo $row['id']; ?>" <?php if($row['status']==1){ echo "checked"; } ?> ><?php echo $row['name']; ?><br>
 
   <?php } ?>
 </form>
