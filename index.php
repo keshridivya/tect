@@ -635,70 +635,6 @@ session_start();
 	<!-- End Testimonial Area -->
 
 <!--start our client area-->
-<section class="section-padding-2 pt-0">
-		<div class="container">
-			<!-- Section Headding -->
-			<div class="row mb-40">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="section-headding">
-						<h2>Our Client</h2>
-						<p>Meet our happy clients</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- Single -->
-				<div class="col-lg-2 col-sm-6 mb-30">
-					<div class="info-box-s1">
-						<div class="mb-4">
-							<img src="assets/img/our_client/hpcl.jpeg" class="img-fluid1" alt="code">
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-2 col-sm-6 mb-30">
-					<div class="info-box-s1">
-						<div class="mb-4">
-							<img src="assets/img/our_client/reliance.png" class="img-fluid1" alt="mase">
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-2 col-sm-3 mb-30">
-					<div class="info-box-s1">
-						<div class="mb-4">
-							<img src="assets/img/our_client/canara.jpeg" class="img-fluid1" alt="doc">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-sm-3 mb-30">
-					<div class="info-box-s1">
-						<div class="mb-4">
-							<img src="assets/img/our_client/lic.png" class="img-fluid1" alt="doc">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-sm-3 mb-30">
-					<div class="info-box-s1">
-						<div class="mb-4">
-							<img src="assets/img/our_client/harmony.png" class="img-fluid1" alt="doc">
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-2 col-sm-3 mb-30">
-					<div class="info-box-s1">
-						<div class="mb-4">
-							<img src="assets/img/our_client/lo.png" class="img-fluid1" alt="doc">
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-<!--end our client area-->
-
-
 <section id="clients" class="section-bg">
 
       <div class="container">
@@ -712,37 +648,37 @@ session_start();
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460149/abof.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/hpcl.jpeg" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460224/cropped-cropped-20170720-lucuLogo-squ2-e1500543540803.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/reliance.png" class="img-fluid" alt="">
             </div>
           </div>
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460269/104840a62d46c05d285762857fecb61a.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/canara.jpeg" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460358/client-4.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/lic.png" class="img-fluid" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460379/client-5.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/harmony.png" class="img-fluid" alt="">
             </div>
           </div>
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460398/client-6.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/lo.png" class="img-fluid" alt="">
             </div>
           </div>
           
@@ -763,6 +699,10 @@ session_start();
       </div>
 
     </section>
+
+<!--end our client area-->
+
+
 
 	<!-- Start Latest blog Area -->
 	<section class="section-padding-2 pt-0">
