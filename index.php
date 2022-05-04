@@ -684,7 +684,7 @@ session_start();
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460418/client-7.png" class="img-fluid1" alt="">
+              <img src="assets/img/our_client/gobest.jpeg" class="img-fluid1" alt="">
             </div>
           </div>
           
