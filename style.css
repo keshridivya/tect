@@ -2192,7 +2192,7 @@ hr.vertical {
 	overflow: hidden;
 	border: 1px solid #eee;
 	-webkit-transition: all .4s ease;
-	transition: all.4s ease;
+	transition: all .4s ease;
 }
 .about-img-ab:hover{
 	box-shadow: 0px 0px 20px 0px #ccc;
@@ -2290,7 +2290,7 @@ hr.vertical {
 .team-item .content .team-social ul {
 	position: absolute;
 	bottom: 92px;
-	-webkit-transition: all.4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
 	transition: all .4s ease;
 	opacity: 0;
 	visibility: hidden;
@@ -2841,7 +2841,7 @@ hr.vertical {
 	color: #736c6c;
 	border-radius: 50%;
 	margin-bottom: 10px;
-	-webkit-transition: all.4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
 	transition: all .4s ease-in-out;
 }
 .portfolio-overly a:hover{
@@ -3392,7 +3392,7 @@ h2.accordion-header {
   color: #fe3737;
   border-color: #fe3737;
 }
-.img-fluid{
+.img-fluid1{
 	width:100px;
 	height:100px;
 	border-radius: 50%;

@@ -651,7 +651,7 @@ session_start();
 				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="mb-4">
-							<img src="assets/img/our_client/hpcl.jpeg" class="img-fluid" alt="code">
+							<img src="assets/img/our_client/hpcl.jpeg" class="img-fluid1" alt="code">
 						</div>
 					</div>
 				</div>
@@ -659,7 +659,7 @@ session_start();
 				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="mb-4">
-							<img src="assets/img/our_client/reliance.png" class="img-fluid" alt="mase">
+							<img src="assets/img/our_client/reliance.png" class="img-fluid1" alt="mase">
 						</div>
 					</div>
 				</div>
@@ -667,28 +667,28 @@ session_start();
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="mb-4">
-							<img src="assets/img/our_client/canara.jpeg" class="img-fluid" alt="doc">
+							<img src="assets/img/our_client/canara.jpeg" class="img-fluid1" alt="doc">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="mb-4">
-							<img src="assets/img/our_client/lic.png" class="img-fluid" alt="doc">
+							<img src="assets/img/our_client/lic.png" class="img-fluid1" alt="doc">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="mb-4">
-							<img src="assets/img/our_client/harmony.png" class="img-fluid" alt="doc">
+							<img src="assets/img/our_client/harmony.png" class="img-fluid1" alt="doc">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="mb-4">
-							<img src="assets/img/our_client/lo.png" class="img-fluid" alt="doc">
+							<img src="assets/img/our_client/lo.png" class="img-fluid1" alt="doc">
 						</div>
 					</div>
 				</div>
