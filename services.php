@@ -66,7 +66,7 @@ session_start();
 			<?php $sql=mysqli_query($conn,"select * from service");
 			
 				$count=mysqli_num_rows($sql);
-				$count1=$count*3;
+				$count1=$count/3;
 				for($col = 0; $col < $count1; $col++) {
 			while($arr=mysqli_fetch_assoc($sql)){ 
 				
