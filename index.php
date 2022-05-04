@@ -635,7 +635,7 @@ session_start();
 	<!-- End Testimonial Area -->
 
 <!--start our client area-->
-<section id="clients" class="section-bg">
+<section id="clients" class="section-bg1">
 
       <div class="container">
 

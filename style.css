@@ -3399,7 +3399,9 @@ h2.accordion-header {
 	border-radius: 50%;
 }
 
-
+.section-bg{
+	background:#67748e !important;
+}
 .section-header h3 {
     font-size: 36px;
     color: #283d50;
