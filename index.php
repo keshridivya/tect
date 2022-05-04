@@ -657,7 +657,7 @@ session_start();
 						<div class="testimonial-item">
 							<div class="testimonial-single-header">
 								<div class="thumbnail">
-									<img src="New Tectignis/template/images/testimonial/<?php echo $arr['image']; ?>" alt="testimonial">
+									<img src="admin/images/testimonial/<?php echo $arr['image']; ?>" alt="testimonial">
 								</div>
 								<div class="testimonial-title">
 									<h4><?php echo $arr['name']; ?></h4>

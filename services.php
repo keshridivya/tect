@@ -74,7 +74,7 @@ session_start();
 								<div class='col-lg-4 col-sm-6 mb-30'>
 								<div class='info-box-s1'>
 								<div class='icon'>
-							<img src='New Tectignis/template/images/employee/". $arr['image']."' alt='code'>
+							<img src='admin/images/employee/". $arr['image']."' alt='code'>
 						</div>
 						<div class='content'>
 							<h4 class='text-gradient'><a href=''>".$arr['name']."</a></h4>
@@ -89,7 +89,7 @@ session_start();
 								<div class='col-lg-4 col-sm-6 mb-30'>
 								<div class='info-box-s1 active'>
 								<div class='icon'>
-							<img src='New Tectignis/template/images/employee/". $arr['image']."' alt='code'>
+							<img src='admin/images/employee/". $arr['image']."' alt='code'>
 						</div>
 						<div class='content'>
 							<h4 class='text-gradient'><a href=''>".$arr['name']."</a></h4>

@@ -71,7 +71,7 @@ if (mysqli_num_rows($doctors)>0){
 					<a href="<?php echo $row["link"]; ?>" >
 						<div class="portfolio-item">
 							<div class="thumbnail">
-								<img src="New Tectignis/template/images/portfolio/<?php echo $row["image"]; ?>" alt="Portfolio">
+								<img src="admin/images/portfolio/<?php echo $row["image"]; ?>" alt="Portfolio">
 							</div>
 						</div>
 						</a>

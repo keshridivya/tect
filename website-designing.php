@@ -73,12 +73,12 @@ while($arr=mysqli_fetch_assoc($sql)){  ?>
 					<p><?php echo $arr['long_desc']; ?></p>
 				</div>
 				<div class="col-lg-6 mb-30">
-					<img src="New Tectignis/template/images/service/<?php echo $arr['image1'];?>" alt="serices">
+					<img src="admin/images/service/<?php echo $arr['image1'];?>" alt="serices">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6 mb-30 order-lg-first order-last">
-					<img src="New Tectignis/template/images/service/<?php echo $arr['image2'];?>" alt="img">
+					<img src="admin/images/service/<?php echo $arr['image2'];?>" alt="img">
 				</div>
 				<div class="col-lg-6 mb-30 align-self-center">
 					<h3><?php echo $arr['meta_title']; ?></h3>

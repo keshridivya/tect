@@ -68,7 +68,7 @@ if (mysqli_num_rows($doctors)>0){
 				<div class="col-lg-4 col-md-6 mb-30">
 					<div class="team-item">
 						<div class="thumb">
-							<img src="New Tectignis/template/images/employee/<?php echo $row["images"]; ?>" alt="team">
+							<img src="admin/images/employee/<?php echo $row["images"]; ?>" alt="team">
 						</div>
 						<div class="content">
 							<div class="left" style="text-align:center;">

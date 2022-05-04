@@ -62,7 +62,7 @@ session_start();
 	?>
 					<div class="blog-details mb-30">
 						<div class="thumbnail">
-							<img src="New Tectignis/template/images/blog/<?php echo $arr['image']; ?>" alt="img">
+							<img src="admin/images/blog/<?php echo $arr['image']; ?>" alt="img">
 						</div>
 						
 						<div class="content">
@@ -133,7 +133,7 @@ session_start();
 							
                                 <div class="thubnail">
                                     <a href="single.html">
-                                        <img src="New Tectignis/template/images/blog/<?php echo $arr['image']; ?>" alt="blog">
+                                        <img src="admin/images/blog/<?php echo $arr['image']; ?>" alt="blog">
                                     </a>
                                 </div>
                                 <div class="content">

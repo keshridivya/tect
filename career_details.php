@@ -81,7 +81,7 @@ if(isset($_POST['s_ubmit'])){
 	?>
 					<div class="blog-details mb-30">
 						<div class="thumbnail">
-							<img src="New Tectignis/template/images/career_logo/<?php echo $arr['logo']; ?>" alt="img">
+							<img src="admin/images/career_logo/<?php echo $arr['logo']; ?>" alt="img">
 						</div>
 						
 						<div class="content">

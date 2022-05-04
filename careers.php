@@ -83,7 +83,7 @@
 					<div class="job-board-item">
 						<div class="top">
 							<div class="img">
-								<img src="New Tectignis/template/images/career_logo/<?php echo $arr['logo']; ?>" alt="job">
+								<img src="admin/images/career_logo/<?php echo $arr['logo']; ?>" alt="job">
 							</div>
 							<div class="con">
 								<a href="#"><?php echo $arr['location']; ?></a>
