@@ -70,7 +70,7 @@ session_start();
 				for($col = 0; $col < $count1; $col++) {
 			while($arr=mysqli_fetch_assoc($sql)){ 
 				
-				for($row = 0; $row < count($arr); $row++) {
+				for($row = 0; $row < $arr.length; $row++) {
 echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 							if($row%2 == 0) {
 								echo "
