@@ -69,7 +69,7 @@ session_start();
 			$count=mysqli_num_rows($sql);
 			$id=$arr['id'];
 echo "<div class='col-lg-4 col-sm-6 mb-30'>";
-							if($id%2 == 0) {
+							if($id%2 != 0) {
 								echo "
 								
 								<div class='info-box-s1'>
