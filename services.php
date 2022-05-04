@@ -68,7 +68,8 @@ session_start();
 			while($arr=mysqli_fetch_assoc($sql)){ 
 			$count=mysqli_num_rows($sql);
 echo "<div class='col-lg-4 col-sm-6 mb-30'>";
-							if($count%2 == 0) {
+for($row = 0; $row <= $count; $row++){
+							if($row%2 == 0) {
 								echo "
 								
 								<div class='info-box-s1'>
@@ -98,6 +99,7 @@ echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 											} 
 											echo "</div>";
 									}
+								}
 				?>
 			
 
