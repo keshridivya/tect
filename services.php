@@ -69,8 +69,9 @@ session_start();
 				$count1=$count/3;
 				for($col = 0; $col < $count1; $col++) {
 			while($arr=mysqli_fetch_assoc($sql)){ 
+				$email_array[] = $arr['name'];
 				
-				for($row = 0; $row < count($arr); $row++) {
+				for($row = 0; $row < sizeof($email_array); $row++) {
 echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 							if($row%2 == 0) {
 								echo "
