@@ -651,7 +651,7 @@ session_start();
 				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/our_client/hpcl.png" alt="code">
+							<img src="assets/img/our_client/hpcl.jpeg" alt="code">
 						</div>
 					</div>
 				</div>
