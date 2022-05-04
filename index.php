@@ -33,59 +33,7 @@ session_start();
 
 
 	<?php include("include/header.php"); ?>
-	<!-- Start Mobile Menu Area -->
-    <div class="mobile-menu-area">
-        <!--offcanvas menu area start-->
-        <div class="off_canvars_overlay"></div>
-        <div class="offcanvas_menu">
-            <div class="offcanvas_menu_wrapper">
-                <div class="canvas_close">
-                    <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-                </div>
-                <div class="mobile-logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo2.png" alt="logo" />
-                    </a>
-                </div>
-                <div id="menu" class="text-left">
-                    <ul class="offcanvas_main_menu">
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-                        <li class="menu-item-has-children">
-                            <a href="about.html">About Us</a>
-                            <ul class="sub-menu">
-                                <li><a href="ceo-govind-bavkar.html">CEO</a></li>
-								<li><a href="team.html">Teams</a></li>
-                            </ul>
-                        </li>
-								<li class="menu-item-has-children">
-									<a href="services.html">Services</a>
-									<ul class="sub-menu">
-										<li><a href="website-designing.html">Website Designing</a></li>
-										<li><a href="ecommerce-website-design-development.html">Ecommerce Website</a></li>
-										<li><a href="software-development.html">Software Development</a></li>
-										<li><a href="mobile-app-development.html">Mobile App Development</a></li>
-										<li><a href="digital-marketing.html">Digital Marketing</a></li>
-										<li><a href="graphics-designing.html">Graphics Designing</a></li>
-										<li><a href="hardware-networking.html">Hardware Networking</a></li>
-										<li><a href="cctv-camera.html">CCTV Camera</a></li>
-										<li><a href="it-consulting.html">IT Consulting</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="portfolio.html">Portfolio</a>
-								</li>								
-								<li>	
-									<a href="blog.html">Blog</a>
-								</li>
-								<li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--offcanvas menu area end-->
+	
 	<!-- Start Hero Section -->
 	<section class="hero-area" style="background-image:url('assets/img/bg1.jpg');">
 		<div class="container">
@@ -685,6 +633,77 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
+
+<!--start our client area-->
+<section class="section-padding-2 pt-0">
+		<div class="container">
+			<!-- Section Headding -->
+			<div class="row mb-40">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="section-headding">
+						<h2>Our Client</h2>
+						<p>The powerful and flexible theme for all kinds of businesses</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Single -->
+				<div class="col-lg-1 col-sm-6 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/cod.png" alt="code">
+						</div>
+					</div>
+				</div>
+				<!-- Single -->
+				<div class="col-lg-1 col-sm-6 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/meas.png" alt="mase">
+						</div>
+					</div>
+				</div>
+				<!-- Single -->
+				<div class="col-lg-1 col-sm-3 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/do.png" alt="doc">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-sm-3 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/do.png" alt="doc">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-sm-3 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/do.png" alt="doc">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-sm-3 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/do.png" alt="doc">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1 col-sm-3 mb-30">
+					<div class="info-box-s1">
+						<div class="icon">
+							<img src="assets/img/icon/do.png" alt="doc">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!--end our client area-->
+
 	<!-- Start Latest blog Area -->
 	<section class="section-padding-2 pt-0">
 		<div class="container">
