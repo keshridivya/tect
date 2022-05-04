@@ -648,49 +648,49 @@ session_start();
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/img/our_client/hpcl.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/our_client/hpcl.jpeg" class="img-fluid1" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/img/our_client/reliance.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/reliance.png" class="img-fluid1" alt="">
             </div>
           </div>
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/img/our_client/canara.jpeg" class="img-fluid" alt="">
+              <img src="assets/img/our_client/canara.jpeg" class="img-fluid1" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/img/our_client/lic.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/lic.png" class="img-fluid1" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/img/our_client/harmony.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/harmony.png" class="img-fluid1" alt="">
             </div>
           </div>
         
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="assets/img/our_client/lo.png" class="img-fluid" alt="">
+              <img src="assets/img/our_client/lo.png" class="img-fluid1" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460418/client-7.png" class="img-fluid" alt="">
+              <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460418/client-7.png" class="img-fluid1" alt="">
             </div>
           </div>
           
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <img src="https://bootstrapmade.com/demo/themes/NewBiz/img/clients/client-8.png" class="img-fluid" alt="">
+              <img src="https://bootstrapmade.com/demo/themes/NewBiz/img/clients/client-8.png" class="img-fluid1" alt="">
             </div>
           </div>
 
