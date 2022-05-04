@@ -3392,3 +3392,8 @@ h2.accordion-header {
   color: #fe3737;
   border-color: #fe3737;
 }
+.img-fluid{
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+}
