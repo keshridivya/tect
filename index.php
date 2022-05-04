@@ -688,17 +688,11 @@ session_start();
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/icon/do.png" alt="doc">
+							<img src="assets/img/our_client/lo.png" alt="doc">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-2 col-sm-3 mb-30">
-					<div class="info-box-s1">
-						<div class="icon">
-							<img src="assets/img/icon/do.png" alt="doc">
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section>
