@@ -69,11 +69,12 @@ session_start();
 				$count1=$count/3;
 				echo "<script>alert('$count1');</script>";
 				//for($col = 0; $col < $count1; $col++) {
+					echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 			while($arr=mysqli_fetch_assoc($sql)){ 
 				$email_array[] = $arr['name'];
 				
 				for($row = 0; $row < $count; $row++) {
-echo "<div class='col-lg-4 col-sm-6 mb-30'>";
+
 							if($row%2 == 0) {
 								echo "
 								
@@ -104,11 +105,13 @@ echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 				";
 				$col++;
 											} 
-											echo"</div>";
+											
 										}
-										echo "<hr><hr><hr>";
+										
 									//}
 								}
+								echo"</div>";
+										echo "<hr><hr><hr>";
 				?>
 			
 
