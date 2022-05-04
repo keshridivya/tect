@@ -651,7 +651,7 @@ session_start();
 				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/icon/cod.png" alt="code">
+							<img src="assets/img/our_client/hpcl.png" alt="code">
 						</div>
 					</div>
 				</div>
@@ -659,7 +659,7 @@ session_start();
 				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/icon/meas.png" alt="mase">
+							<img src="assets/img/our_client/reliance.png" alt="mase">
 						</div>
 					</div>
 				</div>
@@ -667,21 +667,21 @@ session_start();
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/icon/do.png" alt="doc">
+							<img src="assets/img/our_client/canara.jpeg" alt="doc">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/icon/do.png" alt="doc">
+							<img src="assets/img/our_client/lic.png" alt="doc">
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
-							<img src="assets/img/icon/do.png" alt="doc">
+							<img src="assets/img/our_client/harmony.png" alt="doc">
 						</div>
 					</div>
 				</div>
