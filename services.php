@@ -68,12 +68,11 @@ session_start();
 
 			while($arr=mysqli_fetch_assoc($sql)){ 
 				for($row = 0; $row < count($arr); $row++) {
-echo "<div class='col-lg-4 col-sm-6 mb-30'>
-<div class='info-box-s1'>";
+echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 							if($row%2 == 0) {
 								echo "
 								
-								
+								<div class='info-box-s1'>
 								<div class='icon'>
 							<img src='admin/images/employee/". $arr['image']."' alt='code'>
 						</div>
@@ -81,12 +80,14 @@ echo "<div class='col-lg-4 col-sm-6 mb-30'>
 							<h4 class='text-gradient'><a href=''>".$arr['name']."</a></h4>
 							<p>". $arr['desrciption']." </p>
 						</div>
+					</div>
 				";
 				$col++;
 											}
 											else {
 												echo "
 								
+								<div class='info-box-s1 active'>
 								<div class='icon'>
 							<img src='admin/images/employee/". $arr['image']."' alt='code'>
 						</div>
@@ -94,10 +95,11 @@ echo "<div class='col-lg-4 col-sm-6 mb-30'>
 							<h4 class='text-gradient'><a href=''>".$arr['name']."</a></h4>
 							<p>". $arr['desrciption']." </p>
 						</div>
+					</div>
 				";
 				$col++;
 											} 
-											echo"</div></div>";
+											echo"</div>";
 										}
 										echo "<hr><hr><hr>";
 									}
