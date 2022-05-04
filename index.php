@@ -648,7 +648,7 @@ session_start();
 			</div>
 			<div class="row">
 				<!-- Single -->
-				<div class="col-lg-1 col-sm-6 mb-30">
+				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/cod.png" alt="code">
@@ -656,7 +656,7 @@ session_start();
 					</div>
 				</div>
 				<!-- Single -->
-				<div class="col-lg-1 col-sm-6 mb-30">
+				<div class="col-lg-2 col-sm-6 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/meas.png" alt="mase">
@@ -664,35 +664,35 @@ session_start();
 					</div>
 				</div>
 				<!-- Single -->
-				<div class="col-lg-1 col-sm-3 mb-30">
+				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/do.png" alt="doc">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-1 col-sm-3 mb-30">
+				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/do.png" alt="doc">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-1 col-sm-3 mb-30">
+				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/do.png" alt="doc">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-1 col-sm-3 mb-30">
+				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/do.png" alt="doc">
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-1 col-sm-3 mb-30">
+				<div class="col-lg-2 col-sm-3 mb-30">
 					<div class="info-box-s1">
 						<div class="icon">
 							<img src="assets/img/icon/do.png" alt="doc">
