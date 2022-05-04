@@ -64,9 +64,12 @@ session_start();
 			<!-- Single -->
 			<div class='row'>
 			<?php $sql=mysqli_query($conn,"select * from service");
-			for($col = 0; $col < 1; $col++) {
-
+			
+				$count=mysqli_num_rows($sql);
+				$count1=$count*3;
+				for($col = 0; $col < $count1; $col++) {
 			while($arr=mysqli_fetch_assoc($sql)){ 
+				
 				for($row = 0; $row < count($arr); $row++) {
 echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 							if($row%2 == 0) {
