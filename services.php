@@ -72,7 +72,7 @@ session_start();
 			while($arr=mysqli_fetch_assoc($sql)){ 
 				$email_array[] = $arr['name'];
 				
-				for($row = 0; $row < 3; $row++) {
+				for($row = 0; $row < 1; $row++) {
 echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 							if($row%2 == 0) {
 								echo "
