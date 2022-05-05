@@ -24,7 +24,7 @@ if(!isset($_SESSION['email'])){
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
+            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold"><?php echo $name; ?></span></h1>
             <h3 class="welcome-sub-text">Your performance summary this week </h3>
           </li>
         </ul>
@@ -61,7 +61,7 @@ if(!isset($_SESSION['email'])){
                 </div>
               </a>
             </div>
-          </li>-->
+          </li>
           <li class="nav-item d-none d-lg-block">
             <div id="datepicker-popup" class="input-group date datepicker navbar-date-picker">
               <span class="input-group-addon input-group-prepend border-right">
@@ -75,7 +75,7 @@ if(!isset($_SESSION['email'])){
               <i class="icon-search"></i>
               <input type="search" class="form-control" placeholder="Search Here" title="Search here">
             </form>
-          </li>
+          </li>-->
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
