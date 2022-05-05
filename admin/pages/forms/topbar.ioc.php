@@ -2,7 +2,7 @@
 if(!isset($_SESSION['email'])){
   $name=$_SESSION['username'];
   $email=$_SESSION['email'];
-    //header("location:../samples/login.php");
+    header("location:../samples/login.php");
 }
 ?>
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
