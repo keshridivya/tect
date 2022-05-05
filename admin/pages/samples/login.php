@@ -10,7 +10,7 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
   $num=mysqli_fetch_array($query);
 
   if($num>0){
-    $uname=$num['name'];
+    $uname=$num['username'];
     $username=$num['email'];
     $hasspassword=$num['password'];
     if(password_verify($password ,$hasspassword)){
