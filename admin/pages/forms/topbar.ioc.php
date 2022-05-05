@@ -1,6 +1,6 @@
 <?php
  
-if(!isset($_SESSION['email'])){
+if(!isset($_SESSION['id'])){
     header("location:../samples/login.php");
 }
 $name=$_SESSION['name'];

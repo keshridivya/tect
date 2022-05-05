@@ -10,13 +10,13 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
   $num=mysqli_fetch_array($query);
 
   if($num>0){
-    $uname=$num['username'];
     $username=$num['email'];
     $hasspassword=$num['password'];
     if(password_verify($password ,$hasspassword)){
       header("location:../forms/users.php");
-      $_SESSION['name']=$uname;
+      $_SESSION['name']=$num['username'];
       $_SESSION['email']=$username;
+      $_SESSION['id']=$num['id'];
     }
     else{
       $msg="username and password is not correct";
