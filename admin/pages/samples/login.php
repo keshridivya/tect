@@ -15,7 +15,7 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
     $hasspassword=$num['password'];
     if(password_verify($password ,$hasspassword)){
       header("location:../forms/users.php");
-      $_SESSION['username']=$uname;
+      $_SESSION['name']=$uname;
       $_SESSION['email']=$username;
     }
     else{
