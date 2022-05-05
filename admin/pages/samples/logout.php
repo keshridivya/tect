@@ -6,7 +6,7 @@ if(session_destroy()){
     header("location:login.php");
 }
 else{
-    header("location:../forms/dashboard.php");
+    header("location:../forms/users.php");
     echo"<script>alert('There were some problems with your input.');</script>";
 }
 ?>
