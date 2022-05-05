@@ -1,9 +1,10 @@
 <?php
- $name=$_SESSION['name'];
- $email=$_SESSION['email'];
+ 
 if(!isset($_SESSION['email'])){
     header("location:../samples/login.php");
 }
+$name=$_SESSION['name'];
+ $email=$_SESSION['email'];
 ?>
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
