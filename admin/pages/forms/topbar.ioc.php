@@ -24,7 +24,7 @@ $name=$_SESSION['name'];
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="../../index.html">
-            <img src="TM LOGO.jpg" alt="logo" />
+            <img src="TMLOGO.jpg" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="../../index.html">
             <img src="TMLOGO.png" alt="logo" />
