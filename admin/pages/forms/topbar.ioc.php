@@ -1,7 +1,7 @@
 <?php
+ $name=$_SESSION['username'];
+ $email=$_SESSION['email'];
 if(!isset($_SESSION['email'])){
-  $name=$_SESSION['username'];
-  $email=$_SESSION['email'];
     header("location:../samples/login.php");
 }
 ?>
