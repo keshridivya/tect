@@ -1,6 +1,5 @@
 <?php
  $name=$_SESSION['username'];
- echo "<script>alert('Welcome $name');</script>";
  $email=$_SESSION['email'];
 if(!isset($_SESSION['email'])){
     header("location:../samples/login.php");
