@@ -6,9 +6,10 @@ if(!isset($_SESSION['id'])){
 $name=$_SESSION['name'];
  $email=$_SESSION['email'];
 
+ date_default_timezone_set('Asia/Calcutta');
  if(date("H") < 12){
   $dn= "Good Morning";
-}elseif(date("H") > 12 && date("H") < 18){
+}elseif(date("H") > 11 && date("H") < 18){
   $dn= "Good Afternoon";
 }elseif(date("H") > 17){
   $dn= "Good Evening";
@@ -34,7 +35,7 @@ $name=$_SESSION['name'];
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
             <h1 class="welcome-text"><?php echo $dn; ?>, <span class="text-black fw-bold"><?php echo $name; ?></span></h1>
-            <h3 class="welcome-sub-text">Your performance summary this week </h3>
+            <!--<h3 class="welcome-sub-text">Your performance summary this week </h3>-->
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
