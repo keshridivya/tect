@@ -7,7 +7,7 @@ $name=$_SESSION['name'];
  $email=$_SESSION['email'];
 
  if(date("H") < 12){
-  $dn= "Good Morning";
+  $dn= "Good morning";
 }elseif(date("H") > 11 && date("H") < 18){
   $dn= "Good Afternoon";
 }elseif(date("H") > 17){
