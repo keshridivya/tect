@@ -6,12 +6,14 @@ if(!isset($_SESSION['id'])){
 $name=$_SESSION['name'];
  $email=$_SESSION['email'];
 
+ function dn(){
  if(date("H") < 12){
-  $dn= "Good morning";
-}elseif(date("H") > 11 && date("H") < 18){
-  $dn= "Good Afternoon";
+  return "Good morning";
+}elseif(date("H") > 12 && date("H") < 18){
+  return "Good Afternoon";
 }elseif(date("H") > 17){
-  $dn= "Good Evening";
+  return "Good Evening";
+}
 }
 ?>
 <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
@@ -33,7 +35,7 @@ $name=$_SESSION['name'];
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text"><?php echo $dn; ?>, <span class="text-black fw-bold"><?php echo $name; ?></span></h1>
+            <h1 class="welcome-text"><?php echo welcome();  ?>, <span class="text-black fw-bold"><?php echo $name; ?></span></h1>
             <h3 class="welcome-sub-text">Your performance summary this week </h3>
           </li>
         </ul>
