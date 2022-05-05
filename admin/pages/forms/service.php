@@ -1,4 +1,6 @@
-<?php include("../../include/configure.php"); 
+<?php 
+session_start();
+include("../../include/configure.php"); 
 include("list.php");
 if(isset($_POST['empadd'])){
     $file=$_FILES['files']['name'];    

@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 include("../../include/configure.php");
 $id=$_GET['id'];
 if(isset($_POST['empadd'])){

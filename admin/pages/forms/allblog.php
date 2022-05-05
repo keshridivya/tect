@@ -1,4 +1,5 @@
-<?php include("../../include/configure.php");
+<?php session_start();
+ include("../../include/configure.php");
 
 if(isset($_GET['delid'])){
     $id=mysqli_real_escape_string($conn,$_GET['delid']);

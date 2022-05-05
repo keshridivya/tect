@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../../include/configure.php");
 
 if(isset($_POST['empadd'])){

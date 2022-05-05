@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("../../include/configure.php");
 $id=$_GET['id'];
 //$conn=mysqli_connect("localhost","root","","category");

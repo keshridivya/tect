@@ -1,4 +1,4 @@
-<?php 
+<?php session_start();
 include("../../include/configure.php");
 if(isset($_POST['sub'])){
     $description=$_POST['description'];

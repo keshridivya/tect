@@ -1,4 +1,6 @@
-<?php include("../../include/configure.php");
+<?php 
+session_start();
+include("../../include/configure.php");
 
 if(isset($_POST['sub'])){
     $name=$_POST['name'];
