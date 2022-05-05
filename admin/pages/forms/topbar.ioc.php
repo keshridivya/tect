@@ -176,7 +176,7 @@ $name=$_SESSION['name'];
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
               <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
-              <a class="dropdown-item" href="../../../index.php"><i class="dropdown-item-icon mdi mdi-help-circle-outline text-primary me-2"></i> Back to Site</a>
+              <a class="dropdown-item" href="../../../index.php"><i class="dropdown-item-icon mdi mdi-wan text-primary me-2"></i> Back to Site</a>
               <a class="dropdown-item" href="../samples/logout.php"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
           </li>
