@@ -24,10 +24,10 @@ $name=$_SESSION['name'];
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="#">
-            <img src="../../../assets/img/our_client" alt="logo" />
+            <img src="../../../assets/img/our_client/logo.png" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="#">
-            <img src="../../../assets/img/our_client" alt="logo" />
+            <img src="../../../assets/img/our_client/logo.png" alt="logo" />
           </a>
         </div>
       </div>
