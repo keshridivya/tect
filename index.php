@@ -306,7 +306,7 @@ You have to learn and achieve the target.</p>
 				<!-- Thumbnail -->
 				<div class="col-lg-6 mb-30">
 					<div class="applicant-img applicant-img-2">
-						<img src="assets/img/index/hw.jpg" alt="dashkit">
+						<img src="assets/img/index/web.png" alt="dashkit">
 					</div>
 				</div>
 			</div>

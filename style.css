@@ -3410,7 +3410,7 @@ h2.accordion-header {
 	background:#283d50;
 	padding-bottom:30px;
 	height:300px;
-	margin-top: 40px;
+	padding-top: 20px;
   }
   #ourclients .clients-wrap {
 	display: block;
