@@ -305,7 +305,7 @@ You have to learn and achieve the target.</p>
 				</div>
 				<!-- Thumbnail -->
 				<div class="col-lg-6 mb-30">
-					<div class="col-lg-6 mb-30">
+					<div class="applicant-img applicant-img-2">
 						<img src="assets/img/index/hw.jpg" alt="dashkit">
 					</div>
 				</div>
@@ -321,7 +321,7 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-6 align-self-center mb-30">
 					<div class="applicant-content">
 						<h2 class="text-gradient">Designed with The Of applicant in mind.</h2>
-						<p> Duis volutpat viverra consequat. Nam feugiat vitae tortor et ultrices. Duis fringilla porta interdum. Nunc sollicitudin placerat luctus. </p>
+						<p> while design thinking is typically thought of as a tool for designers to create new products, recruiting teams can use a modified version of it to improve processes and enhance services. </p>
 						<div class="applicant-list-full">
 							<!-- Single -->
 							<div class="item">
@@ -330,7 +330,7 @@ You have to learn and achieve the target.</p>
 								</div>
 								<div class="content">
 									<h4> Bootstrap users since the beginning </h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt ut labore et</p>
+									<p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries.</p>
 								</div>
 							</div>
 							<!-- Single -->
@@ -340,7 +340,7 @@ You have to learn and achieve the target.</p>
 								</div>
 								<div class="content">
 									<h4>Explore the Snippets tool</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt ut labore et</p>
+									<p>Google featured snippets are prime real estate in the SERPs, but if you want to capture them for your site, it’s hard to know where to start.</p>
 								</div>
 							</div>
 						</div>
@@ -358,7 +358,7 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-headding">
 						<h2>Turn your ideas <br>Into reality in seconds</h2>
-						<p>The powerful and flexible theme for all kinds of businesses</p>
+						<p>Decide what needs to happen in order to move towards an outcome. ...</p>
 					</div>
 				</div>
 			</div>
@@ -367,19 +367,19 @@ You have to learn and achieve the target.</p>
 					<div class="trun_ideas_nav">
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
 						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link active" id="topa-tab" data-bs-toggle="tab" data-bs-target="#topa" role="tab" aria-controls="topa" aria-selected="true"><i class="fas fa-file-alt"></i> Top Audiences</button>
+						    	<button class="nav-link active" id="topa-tab" data-bs-toggle="tab" data-bs-target="#topa" role="tab" aria-controls="topa" aria-selected="true"><i class="fas fa-file-alt"></i> Website Designing</button>
 						  	</li>
 						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="saasde-tab" data-bs-toggle="tab" data-bs-target="#saasde" role="tab" aria-controls="saasde" aria-selected="false"><i class="far fa-file-code"></i> Saas Development</button>
+						    	<button class="nav-link" id="saasde-tab" data-bs-toggle="tab" data-bs-target="#saasde" role="tab" aria-controls="saasde" aria-selected="false"><i class="far fa-file-code"></i> Digital Marketing</button>
 						  	</li>
 						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="softwareanaly-tab" data-bs-toggle="tab" data-bs-target="#softwareanaly" role="tab" aria-controls="softwareanaly" aria-selected="false"><i class="fas fa-chart-line"></i> Analytics Software</button>
+						    	<button class="nav-link" id="softwareanaly-tab" data-bs-toggle="tab" data-bs-target="#softwareanaly" role="tab" aria-controls="softwareanaly" aria-selected="false"><i class="fas fa-chart-line"></i> App Development</button>
 						  	</li>
 						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="exchangefeed-tab" data-bs-toggle="tab" data-bs-target="#exchangefeed" role="tab" aria-controls="exchangefeed" aria-selected="false"><i class="fas fa-exchange-alt"></i> Exchange Feedback</button>
+						    	<button class="nav-link" id="exchangefeed-tab" data-bs-toggle="tab" data-bs-target="#exchangefeed" role="tab" aria-controls="exchangefeed" aria-selected="false"><i class="fas fa-exchange-alt"></i> Graphics Designing</button>
 						  	</li>
 						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="foremployees-tab" data-bs-toggle="tab" data-bs-target="#foremployees" role="tab" aria-controls="foremployees" aria-selected="false"><i class="fas fa-user-injured"></i> For Employees</button>
+						    	<button class="nav-link" id="foremployees-tab" data-bs-toggle="tab" data-bs-target="#foremployees" role="tab" aria-controls="foremployees" aria-selected="false"><i class="fas fa-user-injured"></i> Hardware</button>
 						  	</li>
 						</ul>
 					</div>
@@ -387,19 +387,19 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-8">
 					<div class="tab-content" id="myTabContent">
 					  	<div class="tab-pane trun_ideas_contetn fade show active" id="topa" role="tabpanel" aria-labelledby="topa-tab">
-					  		<img src="assets/img/HOME 4.png" alt="dashbord">
+					  		<img src="assets/img/index/wd.png" alt="dashbord">
 					  	</div>
 					  	<div class="tab-pane trun_ideas_contetn fade" id="saasde" role="tabpanel" aria-labelledby="saasde-tab">
-					  		<img src="assets/img/dashbord.png" alt="dashbord">
+					  		<img src="assets/img/index/ad.jpg" alt="dashbord">
 					  	</div>
 					  	<div class="tab-pane trun_ideas_contetn fade" id="softwareanaly" role="tabpanel" aria-labelledby="softwareanaly-tab">
-					  		<img src="assets/img/dashbord.png" alt="dashbord">
+					  		<img src="assets/img/index/dm.png" alt="dashbord">
 					  	</div>
 					  	<div class="tab-pane trun_ideas_contetn fade" id="exchangefeed" role="tabpanel" aria-labelledby="exchangefeed-tab">
-					  		<img src="assets/img/dashbord.png" alt="dashbord">
+					  		<img src="assets/img/index/gd.png" alt="dashbord">
 					  	</div>
 					  	<div class="tab-pane trun_ideas_contetn fade" id="foremployees" role="tabpanel" aria-labelledby="foremployees-tab">
-					  		<img src="assets/img/dashbord.png" alt="dashbord">
+					  		<img src="assets/img/index/hn.png" alt="dashbord">
 					  	</div>
 					</div>
 				</div>
@@ -506,77 +506,7 @@ You have to learn and achieve the target.</p>
 					  			</div>
 					  		</div>
 					  	</div>
-					  	<div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
-					  		<div class="row">
-					  			<!-- Single -->
-					  			<div class="col-lg-4 col-md-6 mb-30">
-					  				<div class="pricing-item">
-					  					<div class="pricing-header">
-					  						<h4>BASIC</h4>
-					  						<h2>$119.89</h2>
-					  					</div>
-					  					<div class="pricing-content">
-					  						<ul>
-					  							<li>Basic Listing Submission</li>
-					  							<li>One Listing</li>
-					  							<li>30 Days Availability</li>
-					  							<li>Limited Support</li>
-					  							<li>Accept Reviews</li>
-					  							<li>Edit Your Listing</li>
-					  						</ul>
-					  					</div>
-					  					<div class="pricng-btn">
-					  						<a class="button-1" href="#">Get Started</a>
-					  					</div>
-					  				</div>
-					  			</div>
-					  			<!-- Single -->
-					  			<div class="col-lg-4 col-md-6 mb-30">
-					  				<div class="pricing-item active">
-					  					<div class="pricing-header">
-					  						<h4>STANDART</h4>
-					  						<h2>$199.89</h2>
-					  						<div class="badge">Popular</div>
-					  					</div>
-					  					<div class="pricing-content">
-					  						<ul>
-					  							<li>Basic Listing Submission</li>
-					  							<li>One Listing</li>
-					  							<li>30 Days Availability</li>
-					  							<li>Limited Support</li>
-					  							<li>Accept Reviews</li>
-					  							<li>Edit Your Listing</li>
-					  						</ul>
-					  					</div>
-					  					<div class="pricng-btn">
-					  						<a class="button-1" href="#">Get Started</a>
-					  					</div>
-					  				</div>
-					  			</div>
-					  			<!-- Single -->
-					  			<div class="col-lg-4 col-md-6 mb-30">
-					  				<div class="pricing-item">
-					  					<div class="pricing-header">
-					  						<h4>Premium</h4>
-					  						<h2>$219.89</h2>
-					  					</div>
-					  					<div class="pricing-content">
-					  						<ul>
-					  							<li>Basic Listing Submission</li>
-					  							<li>One Listing</li>
-					  							<li>30 Days Availability</li>
-					  							<li>Limited Support</li>
-					  							<li>Accept Reviews</li>
-					  							<li>Edit Your Listing</li>
-					  						</ul>
-					  					</div>
-					  					<div class="pricng-btn">
-					  						<a class="button-1" href="#">Get Started</a>
-					  					</div>
-					  				</div>
-					  			</div>
-					  		</div>
-					  	</div>
+					  	
 					</div>
 
 				</div>
