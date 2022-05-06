@@ -33,7 +33,7 @@
     <!-- partial:partials/_navbar.html -->
     
    
-    <?php include("topbar.ioc.php")
+    <?php include("topbar.ioc.php");
     include("sidebar.ioc.php") ?>
     <!-- partial -->
       <div class="main-panel">
