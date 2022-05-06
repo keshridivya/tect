@@ -37,13 +37,13 @@ session_start();
 	<?php include("include/header.php"); ?>
 	
 	<!-- Start Hero Section -->
-	<section class="hero-area" style="background-image:url('assets/img/bg1.jpg');">
+	<section class="hero-area" style="background-image:url('assets/img/index/banner.png');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="hero-caption pt-150 pb-200">
-						<h2>Esit is most powerful SAAS solution</h2>
-						<p>Simple and innovative Web UI Kit built on top of Bootstrap 5. Join over 1.4 million developers around the world. </p>
+						<h2>Welome to Tectignis IT Solutions</h2>
+						<p>We are providing the best website's designing services & combined web that help customer to gain a competitive advantage from website design & SEO services India.. </p>
 					</div>
 				</div>
 			</div>
@@ -68,8 +68,8 @@ session_start();
                                     <h2 class="counter text-gradient">255</h2>
                                     <h3 class="text-gradient">+</h3>
                                 </div>
-	                			<h5>Coded Elements</h5>
-	                			<p class="text-sm">From buttons, to inputs, to outputs, navbars, alerts or cards, you are covered</p>
+	                			<h5>Web Development</h5>
+	                			<p class="text-sm">Provide Superior, Customised & Tailormade web design & development services for your business.</p>
 		              			<hr class="vertical dark">
 							</div>	
 	            		</div>
