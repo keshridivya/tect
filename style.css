@@ -414,7 +414,7 @@ img{
 }
 .hero-area::after {
 	content: "";
-	background-image: linear-gradient(310deg,#7928ca,#f9004d);
+	background-image: linear-gradient(310deg,black,black);
 	clear: both;
 	display: block;
 	position: absolute;
