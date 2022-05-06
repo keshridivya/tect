@@ -1,5 +1,8 @@
 <?php session_start();
 include("../../include/configure.php");
+
+$sql=mysqli_query($conn,"select * from userlogin where user_id='".$_SESSION['user_id']."'");
+$row=mysqli_fetch_array($sql);
   
 ?>
 <!DOCTYPE html>
@@ -41,37 +44,31 @@ include("../../include/configure.php");
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Portfolio</h4>
+                  <h4 class="card-title">Update Profile</h4>
                   <form class="forms-sample" method="post">
                  
                  <div class="form-group row">
-                   <label for="exampleaddress" class="col-sm-2 col-form-label">Agent Name</label>
+                   <label for="exampleaddress" class="col-sm-2 col-form-label"> Name</label>
                    <div class="col-sm-10">
-                     <input type="text" class="form-control"name="name"value="TECTIGNIS IT SOLUTIONS PVT LTD">
+                     <input type="text" class="form-control"name="name"value="<?php echo $row['username']; ?>">
                    </div>
                  </div>
                  <div class="form-group row">
-                   <label for="exampleaddress" class="col-sm-2 col-form-label">Agent Email-ID</label>
+                   <label for="exampleaddress" class="col-sm-2 col-form-label"> Email-ID</label>
                    <div class="col-sm-10">
-                     <input type="email" class="form-control"name="email"value="info@tectignis.in">
+                     <input type="email" class="form-control"name="email"value="<?php echo $row['email']; ?>">
                    </div>
                  </div>
                  <div class="form-group row">
                    <label for="exampleInputMobile" class="col-sm-2 col-form-label">Office Address</label>
                    <div class="col-sm-10">
-                     <input type="text" class="form-control"name="address"value="Aashiyana CHS Shop No 05, Sector 11, Plot No 29, Kamothe, Navi Mumbai, Maharashtra 410206">
+                     <input type="text" class="form-control"name="address"value="">
                    </div>
                  </div>
                  <div class="form-group row">
                    <label for="exampleaadhaar" class="col-sm-2 col-form-label">Mobile No.</label>
                    <div class="col-sm-10">
-                     <input type="text" class="form-control"name="mobile"value="9987805688">
-                   </div>
-                 </div>
-                 <div class="form-group row">
-                   <label for="examplepan" class="col-sm-2 col-form-label">Rera No.</label>
-                   <div class="col-sm-10">
-                     <input type="text" class="form-control"name="rera"value="U45400UP2008PTC036249">
+                     <input type="text" class="form-control"name="mobile"value="">
                    </div>
                  </div>
        <div class="col" align="right">
