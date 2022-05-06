@@ -80,8 +80,8 @@ session_start();
                                     <h2 class="counter text-gradient">100</h2>
                                     <h3 class="text-gradient">+</h3>
                                 </div>
-	                			<h5>Design Blocks</h5>
-	                			<p class="text-sm">From buttons, to inputs, to outputs, navbars, alerts or cards, you are covered</p>
+	                			<h5>App Development</h5>
+	                			<p class="text-sm">We are specializes in building mobile apps for all platforms and now. It using a new robust technology</p>
 		              			<hr class="vertical dark">
 							</div>	
 	            		</div>
@@ -92,8 +92,8 @@ session_start();
                                     <h2 class="counter text-gradient">255</h2>
                                     <h3 class="text-gradient">+</h3>
                                 </div>
-	                			<h5>Pages</h5>
-	                			<p class="text-sm">From buttons, to inputs, to outputs, navbars, alerts or cards, you are covered</p>
+	                			<h5>Digital Marketing</h5>
+	                			<p class="text-sm">We are specializes in building mobile apps for all platforms and now. It using a new robust technology</p>
 							</div>	
 	            		</div>
 					</div>
@@ -123,7 +123,7 @@ session_start();
 						</div>
 						<div class="content">
 							<h4 class="text-gradient"> Built for developers </h4>
-							<p>Vestibulum venenatis eget orci eget ornare. Donec pretium vel neque id lobortis. Integer at metus eleifend, viverra odio et, suscipit tortor. </p>
+							<p>Vestibulum venenatis eget orci eget ornare. Donec pretium vel neque id lobortis. Integer at metus eleifend, viverra odio et, suscipit tortor.Quantitative research involves more people means more data. With more data to analyze, you can obtain more accurate results. </p>
 						</div>
 					</div>
 				</div>
@@ -134,8 +134,8 @@ session_start();
 							<img src="assets/img/icon/meas.png" alt="mase">
 						</div>
 						<div class="content">
-							<h4 class="text-gradient"> Designed to be modern </h4>
-							<p>Vestibulum venenatis eget orci eget ornare. Donec pretium vel neque id lobortis. Integer at metus eleifend, viverra odio et, suscipit tortor. </p>
+							<h4 class="text-gradient"> Digital Marketing</h4>
+							<p>Promote your web or business online organically with our services and see your website grow in visibility, traffic and rankings. </p>
 						</div>
 					</div>
 				</div>
@@ -147,7 +147,7 @@ session_start();
 						</div>
 						<div class="content">
 							<h4 class="text-gradient"> Documentation for everything </h4>
-							<p>Vestibulum venenatis eget orci eget ornare. Donec pretium vel neque id lobortis. Integer at metus eleifend, viverra odio et, suscipit tortor. </p>
+							<p>We are specializes in building mobile apps for all platforms and now. It using a new robust technology</p>
 						</div>
 					</div>
 				</div>
@@ -162,8 +162,10 @@ session_start();
 				<!-- Content -->
 				<div class="col-lg-6 align-self-center">
 					<div class="analytics-toll-content">
-						<h2 class="text-gradient">The only analytics tool you'll ever need</h2>
-						<p class="contetn">Aenean vel ante a eros pulvinar posuere sollicitudin vitae arcu. Phasellus eget felis velit. Cras placerat libero purus, ultricies aliquam ligula consequat non.</p>
+						<h2 class="text-gradient">Learn new skills to go ahead for your career</h2>
+						<p class="contetn">At this point, you will be programming
+ you will be making changes frequently. 
+You have to learn and achieve the target.</p>
 						<div class="row">
 							<!-- Single -->
 							<div class="col-sm-6 mb-30">
@@ -220,7 +222,7 @@ session_start();
 					<h2>The only one template you need.</h2>
 				</div>
 				<div class="col-lg-6 align-self-center">
-					<a class="button-2 text-right" href="#">Get Started For Free</a>
+				<a class="button-2 text-right" id="popup" onclick="div_show()" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Get Quote</a>
 				</div>
 			</div>
 		</div>
@@ -234,7 +236,7 @@ session_start();
 				<div class="col-12 col-lg-5">
 					<div class="usefull-resourses-form">
 						<div class="thum">
-							<img src="assets/img/HOME 1.png" alt="img">
+							<img src="assets/img/index/hw1.jpg" alt="img">
 						</div>
 						<div class="use_form">
 							<form action="include/api.php" method="post">
@@ -250,9 +252,9 @@ session_start();
 				<div class="col-12 col-lg-7 align-self-center">
 					<div class="usefull-resourses-content">
 						<h2 class="text-gradient">The most useful resource ever created for developers.</h2>
-						<p> Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier. Fusce lorem odio, pretium non dui id, vulputate tempor purus.</p>
+						<p> Programming encompasses a broad range of topics and skills. Those interested in breaking into the industry may find it challenging to narrow down a field of study without understanding roles and the tasks that go with them</p>
 						<h4>Stay update with us</h4>
-						<p>Suspendisse fermentum, mi a suscipit iaculis, erat odio faucibus eros, nec aliquet sem augue sagittis orci. Sed aliquam lobortis justo, sit amet finibus tortor molestie sed.</p>
+						<p>We are specializes in building mobile apps for all platforms and now. It using a new robust technology</p>
 						<ul>
 							<li><i class="fas fa-check-circle"></i> Product Development</li>
 							<li><i class="fas fa-check-circle"></i> Product Consultation</li>
@@ -276,7 +278,7 @@ session_start();
 				<div class="col-lg-6 align-self-center mb-30">
 					<div class="applicant-content">
 						<h2 class="text-gradient">Designed with The Of applicant in mind.</h2>
-						<p> Duis volutpat viverra consequat. Nam feugiat vitae tortor et ultrices. Duis fringilla porta interdum. Nunc sollicitudin placerat luctus. </p>
+						<p> Duis Design thinking is simply a method for solving problems and discovering new opportunities using a structured creative process. </p>
 						<div class="applicant-list-full">
 							<!-- Single -->
 							<div class="item">
@@ -284,8 +286,8 @@ session_start();
 									<i class="fas fa-code"></i>
 								</div>
 								<div class="content">
-									<h4> Bootstrap users since the beginning </h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt ut labore et</p>
+									<h4> IOT </h4>
+									<p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
 								</div>
 							</div>
 							<!-- Single -->
@@ -294,8 +296,8 @@ session_start();
 									<i class="fas fa-tools"></i>
 								</div>
 								<div class="content">
-									<h4>Explore the Snippets tool</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisic do eiusmod tempor incididunt ut labore et</p>
+									<h4>Cloud</h4>
+									<p>The Featured Snippets+ Tool goes through tons of data and APIs to give you actionable and easy-to-implement steps to optimize your site for Google's featured snippets and build more visibility in SERPs.</p>
 								</div>
 							</div>
 						</div>

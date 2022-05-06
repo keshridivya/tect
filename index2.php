@@ -229,8 +229,8 @@ You have to learn and achieve the target.</p>
 										<img src="assets/img/icon/1.png" alt="icon">
 									</div>
 									<div class="content">
-										<h4>We are learners</h4>
-										<p>Whether you want to learn you’ve come to the right place..</p>
+										<h4>Fully Responsive</h4>
+										<p>Up the duff bonnet daft amongst bog Oxford lost.</p>
 									</div>
 								</div>
 							</div>
@@ -241,8 +241,8 @@ You have to learn and achieve the target.</p>
 										<img src="assets/img/icon/2.png" alt="icon">
 									</div>
 									<div class="content">
-										<h4>Achieve your goals</h4>
-										<p>Follow a recommended learning plan, specifically designed to help you build your knowledge . </p>
+										<h4>24/7 Support</h4>
+										<p>Up the duff bonnet daft amongst bog Oxford lost. </p>
 									</div>
 								</div>
 							</div>
@@ -254,7 +254,7 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/index/bg" alt="img">
+						<img src="assets/img/1.png" alt="img">
 						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
 						<div class="vedio-btn-ab">
