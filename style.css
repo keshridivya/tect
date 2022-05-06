@@ -3465,7 +3465,7 @@ $animationSpeed: 40s;
 	100% { transform: translateX(calc(-250px * 7))}
 }
 
-.slider {
+.slider1 {
 	height: 100px;
 	margin: auto;
 	overflow:hidden;

@@ -633,7 +633,7 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-	<div class="slider">
+	<div class="slider1">
 	<div class="slide-track">
 		<div class="slide">
 			<img src="https://www.scorepromotions.com/assets/score/img/clients/Air-Canada-01.jpg" height="100" width="100" alt="" />
