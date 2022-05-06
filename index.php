@@ -28,10 +28,7 @@ session_start();
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+
 	<!--head and body in include file-->
 
 
@@ -505,7 +502,77 @@ session_start();
 					  			</div>
 					  		</div>
 					  	</div>
-					  	
+					  	<div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+					  		<div class="row">
+					  			<!-- Single -->
+					  			<div class="col-lg-4 col-md-6 mb-30">
+					  				<div class="pricing-item">
+					  					<div class="pricing-header">
+					  						<h4>BASIC</h4>
+					  						<h2>$119.89</h2>
+					  					</div>
+					  					<div class="pricing-content">
+					  						<ul>
+					  							<li>Basic Listing Submission</li>
+					  							<li>One Listing</li>
+					  							<li>30 Days Availability</li>
+					  							<li>Limited Support</li>
+					  							<li>Accept Reviews</li>
+					  							<li>Edit Your Listing</li>
+					  						</ul>
+					  					</div>
+					  					<div class="pricng-btn">
+					  						<a class="button-1" href="#">Get Started</a>
+					  					</div>
+					  				</div>
+					  			</div>
+					  			<!-- Single -->
+					  			<div class="col-lg-4 col-md-6 mb-30">
+					  				<div class="pricing-item active">
+					  					<div class="pricing-header">
+					  						<h4>STANDART</h4>
+					  						<h2>$199.89</h2>
+					  						<div class="badge">Popular</div>
+					  					</div>
+					  					<div class="pricing-content">
+					  						<ul>
+					  							<li>Basic Listing Submission</li>
+					  							<li>One Listing</li>
+					  							<li>30 Days Availability</li>
+					  							<li>Limited Support</li>
+					  							<li>Accept Reviews</li>
+					  							<li>Edit Your Listing</li>
+					  						</ul>
+					  					</div>
+					  					<div class="pricng-btn">
+					  						<a class="button-1" href="#">Get Started</a>
+					  					</div>
+					  				</div>
+					  			</div>
+					  			<!-- Single -->
+					  			<div class="col-lg-4 col-md-6 mb-30">
+					  				<div class="pricing-item">
+					  					<div class="pricing-header">
+					  						<h4>Premium</h4>
+					  						<h2>$219.89</h2>
+					  					</div>
+					  					<div class="pricing-content">
+					  						<ul>
+					  							<li>Basic Listing Submission</li>
+					  							<li>One Listing</li>
+					  							<li>30 Days Availability</li>
+					  							<li>Limited Support</li>
+					  							<li>Accept Reviews</li>
+					  							<li>Edit Your Listing</li>
+					  						</ul>
+					  					</div>
+					  					<div class="pricng-btn">
+					  						<a class="button-1" href="#">Get Started</a>
+					  					</div>
+					  				</div>
+					  			</div>
+					  		</div>
+					  	</div>
 					</div>
 
 				</div>
@@ -566,7 +633,7 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-	
+
 <!--start our client area-->
 <section id="clients" class="section-bg1">
 
@@ -578,9 +645,6 @@ session_start();
         </div>
 
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-
-   
-   
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
@@ -775,32 +839,6 @@ session_start();
     <script src="assets/js/script.js"></script>
     <script src="assets/js/mobile-menu.js"></script>
     <script src="assets/js/ajax-form.js"></script>
-	<!--our client-->
-	<script>
-		$(document).ready(function(){
-    $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
-});
-	</script>
-	<!--End our client-->
 	
 </body>
 </html>
