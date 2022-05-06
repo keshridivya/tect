@@ -123,7 +123,7 @@ session_start();
 						</div>
 						<div class="content">
 							<h4 class="text-gradient"> Built for developers </h4>
-							<p>Vestibulum venenatis eget orci eget ornare. Donec pretium vel neque id lobortis. Integer at metus eleifend, viverra odio et, suscipit tortor.Quantitative research involves more people means more data. With more data to analyze, you can obtain more accurate results. </p>
+							<p>Quantitative research involves more people means more data. With more data to analyze, you can obtain more accurate results. </p>
 						</div>
 					</div>
 				</div>
@@ -306,7 +306,7 @@ You have to learn and achieve the target.</p>
 				<!-- Thumbnail -->
 				<div class="col-lg-6 mb-30">
 					<div class="col-lg-6 mb-30">
-						<img src="assets/img/HOME 2.png" alt="dashkit">
+						<img src="assets/img/index/hw.jpg" alt="dashkit">
 					</div>
 				</div>
 			</div>
