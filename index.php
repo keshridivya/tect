@@ -684,22 +684,28 @@ session_start();
   <div class="clients-wrap">
     <ul id="clientlogo" class="clearfix">
       <li>
-        <img src="https://i.ibb.co/N92D9G3/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-removebg-preview.png" alt="Logo">
+        <img src="assets/img/our_client/hpcl.jpeg" alt="Logo">
       </li>
       <li>
-        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo">
+        <img src="assets/img/our_client/reliance.png" alt="Logo">
       </li>
       <li>
-        <img src="https://i.ibb.co/jkSTBVP/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-2-removebg-preview.png" alt="Logo">
+        <img src="assets/img/our_client/canara.jpeg" alt="Logo">
       </li>
       <li>
-        <img src="https://i.ibb.co/KNFTLHv/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-1.png" alt="Logo">
+        <img src="assets/img/our_client/lic.png" alt="Logo">
       </li>
       <li>
-        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+        <img src="assets/img/our_client/harmony.png" alt="Logo" hspace='100'>
       </li>
       <li>
-        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+        <img src="assets/img/our_client/lo.png" alt="Logo" hspace='100'>
+      </li>
+	  <li>
+        <img src="assets/img/our_client/gobest.jpeg" alt="Logo" hspace='100'>
+      </li>
+	  <li>
+        <img src="assets/img/our_client/logo.png" alt="Logo" hspace='100'>
       </li>
      <li>
      </li>
@@ -716,57 +722,36 @@ session_start();
           <p>Meet our happy clients</p>
         </div>
 
-        <div class="row no-gutters clients-wrap clearfix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/hpcl.jpeg" class="img-fluid1" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/reliance.png" class="img-fluid1" alt="">
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/canara.jpeg" class="img-fluid1" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/lic.png" class="img-fluid1" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/harmony.png" class="img-fluid1" alt="">
-            </div>
-          </div>
-        
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/lo.png" class="img-fluid1" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/gobest.jpeg" class="img-fluid1" alt="">
-            </div>
-          </div>
-          
-          <div class="col-lg-3 col-md-4 col-xs-6">
-            <div class="client-logo">
-              <img src="assets/img/our_client/logo.png" class="img-fluid1" alt="">
-            </div>
-          </div>
-
-        </div>
+        <div class="clients-wrap">
+    <ul id="clientlogo" class="clearfix">
+      <li>
+        <img src="assets/img/our_client/hpcl.jpeg" alt="Logo">
+      </li>
+      <li>
+        <img src="assets/img/our_client/reliance.png" alt="Logo">
+      </li>
+      <li>
+        <img src="assets/img/our_client/canara.jpeg" alt="Logo">
+      </li>
+      <li>
+        <img src="assets/img/our_client/lic.png" alt="Logo">
+      </li>
+      <li>
+        <img src="assets/img/our_client/harmony.png" alt="Logo" hspace='100'>
+      </li>
+      <li>
+        <img src="assets/img/our_client/lo.png" alt="Logo" hspace='100'>
+      </li>
+	  <li>
+        <img src="assets/img/our_client/gobest.jpeg" alt="Logo" hspace='100'>
+      </li>
+	  <li>
+        <img src="assets/img/our_client/logo.png" alt="Logo" hspace='100'>
+      </li>
+     <li>
+     </li>
+    </ul>
+  </div>
 
       </div>
 
