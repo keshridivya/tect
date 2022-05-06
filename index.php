@@ -643,7 +643,6 @@ session_start();
       <div class="container">
 
 		<div id="ourclients">
-<center><h3>Our Partners</h3></center><div class="section-header">
           <h3>Our CLients</h3>
           <p>Meet our happy clients</p>
         </div>

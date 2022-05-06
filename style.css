@@ -3426,7 +3426,7 @@ h2.accordion-header {
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom:30px;
-	height:150px;
+	height:auto;
   }
   #ourclients .clients-wrap {
 	display: block;
