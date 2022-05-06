@@ -505,75 +505,11 @@ session_start();
 					  			</div>
 					  		</div>
 					  	</div>
-					  	<div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+					  	<!--<div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
 					  		<div class="row">
-					  			<!-- Single -->
-					  			<div class="col-lg-4 col-md-6 mb-30">
-					  				<div class="pricing-item">
-					  					<div class="pricing-header">
-					  						<h4>BASIC</h4>
-					  						<h2>$119.89</h2>
-					  					</div>
-					  					<div class="pricing-content">
-					  						<ul>
-					  							<li>Basic Listing Submission</li>
-					  							<li>One Listing</li>
-					  							<li>30 Days Availability</li>
-					  							<li>Limited Support</li>
-					  							<li>Accept Reviews</li>
-					  							<li>Edit Your Listing</li>
-					  						</ul>
-					  					</div>
-					  					<div class="pricng-btn">
-					  						<a class="button-1" href="#">Get Started</a>
-					  					</div>
-					  				</div>
-					  			</div>
-					  			<!-- Single -->
-					  			<div class="col-lg-4 col-md-6 mb-30">
-					  				<div class="pricing-item active">
-					  					<div class="pricing-header">
-					  						<h4>STANDART</h4>
-					  						<h2>$199.89</h2>
-					  						<div class="badge">Popular</div>
-					  					</div>
-					  					<div class="pricing-content">
-					  						<ul>
-					  							<li>Basic Listing Submission</li>
-					  							<li>One Listing</li>
-					  							<li>30 Days Availability</li>
-					  							<li>Limited Support</li>
-					  							<li>Accept Reviews</li>
-					  							<li>Edit Your Listing</li>
-					  						</ul>
-					  					</div>
-					  					<div class="pricng-btn">
-					  						<a class="button-1" href="#">Get Started</a>
-					  					</div>
-					  				</div>
-					  			</div>
-					  			<!-- Single -->
-					  			<div class="col-lg-4 col-md-6 mb-30">
-					  				<div class="pricing-item">
-					  					<div class="pricing-header">
-					  						<h4>Premium</h4>
-					  						<h2>$219.89</h2>
-					  					</div>
-					  					<div class="pricing-content">
-					  						<ul>
-					  							<li>Basic Listing Submission</li>
-					  							<li>One Listing</li>
-					  							<li>30 Days Availability</li>
-					  							<li>Limited Support</li>
-					  							<li>Accept Reviews</li>
-					  							<li>Edit Your Listing</li>
-					  						</ul>
-					  					</div>
-					  					<div class="pricng-btn">
-					  						<a class="button-1" href="#">Get Started</a>
-					  					</div>
-					  				</div>
-					  			</div>
+					  		
+					  					
+					  			
 					  		</div>
 					  	</div>
 					</div>
@@ -636,30 +572,7 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-	<div class="container h-100">
-  <div class="row align-items-center h-100">
-    <div class="container rounded">
-      <h1 class="text-center">Featured in:</h1>
-      <div class="slider">
-        <div class="logos">
-          <i class="fab fa-js fa-4x"></i>
-          <i class="fab fa-linkedin-in fa-4x"></i>
-          <i class="fab fa-dribbble fa-4x"></i>
-          <i class="fab fa-medium-m fa-4x"></i>
-          <i class="fab fa-github fa-4x"></i>
-        </div>
-        <div class="logos">
-          <i class="fab fa-js fa-4x"></i>
-          <i class="fab fa-linkedin-in fa-4x"></i>
-          <i class="fab fa-dribbble fa-4x"></i>
-          <i class="fab fa-medium-m fa-4x"></i>
-          <i class="fab fa-github fa-4x"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
+	
 <!--start our client area-->
 <section id="clients" class="section-bg1">
 
