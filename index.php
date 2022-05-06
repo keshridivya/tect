@@ -679,7 +679,18 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-<div id="ourclients">
+
+<!--start our client area-->
+<section id="clients" class="section-bg1">
+
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Our CLients</h3>
+          <p>Meet our happy clients</p>
+        </div>
+
+		<div id="ourclients">
 <center><h3>Our Partners</h3></center>
   <div class="clients-wrap">
     <ul id="clientlogo" class="clearfix">
@@ -712,46 +723,6 @@ session_start();
     </ul>
   </div>
 </div>
-<!--start our client area-->
-<section id="clients" class="section-bg1">
-
-      <div class="container">
-
-        <div class="section-header">
-          <h3>Our CLients</h3>
-          <p>Meet our happy clients</p>
-        </div>
-
-        <div class="clients-wrap">
-    <ul id="clientlogo" class="clearfix">
-      <li>
-        <img src="assets/img/our_client/hpcl.jpeg" alt="Logo">
-      </li>
-      <li>
-        <img src="assets/img/our_client/reliance.png" alt="Logo">
-      </li>
-      <li>
-        <img src="assets/img/our_client/canara.jpeg" alt="Logo">
-      </li>
-      <li>
-        <img src="assets/img/our_client/lic.png" alt="Logo">
-      </li>
-      <li>
-        <img src="assets/img/our_client/harmony.png" alt="Logo" hspace='100'>
-      </li>
-      <li>
-        <img src="assets/img/our_client/lo.png" alt="Logo" hspace='100'>
-      </li>
-	  <li>
-        <img src="assets/img/our_client/gobest.jpeg" alt="Logo" hspace='100'>
-      </li>
-	  <li>
-        <img src="assets/img/our_client/logo.png" alt="Logo" hspace='100'>
-      </li>
-     <li>
-     </li>
-    </ul>
-  </div>
 
       </div>
 
