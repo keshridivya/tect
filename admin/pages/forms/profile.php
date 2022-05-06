@@ -90,50 +90,6 @@ if (mysqli_num_rows($portfolio)>0){
 }
 ?>
 
-			<div class="row">
-			<div class="col-lg-12 stretch-card">
-              <div class="card">
-                <div class="card-body">				
-                  <div class="table-responsive pt-3">
-                    <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th>Sr.No</th>
-                          <th>Company Name</th>
-                          <th>Website Link</th>
-                          <th>Image</th>
-                          <th>Action</th>							
-                        </tr>
-                      </thead>
-                      <tbody>
-                      <?php
-											$i=0;
-											while($row = mysqli_fetch_array($portfolio)) {
-											?>  
-                        <tr class="table">
-                          <td><?php echo $row["id"]; ?></td>
-                          <td><?php echo $row["company_name"]; ?></td>
-                          <td><?php echo $row["link"]; ?></td>
-                          <td><img src="../../images/portfolio/<?php echo $row["image"]; ?>"></td>
-						  <td>                   
-                            <button type="button" class="btn btn-primary btn-rounded btn-icon">
-                        <i class="mdi mdi-border-color"></i></button> 
-                            
-<a class="btn btn-danger btn-rounded btn-icon" href="portfolio.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">
-                          <i class="mdi mdi-delete"></i>								
-                          </td>							
-                        </tr>
-                        <?php
-											$i++;
-											}
-											?>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-			</div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
