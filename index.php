@@ -633,36 +633,22 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-	<div class="brand-carousel section-padding owl-carousel">
-  <div class="single-logo">
-    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-  </div>
-  <div class="single-logo">
-    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-  </div>
-  <div class="single-logo">
-    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-  </div>
-  <div class="single-logo">
-    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-  </div>
-  <div class="single-logo">
-    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-  </div>
-  <div class="single-logo">
-    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
-  </div>
-</div>
-
-
-
-
-
-<!--- ignore the code below-->
-
-<div class="link-area">
-  <a href="https://www.youtube.com/channel/UCki4IDK86E6_pDtptmsslow" target="_blank">Click for More</a>
-</div>
+	$('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
+})
 <!--start our client area-->
 <section id="clients" class="section-bg1">
 
@@ -870,27 +856,39 @@ session_start();
     <script src="assets/js/ajax-form.js"></script>
 
 
-	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
           
-		  $('.brand-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  autoplay:true,
-  responsive:{
-    0:{
-      items:1
+		  $(function() {
+  var $clientslider = $('#clientlogo');
+  var clients = $clientslider.children().length;
+  var clientwidth = (clients * 220); 
+  $clientslider.css('width', clientwidth);
+  var rotating = true;
+  var clientspeed = 1800;
+  var seeclients = setInterval(rotateClients, clientspeed);
+  $(document).on({
+    mouseenter: function() {
+      rotating = false;
     },
-    600:{
-      items:3
-    },
-    1000:{
-      items:5
+    mouseleave: function() {
+      rotating = true;
+    }
+  }, '#ourclients');
+  function rotateClients() {
+    if (rotating != false) {
+      var $first = $('#clientlogo li:first');
+      $first.animate({
+        'margin-left': '-220px'
+      }, 2000, function() {
+        $first.remove().css({
+          'margin-left': '0px'
+        });
+        $('#clientlogo li:last').after($first);
+      });
     }
   }
-})
+});
       </script>
 	
 </body>
