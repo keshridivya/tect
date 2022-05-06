@@ -1,5 +1,8 @@
 
- <?php include("topbar.ioc.php") ?>  
+ <?php 
+ session_start();
+ include("../../include/configure.php");
+ include("topbar.ioc.php") ?>  
 <!DOCTYPE html>
 <html lang="en">
 
