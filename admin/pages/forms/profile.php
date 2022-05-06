@@ -1,24 +1,5 @@
 <?php session_start();
 include("../../include/configure.php");
-
-$id=$_SESSION['user_id'];
-echo "<script>alert('$id');</script>";
-if(isset($_POST['subm_it'])){
-  $id=$_SESSION['user_id'];
-  $name=$_POST['name'];
-  $email=$_POST['email'];
-  $mobile=$_POST['mobile'];
-  $description=$_POST['description'];
-
-  $query=$mysqli_query($conn,"UPDATE `userlogin` SET `username`='$name',`email`='$email',`mobile`='$mobile',`short_desc`='$description' WHERE id='$id'");
-  if($query==1){
-    echo "<script>alert('Profile Updated Successfully');</script>";
-  }
-  else{
-    echo "<script>alert('Profile Not Updated');</script>";
-  }
-}
-  
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +30,25 @@ if(isset($_POST['subm_it'])){
 <body>
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
-    <?php include("topbar.ioc.php") ?> <!-- partial -->
+    <?php include("topbar.ioc.php");
+    $id=$_SESSION['user_id'];
+    echo "<script>alert('$id');</script>";
+    if(isset($_POST['subm_it'])){
+      $id=$_SESSION['user_id'];
+      $name=$_POST['name'];
+      $email=$_POST['email'];
+      $mobile=$_POST['mobile'];
+      $description=$_POST['description'];
+    
+      $query=$mysqli_query($conn,"UPDATE `userlogin` SET `username`='$name',`email`='$email',`mobile`='$mobile',`short_desc`='$description' WHERE id='$id'");
+      if($query==1){
+        echo "<script>alert('Profile Updated Successfully');</script>";
+      }
+      else{
+        echo "<script>alert('Profile Not Updated');</script>";
+      }
+    }
+    ?> <!-- partial -->
       <!-- partial:../../partials/_sidebar.html -->
       <?php include("sidebar.ioc.php") ?>
       <!-- partial -->
