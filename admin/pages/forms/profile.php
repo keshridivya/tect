@@ -1,8 +1,8 @@
 <?php session_start();
 include("../../include/configure.php");
 
-
-
+$id=$_SESSION['user_id'];
+echo "<script>alert('$id');</script>";
 if(isset($_POST['subm_it'])){
   $id=$_SESSION['user_id'];
   $name=$_POST['name'];
