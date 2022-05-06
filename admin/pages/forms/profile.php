@@ -81,7 +81,7 @@ include("../../include/configure.php");
                  <div class="form-group row">
                    <label for="exampleaadhaar" class="col-sm-2 col-form-label">About Me</label>
                    <div class="col-sm-10">
-                     <textarea name="description"></textarea>
+                     <textarea class="form-control" rows="5" name="description"></textarea>
                    </div>
                  </div>
        <div class="col" align="right">

@@ -25,6 +25,7 @@ $name=$_SESSION['name'];
           </button>
         </div>
         <div>
+          
           <a class="navbar-brand brand-logo" href="#">
             <img src="../../../assets/img/our_client/logo.png" style="height:90px" alt="logo" />
           </a>
@@ -170,8 +171,12 @@ $name=$_SESSION['name'];
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+            
               <div class="dropdown-header text-center">
-                <img class="img-md rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image">
+                <div class="edit_image">
+                <img class="img-md rounded-circle main-profile-img" src="../../images/faces/face8.jpg" alt="Profile image">
+                <i class="mdi mdi-camera"></i>
+</div>
                 <p class="mb-1 mt-3 font-weight-semibold"><?php echo $name ?></p>
                 <p class="fw-light text-muted mb-0"><?php  echo $email ?></p>
               </div>
