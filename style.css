@@ -3471,6 +3471,7 @@ $animationSpeed: 40s;
 	overflow:hidden;
 	position: relative;
 	width: auto;
+}
 	
 	.slide-track {
 		animation: scroll $animationSpeed linear infinite;
@@ -3481,4 +3482,3 @@ $animationSpeed: 40s;
 		height: 100px;
 		width: 250px;
 	}
-}
