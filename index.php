@@ -572,8 +572,8 @@ You have to learn and achieve the target.</p>
       
 		<div id="ourclients">
 			<div class="ourclientheader">
-		<h3>Our Partners</h3>
-		<p>We are proud to be a part of the following companies</p>
+		<h3 style="color: #ddd;"> Our Partners</h3>
+		<p style="color: #ddd;">We are proud to be a part of the following companies</p>
 							</div>
         <div class="clients-wrap">
     <ul id="clientlogo" class="clearfix">

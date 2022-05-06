@@ -3,6 +3,16 @@ include("../../include/configure.php");
 
 $sql=mysqli_query($conn,"select * from userlogin where user_id='".$_SESSION['user_id']."'");
 $row=mysqli_fetch_array($sql);
+
+if(isset($_POST['subm_it'])){
+  $id=$_SESSION['user_id'];
+  $name=$_POST['name'];
+  $email=$_POST['email'];
+  $mobile=$_POST['mobile'];
+  $description=$_POST['description'];
+
+  $query=$mysqli_query($conn,"UPDATE `userlogin` SET `username`='$name',`email`='$email',`mobile`='$mobile',`short_desc`='$description' WHERE id='$id'");
+}
   
 ?>
 <!DOCTYPE html>
@@ -50,29 +60,29 @@ $row=mysqli_fetch_array($sql);
                  <div class="form-group row">
                    <label for="exampleaddress" class="col-sm-2 col-form-label"> Name</label>
                    <div class="col-sm-10">
-                     <input type="text" class="form-control"name="name"value="<?php echo $row['username']; ?>">
+                     <input type="text" class="form-control" name="name"value="<?php echo $row['username']; ?>">
                    </div>
                  </div>
                  <div class="form-group row">
                    <label for="exampleaddress" class="col-sm-2 col-form-label"> Email-ID</label>
                    <div class="col-sm-10">
-                     <input type="email" class="form-control"name="email"value="<?php echo $row['email']; ?>">
-                   </div>
-                 </div>
-                 <div class="form-group row">
-                   <label for="exampleInputMobile" class="col-sm-2 col-form-label">Office Address</label>
-                   <div class="col-sm-10">
-                     <input type="text" class="form-control"name="address"value="">
+                     <input type="email" class="form-control" name="email"value="<?php echo $row['email']; ?>">
                    </div>
                  </div>
                  <div class="form-group row">
                    <label for="exampleaadhaar" class="col-sm-2 col-form-label">Mobile No.</label>
                    <div class="col-sm-10">
-                     <input type="text" class="form-control"name="mobile"value="">
+                     <input type="text" class="form-control" name="mobile"value="">
+                   </div>
+                 </div>
+                 <div class="form-group row">
+                   <label for="exampleaadhaar" class="col-sm-2 col-form-label">About Me</label>
+                   <div class="col-sm-10">
+                     <textarea name="description"></textarea>
                    </div>
                  </div>
        <div class="col" align="right">
-                 <button type="submit" name="submit" class="btn btn-primary  btn-lg" style="color: aliceblue">Submit</button>
+                 <button type="submit" name="subm_it" class="btn btn-primary  btn-lg" style="color: aliceblue">Submit</button>
        </div>
                </form>
                 </div>
