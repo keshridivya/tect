@@ -11,6 +11,12 @@ if(isset($_POST['subm_it'])){
   $description=$_POST['description'];
 
   $query=$mysqli_query($conn,"UPDATE `userlogin` SET `username`='$name',`email`='$email',`mobile`='$mobile',`short_desc`='$description' WHERE id='$id'");
+  if($query==1){
+    echo "<script>alert('Profile Updated Successfully');</script>";
+  }
+  else{
+    echo "<script>alert('Profile Not Updated');</script>";
+  }
 }
   
 ?>
