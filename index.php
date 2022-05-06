@@ -633,51 +633,35 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-	<div class="slider1">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="https://www.scorepromotions.com/assets/score/img/clients/Air-Canada-01.jpg" height="100" width="100" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-		</div>
-	</div>
+	<div class="brand-carousel section-padding owl-carousel">
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+  <div class="single-logo">
+    <img src="https://i.postimg.cc/t4w94PSN/logo1.png" alt="">
+  </div>
+</div>
+
+
+
+
+
+<!--- ignore the code below-->
+
+<div class="link-area">
+  <a href="https://www.youtube.com/channel/UCki4IDK86E6_pDtptmsslow" target="_blank">Click for More</a>
 </div>
 <!--start our client area-->
 <section id="clients" class="section-bg1">
@@ -891,30 +875,22 @@ session_start();
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script>
           
-          $(document).ready(function(){
-    $('.customer-logos').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 1500,
-    arrows: true,
-    dots: false,
-    pauseOnHover: false,
-    prevArrow: '<i class="slick-prev fas fa-angle-left"></i>',
-    nextArrow: '<i class="slick-next fas fa-angle-right"></i>',
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 3
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-    });
-  });
+		  $('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  autoplay:true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:5
+    }
+  }
+})
       </script>
 	
 </body>

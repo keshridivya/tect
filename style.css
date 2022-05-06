@@ -3458,27 +3458,48 @@ h2.accordion-header {
  
 /*client section*/
 
-$animationSpeed: 40s;
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
-}
-
-.slider1 {
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: auto;
-}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+.section-padding{
+	padding:60px 0;
+  }
+  .brand-carousel {
+	background: #eee;
+	margin-top: 10%;
+  }
+  .owl-dots{
+	text-align: center;
+  }
+  
+  .owl-dot {
+	display: inline-block;
+	height: 15px !important;
+	width: 15px !important;
+	background-color: #222222 !important;
+	opacity: 0.8;
+	border-radius: 50%;
+	margin: 0 5px;
+  }
+  
+  .owl-dot.active {
+	background-color: #FF170F !important;
+  }
+  
+  
+  
+  /* ignore the code below */
+  
+  
+  .link-area
+  {
+	position:fixed;
+	bottom:20px;
+	left:20px;  
+	padding:15px;
+	border-radius:40px;
+	background:tomato;
+  }
+  .link-area a
+  {
+	text-decoration:none;
+	color:#fff;
+	font-size:25px;
+  }
