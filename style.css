@@ -3442,13 +3442,7 @@ h2.accordion-header {
 	-moz-transition: 0 linear left;
 	transition: 0 linear left;
   }
-  #ourclients h3, p{
-  border-bottom:2px solid #3399ff;
-  padding:10px;
-  text-align: center;
-  color:#fff;
-
-  }
+  
   .ourclientheader{
 	  width: 100%;
 	  justify-content: center;
