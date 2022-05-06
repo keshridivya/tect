@@ -34,13 +34,12 @@ include("../../include/configure.php");
     if(isset($_POST['subm_it'])){
 
       $id=$_SESSION['id'];
-      echo "<script>alert(' $id');</script>";
       $name=$_POST['name'];
       $email=$_POST['email'];
       $mobile=$_POST['mobile'];
       $description=$_POST['description'];
     
-      $query=$mysqli_query($conn,"UPDATE `userlogin` SET `username`='$name',`email`='$email',`mobile`='$mobile',`short_desc`='$description' WHERE id='$id'");
+      $query=mysqli_query($conn,"UPDATE `userlogin` SET `username`='$name',`email`='$email',`mobile`='$mobile',`short_desc`='$description' WHERE id='$id'");
       if($query==1){
         echo "<script>alert('Profile Updated Successfully');</script>";
       }
