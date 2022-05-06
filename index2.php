@@ -254,7 +254,7 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/1.png" alt="img">
+						<img src="assets/img/index/bg.webp" alt="img">
 						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
 						<div class="vedio-btn-ab">
