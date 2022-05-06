@@ -3445,8 +3445,11 @@ h2.accordion-header {
   
   .ourclientheader{
 	  width: 100%;
-	  justify-content: center;
+	  text-align: center;
   }
+  .ourclientheader h3,p{
+	color: #ddd;
+}
  
 /*client section*/
 
