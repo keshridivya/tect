@@ -32,7 +32,9 @@ include("../../include/configure.php");
     <!-- partial:../../partials/_navbar.html -->
     <?php include("topbar.ioc.php");
     if(isset($_POST['subm_it'])){
+
       $id=$_SESSION['id'];
+      echo "<script>alert(' $id');</script>";
       $name=$_POST['name'];
       $email=$_POST['email'];
       $mobile=$_POST['mobile'];
