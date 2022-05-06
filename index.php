@@ -505,13 +505,7 @@ session_start();
 					  			</div>
 					  		</div>
 					  	</div>
-					  	<!--<div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
-					  		<div class="row">
-					  		
-					  					
-					  			
-					  		</div>
-					  	</div>
+					  	
 					</div>
 
 				</div>
