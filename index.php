@@ -30,9 +30,7 @@ session_start();
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
 
-	<style>
-		
-	</style>
+	
 	<!--head and body in include file-->
 
 
@@ -638,15 +636,11 @@ session_start();
 	<!-- End Testimonial Area -->
 
 <!--start our client area-->
-<section id="clients" class="section-bg1">
 
-      <div class="container">
-
+      
 		<div id="ourclients">
-          <h3>Our CLients</h3>
-          <p>Meet our happy clients</p>
-        </div>
-  <div class="clients-wrap">
+		<center><h3>Our Partners</h3></center>
+        <div class="clients-wrap">
     <ul id="clientlogo" class="clearfix">
       <li>
         <img src="assets/img/our_client/hpcl.jpeg" alt="Logo">
@@ -676,11 +670,9 @@ session_start();
      </li>
     </ul>
   </div>
-</div>
 
       </div>
 
-    </section>
 
 <!--end our client area-->
 
