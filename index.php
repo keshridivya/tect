@@ -582,7 +582,6 @@ session_start();
 	<!-- End Pricing Plane -->
 
 
-	<?php include("ch.php"); ?>
 	<!-- Start Testimonial Area -->
 	<section class="section-padding pt-0">
 		<div class="container">
