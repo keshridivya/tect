@@ -57,7 +57,7 @@ if(isset($_GET['delid'])){
     <!-- partial:../../partials/_navbar.html -->
     <?php include("topbar.ioc.php") ?> <!-- partial -->
       <!-- partial:../../partials/_sidebar.html -->
-      <?php include("sidebar.ioc.php") ?>>
+      <?php include("sidebar.ioc.php") ?>
       <!-- partial -->
       <div class="main-panel">        
         <div class="content-wrapper">
