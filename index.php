@@ -693,6 +693,52 @@ You have to learn and achieve the target.</p>
 
 
 	<!-- End Testimonial Area -->
+
+<!--start our client area-->
+
+      
+<div id="ourclients">
+			<div class="ourclientheader">
+		<h3>Our Partners</h3>
+		<p>We are proud to be a part of the following companies</p>
+							</div>
+        <div class="clients-wrap">
+    <ul id="clientlogo" class="clearfix">
+      <li>
+        <img src="assets/img/our_client/hpcl.jpeg" alt="Logo" class="img-fluid1">
+      </li>
+      <li>
+        <img src="assets/img/our_client/reliance.png" alt="Logo" class="img-fluid1">
+      </li>
+      <li>
+        <img src="assets/img/our_client/canara.jpeg" alt="Logo" class="img-fluid1">
+      </li>
+      <li>
+        <img src="assets/img/our_client/lic.png" alt="Logo" class="img-fluid1">
+      </li>
+      <li>
+        <img src="assets/img/our_client/harmony.png" alt="Logo" hspace='100' class="img-fluid1">
+      </li>
+      <li>
+        <img src="assets/img/our_client/lo.png" alt="Logo" hspace='100' class="img-fluid1">
+      </li>
+	  <li>
+        <img src="assets/img/our_client/gobest.jpeg" alt="Logo" hspace='100' class="img-fluid1">
+      </li>
+	  <li>
+        <img src="assets/img/our_client/logo.png" alt="Logo" hspace='100' class="img-fluid1">
+      </li>
+     <li>
+     </li>
+    </ul>
+  </div>
+
+      </div>
+
+
+<!--end our client area-->
+
+
 	<!-- Start Latest blog Area -->
 	<section class="section-padding-2 pt-0">
 		<div class="container">
