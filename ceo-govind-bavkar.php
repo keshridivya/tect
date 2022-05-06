@@ -1,3 +1,7 @@
+<?php
+include("include/configure.php");
+
+?> 
 <!DOCTYPE html>
 <html  class="no-js" lang="en">
 <head>
@@ -22,136 +26,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
-</head>
-<body>
-	<!-- Preloader -->
-    <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-	<!-- Start Header Area -->
-	<header class="header">
-		<div class="container">
-			<div class="row">
-				<!-- Logo -->
-				<div class="col-lg-3 align-self-center">
-					<div class="logo">
-						<a href="index.html">
-							<img src="assets/img/logo2.png" alt="img">
-						</a>
-					</div>
-					<div class="canvas_open">
-                        <a href="javascript:void(0)">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
-                    </div>
-				</div>
-				<!-- Right -->
-				<div class="col-lg-9">
-					<!-- Header Right Button -->
-					<div class="hr_btn">
-						<a class="button-2" href="#">Get Quote</a>
-					</div>
-					<!-- Menu -->
-					<div class="menu">
-						<nav>
-							<ul>
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-								<li class="menu-item-has-children">
-									<a href="about.html">About Us</a>
-								<ul>
-									<li><a href="ceo-govind-bavkar.html">CEO</a></li>
-									<li><a href="team.html">Teams</a></li>
-								</ul>
-								</li>
-								<li class="menu-item-has-children">
-									<a href="services.html">Services</a>
-									<ul>
-										<li><a href="website-designing.html">Website Designing</a></li>
-										<li><a href="ecommerce-website-design-development.html">Ecommerce Website</a></li>
-										<li><a href="software-development.html">Software Development</a></li>
-										<li><a href="mobile-app-development.html">Mobile App Development</a></li>
-										<li><a href="digital-marketing.html">Digital Marketing</a></li>
-										<li><a href="graphics-designing.html">Graphics Designing</a></li>
-										<li><a href="hardware-networking.html">Hardware Networking</a></li>
-										<li><a href="cctv-camera.html">CCTV Camera</a></li>
-										<li><a href="it-consulting.html">IT Consulting</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="portfolio.html">Portfolio</a>
-								</li>								
-								<li>
-									<a href="blog.html">Blog</a>
-								</li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- End Header Area -->
-	<!-- Start Mobile Menu Area -->
-    <div class="mobile-menu-area">
-        <!--offcanvas menu area start-->
-        <div class="off_canvars_overlay"></div>
-        <div class="offcanvas_menu">
-            <div class="offcanvas_menu_wrapper">
-                <div class="canvas_close">
-                    <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-                </div>
-                <div class="mobile-logo">
-                    <a href="index.html">
-                        <img src="assets/img/logo2.png" alt="logo" />
-                    </a>
-                </div>
-                <div id="menu" class="text-left">
-                    <ul class="offcanvas_main_menu">
-								<li>
-									<a href="index.html">Home</a>
-								</li>
-                        <li class="menu-item-has-children">
-                            <a href="about.html">About Us</a>
-                            <ul class="sub-menu">
-                                <li><a href="ceo-govind-bavkar.html">CEO</a></li>
-								<li><a href="team.html">Teams</a></li>
-                            </ul>
-                        </li>
-								<li class="menu-item-has-children">
-									<a href="services.html">Services</a>
-									<ul class="sub-menu">
-										<li><a href="website-designing.html">Website Designing</a></li>
-										<li><a href="ecommerce-website-design-development.html">Ecommerce Website</a></li>
-										<li><a href="software-development.html">Software Development</a></li>
-										<li><a href="mobile-app-development.html">Mobile App Development</a></li>
-										<li><a href="digital-marketing.html">Digital Marketing</a></li>
-										<li><a href="graphics-designing.html">Graphics Designing</a></li>
-										<li><a href="hardware-networking.html">Hardware Networking</a></li>
-										<li><a href="cctv-camera.html">CCTV Camera</a></li>
-										<li><a href="it-consulting.html">IT Consulting</a></li>
-									</ul>
-								</li>
-								<li>
-									<a href="portfolio.html">Portfolio</a>
-								</li>								
-								<li>	
-									<a href="blog.html">Blog</a>
-								</li>
-								<li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--offcanvas menu area end-->
+	<?php include("include/header.php"); ?>
 	<!-- Start Breadcrumb Area -->
 	<section class="breadcrumb-area" style="background-image: url('assets/img/breadcrumb.jpg');">
 		<div class="container">
