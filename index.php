@@ -639,8 +639,10 @@ session_start();
 
       
 		<div id="ourclients">
+			<div class="ourclientheader">
 		<h3>Our Partners</h3>
 		<p>We are proud to be a part of the following companies</p>
+							</div>
         <div class="clients-wrap">
     <ul id="clientlogo" class="clearfix">
       <li>
