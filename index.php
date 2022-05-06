@@ -679,22 +679,33 @@ session_start();
 
 
 	<!-- End Testimonial Area -->
-	$('.brand-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  autoplay:true,
-  responsive:{
-    0:{
-      items:1
-    },
-    600:{
-      items:3
-    },
-    1000:{
-      items:5
-    }
-  }
-})
+<div id="ourclients">
+<center><h3>Our Partners</h3></center>
+  <div class="clients-wrap">
+    <ul id="clientlogo" class="clearfix">
+      <li>
+        <img src="https://i.ibb.co/N92D9G3/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/jkSTBVP/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-2-removebg-preview.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/KNFTLHv/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Logo-design-proposals-1.png" alt="Logo">
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+      </li>
+      <li>
+        <img src="https://i.ibb.co/G31gG9y/Screenshot-2020-10-20-My-Brand-New-Logo-My-Brand-New-Logo-Create-a-logo-removebg-preview.png" alt="Logo" hspace='100'>
+      </li>
+     <li>
+     </li>
+    </ul>
+  </div>
+</div>
 <!--start our client area-->
 <section id="clients" class="section-bg1">
 
