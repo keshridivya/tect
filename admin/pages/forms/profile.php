@@ -1,8 +1,7 @@
 <?php session_start();
 include("../../include/configure.php");
 
-$sql=mysqli_query($conn,"select * from userlogin where user_id='".$_SESSION['user_id']."'");
-$row=mysqli_fetch_array($sql);
+
 
 if(isset($_POST['subm_it'])){
   $id=$_SESSION['user_id'];
@@ -60,13 +59,13 @@ if(isset($_POST['subm_it'])){
                  <div class="form-group row">
                    <label for="exampleaddress" class="col-sm-2 col-form-label"> Name</label>
                    <div class="col-sm-10">
-                     <input type="text" class="form-control" name="name"value="<?php echo $row['username']; ?>">
+                     <input type="text" class="form-control" name="name"value="<?php echo $name ?>">
                    </div>
                  </div>
                  <div class="form-group row">
                    <label for="exampleaddress" class="col-sm-2 col-form-label"> Email-ID</label>
                    <div class="col-sm-10">
-                     <input type="email" class="form-control" name="email"value="<?php echo $row['email']; ?>">
+                     <input type="email" class="form-control" name="email"value="<?php echo $email ?>">
                    </div>
                  </div>
                  <div class="form-group row">
