@@ -31,10 +31,8 @@ include("../../include/configure.php");
   <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
     <?php include("topbar.ioc.php");
-    $id=$_SESSION['id'];
-    echo "<script>alert('$id');</script>";
     if(isset($_POST['subm_it'])){
-      $id=$_SESSION['user_id'];
+      $id=$_SESSION['id'];
       $name=$_POST['name'];
       $email=$_POST['email'];
       $mobile=$_POST['mobile'];
