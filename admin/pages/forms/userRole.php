@@ -64,7 +64,7 @@ $id=$_GET['id'];
      
 <form action="" method="post">
 <?php
-$sql=mysqli_query($conn,"select * from sidebar where status='1'");
+$sql=mysqli_query($conn,"select * from sidebar where status='enable'");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
@@ -83,7 +83,7 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1.",";
 }
-$sql=mysqli_query($conn,"update sidebar set status=0 where id in ($chk)");
+$sql=mysqli_query($conn,"update sidebar set status='disable' where id in ($chk)");
 if($sql){
   echo "updated";
 }

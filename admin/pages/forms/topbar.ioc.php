@@ -176,6 +176,17 @@ $name=$_SESSION['name'];
               <img class="img-xs rounded-circle" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
             
+            <div class="user-sidebar ">
+    <div class="profile-pic">
+    <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+      <img class="img-xs rounded-circle" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
+      <form action="">
+        <input type="file" name="pic" accept="image/*">
+        <i class="fas fa-camera fa-2x"></i>
+      </form>
+    </div>
+  </div>
+
               <div class="dropdown-header text-center">
                 <div class="edit_image">
                 <img class="img-md rounded-circle main-profile-img" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
