@@ -37,7 +37,7 @@ session_start();
 	<?php include("include/header.php"); ?>
 	
 	<!-- Start Hero Section -->
-	<section class="hero-area" style="background-image:url('assets/img/index/banner.png');">
+	<section class="hero-area" >
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
