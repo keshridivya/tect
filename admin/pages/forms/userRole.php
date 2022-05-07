@@ -81,7 +81,7 @@ if(isset($_POST['submit'])){
   $status=$_POST['check_list'];
 $chk='';
 foreach($status as $chk1){
-  $chk.=$chk1.",";
+  $chk.=$chk1;
 }
 $sql=mysqli_query($conn,"update sidebar set status='disable' where id in ($chk)");
 if($sql){

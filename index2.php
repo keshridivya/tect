@@ -771,7 +771,6 @@ You have to learn and achieve the target.</p>
 								<ul>
 									<li>
 										<img src="assets/img/index/1.jfif" alt="img">
-										
 										<a href="#">Sagar bavkar</a>
 									</li>
 									
