@@ -167,14 +167,18 @@ $name=$_SESSION['name'];
               </a>
             </div>
           </li>
+          <?php
+          $sql=mysqli_query($conn,"select profile_img from userlogin where email='$email'");
+          $dnk=mysqli_fetch_assoc($sql);
+          ?>
           <li class="nav-item dropdown d-none d-lg-block user-dropdown">
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-              <img class="img-xs rounded-circle" src="../../images/faces/face8.jpg" alt="Profile image"> </a>
+              <img class="img-xs rounded-circle" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
             
               <div class="dropdown-header text-center">
                 <div class="edit_image">
-                <img class="img-md rounded-circle main-profile-img" src="../../images/faces/face8.jpg" alt="Profile image">
+                <img class="img-md rounded-circle main-profile-img" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
                 <i class="mdi mdi-camera"></i>
 </div>
                 <p class="mb-1 mt-3 font-weight-semibold"><?php echo $name ?></p>
