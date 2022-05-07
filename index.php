@@ -576,7 +576,7 @@ You have to learn and achieve the target.</p>
 		<p style="color: #ddd;">We are proud to be a part of the following companies</p>
 							</div>
         <div class="clients-wrap">
-    <ul id="clientlogo" class="clearfix">
+    <ul id="clientlogo" class="clearfix" style="height:200px">
       <li>
         <img src="assets/img/our_client/hpcl.jpeg" alt="Logo" class="img-fluid1">
       </li>
