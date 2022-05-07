@@ -64,7 +64,7 @@ $id=$_GET['id'];
      
 <form action="" method="post">
 <?php
-$sql=mysqli_query($conn,"select * from sidebar where status='enable'");
+$sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
