@@ -83,7 +83,7 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
-if($chk==''){
+if($chk==null){
   $sql=mysqli_query($conn,"update sidebar set status='enable' where id in ($chk)");
 }else{
   $sql=mysqli_query($conn,"update sidebar set status='disable' where id in ($chk)");
