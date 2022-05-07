@@ -86,6 +86,8 @@ foreach($status as $chk1){
 $sql=mysqli_query($conn,"update sidebar set status='disable' where id in ($chk)");
 if($sql){
   echo "updated";
+}else{
+  echo "not updated";
 }
 }
 
@@ -103,11 +105,6 @@ if($res['status']=="enable"){?>
 }
 
 ?>
-
-
-
-         
-            
             </div>
             
            
