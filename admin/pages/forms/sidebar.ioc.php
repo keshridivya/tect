@@ -5,7 +5,7 @@
 $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
 ?>
-          <li class="nav-item">
+          <li class="nav-item company">
             <a class="nav-link" href="<?php echo $row['link']; ?>">
               <i class="<?php echo $row['icon']; ?>"></i>
               <span class="menu-title"><?php echo $row['name']; ?></span>

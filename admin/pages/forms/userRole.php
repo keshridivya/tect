@@ -68,9 +68,9 @@ $sql=mysqli_query($conn,"select * from sidebar where status='enable'");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
-  <input type="checkbox" name="check_list[]" value="<?php echo $row['id'];?>" <?php if($row['status']=='enable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
+  <input type="checkbox" name="check_list[]" value="<?php echo $row['id'];?>" ><?php echo $row['name']; ?><br>
   
-
+  <?php //if($row['status']=='enable'){?> <!--checked='checked'--> <?php// } ?>
   <?php } ?>
   <input type="submit" class="btn btn-primary" name="submit" value="Submit">
 </form>
