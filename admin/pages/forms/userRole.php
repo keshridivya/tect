@@ -118,7 +118,7 @@ if($res['status']=="enable"){?>
 </div>
 </div>
 </div>
-
+</div>
 <?php include("footer.ioc.php") ?>
 </div>
 
