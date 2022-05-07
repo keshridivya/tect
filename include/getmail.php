@@ -65,10 +65,10 @@ if(isset($_POST['signup'])){
 							<input type="email" name="email" placeholder="Email Address">
 							<button type="submit" name="signup">Sign up free</button>
 						</form>
-						<ul>
+						<!--<ul>
 							<li><i class="fas fa-check"></i>  30-day free tria</li>
 							<li><i class="fas fa-check"></i> No credit card required</li>
-						</ul>
+						</ul>-->
 					</div>
 				</div>
 			</div>
