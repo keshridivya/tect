@@ -2,7 +2,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
         <?php
-$sql=mysqli_query($conn,"select * from sidebar");
+$sql=mysqli_query($conn,"select * from sidebar where status='enable'");
 while($row=mysqli_fetch_array($sql)){
 ?>
           <li class="nav-item company">
