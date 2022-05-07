@@ -59,7 +59,7 @@ if(isset($_POST['signup'])){
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="subscribe-content">
-						<h2>News <br>Letter</h2>
+						<h2>News Letter</h2>
 						<!--<p>Naff the little rotter have gutted mate James cuppa baking legged. </p>-->
 						<form action="#" method="post">
 							<input type="email" name="email" placeholder="Email Address">
