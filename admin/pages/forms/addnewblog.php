@@ -162,7 +162,7 @@ Blog List
 <h4 class="card-title">Categories</h4>
 <div class="form-check form-check-primary" required>
     <div required>
-<?php  $categories=explode($res['categories']); ?>
+<?php  $categories=$res['categories']; ?>
 <label class="form-check-label">
 <input type="checkbox" name="chkl[ ]" value="e-commerce" <?php if(in_array("e-commerce",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
 E-commerce
