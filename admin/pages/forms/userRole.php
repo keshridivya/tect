@@ -84,7 +84,7 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
-if (isset($_GET['check_list']) && ($_GET['check_list'] == enable)) { 
+if (isset($chk) && ($chk == enable)) { 
 	$sql1 .= " variable_check = enable "; 
 } else { 
 	$sql1 .= " variable_check = disable  "; 
