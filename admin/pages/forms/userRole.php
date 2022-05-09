@@ -68,7 +68,7 @@ $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
   $id=$row['id'];
 ?>
-
+<input type="hidden" name="id" value="<?php echo $id; ?>">
   <input type="checkbox" name="check_list[]" class="custom7" value="<?php echo $row['status'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
   
   
@@ -80,6 +80,7 @@ while($row=mysqli_fetch_array($sql)){
 <?php
 if(isset($_POST['submit'])){
   $status=$_POST['check_list'];
+  $id=$_POST['id'];
 $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
