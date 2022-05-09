@@ -5,7 +5,7 @@ if(isset($_POST['tadd'])){
   $file=$_FILES['timage']['name'];    
   $tname=$_POST['tname'];
   $tcompany=$_POST['tcompany'];
-  $tdiscription=$_POST['tdisc'];
+  $tdiscription=mysqli_real_escape_string($conn,$_POST['tdisc']);
   if(empty(($_FILES['timage']['tmp_name'])) && ($_POST['image_name']) && ($_GET['id'])){
     $id=$_GET['id'];
     $ba_image = $_POST['image_name'];
