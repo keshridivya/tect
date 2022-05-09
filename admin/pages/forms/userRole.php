@@ -156,7 +156,7 @@ function checkDelete(){
 
 <script>
   $('.custom7').on('change', function(){
-   this.value = this.checked ? 'disable' : 'enable';
+   this.value = this.checked ? 'enable' : 'disable';
    //alert(this.value);
 }).change();
 </script>
