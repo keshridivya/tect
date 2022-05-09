@@ -68,7 +68,7 @@ $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
-  <input type="checkbox" name="check_list[]" id="custom7" value="<?php echo $row['id'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
+  <input type="checkbox" name="check_list[]" class="custom7" value="<?php echo $row['id'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
   
   
   <?php } ?>
@@ -148,7 +148,7 @@ function checkDelete(){
 <script src="../../js/select2.js"></script>
 
 <script>
-  $('#custom7').on('change', function(){
+  $('.custom7').on('change', function(){
    this.value = this.checked ? 'disable' : 'enable';
    alert(this.value);
 }).change();
