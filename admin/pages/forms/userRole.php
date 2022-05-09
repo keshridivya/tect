@@ -77,6 +77,7 @@ while($row=mysqli_fetch_array($sql)){
 
 
 <?php
+$variable_check = isset($_GET['check_list'])?$_GET['check_list']:disable;
 if(isset($_POST['submit'])){
   $status=$_POST['check_list'];
 $chk='';
