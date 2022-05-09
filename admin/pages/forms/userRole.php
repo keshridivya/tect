@@ -77,15 +77,19 @@ while($row=mysqli_fetch_array($sql)){
 
 
 <?php
-$variable_check = isset($_GET['check_list'])?$_GET['check_list']:disable;
 if(isset($_POST['submit'])){
   $status=$_POST['check_list'];
 $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
+if (isset($_GET['check_list']) && ($_GET['check_list'] == enable)) { 
+	$sql1 .= " variable_check = enable "; 
+} else { 
+	$sql1 .= " variable_check = disable  "; 
+}	
 echo"<script>alert('$chk');</script>";
-  $sql=mysqli_query($conn,"update sidebar set status='$chk' where id in ($chk)");
+  $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id in ($chk)");
 
 if($sql){
   echo "updated";
