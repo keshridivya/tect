@@ -66,9 +66,10 @@ $id=$_GET['id'];
 <?php
 $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
-  
+  $id=$row['id'];
 ?>
-  <input type="checkbox" name="check_list[]" class="custom7" value="<?php echo $row['id'] , $row['status'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
+
+  <input type="checkbox" name="check_list[]" class="custom7" value="<?php echo $row['status'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
   
   
   <?php } ?>
@@ -89,7 +90,7 @@ if (isset($_GET['check_list']) && ($_GET['check_list'] == enable)) {
 	$sql1 .= " variable_check = disable  "; 
 }	
 echo"<script>alert('$chk');</script>";
-  $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id in ($chk)");
+  $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id ='$id'");
 
 if($sql){
   echo "updated";
