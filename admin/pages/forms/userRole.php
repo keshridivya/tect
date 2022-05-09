@@ -90,7 +90,7 @@ if($chk == 'disable'){
 } else { 
 	$sql1 .=  $chk = "enable "; 
 }	
-echo"<script>alert('$chk');</script>";
+echo"<script>alert(' $id$chk');</script>";
   $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id ='$id'");
 
 if($sql){
