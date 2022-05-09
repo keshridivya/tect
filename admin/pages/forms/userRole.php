@@ -69,7 +69,7 @@ while($row=mysqli_fetch_array($sql)){
   $id=$row['id'];
 ?>
 <input type="hidden" name="id" value="<?php echo $id; ?>">
-  <input type="checkbox" name="check_list[]" class="custom7" value="<?php echo $row['status'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> onclick="myFunction()"><?php echo $row['name']; ?><br>
+  <input type="checkbox" name="check_list[]" class="custom7" value="<?php echo $id ,$row['status'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> onclick="myFunction()"><?php echo $row['name']; ?><br>
   
   
   <?php } ?>
