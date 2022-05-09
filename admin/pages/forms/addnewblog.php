@@ -103,11 +103,11 @@ if(isset($_POST['sub'])){
 </div>
 <div class="form-group">
 <label for="exampledesp">Head</label>
-<textarea class="form-control" name="shortdescription" value="<?php echo $res['shortdesc']; ?>" required></textarea>
+<textarea class="form-control" name="shortdescription"  required><?php echo $res['shortdesc']; ?></textarea>
 </div>
 <div class="form-group">
 <label for="exampledesp">Description</label>
-<textarea class="form-control summernote" name="description" value="<?php echo $res['description']; ?>" id="summernote" required></textarea>
+<textarea class="form-control summernote" name="description"  id="summernote" required><?php echo $res['description']; ?></textarea>
 </div>
 <div class="form-group">
 <div class="custom-control custom-switch">
