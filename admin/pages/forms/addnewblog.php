@@ -164,25 +164,25 @@ Blog List
     <div required>
 <?php  $categories=$res['categories']; ?>
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="e-commerce" <?php if(in_array("e-commerce ",$categories)) {?> checked="checked" <?php } ?> class="form-check-input" >
+<input type="checkbox" name="chkl[ ]" value="e-commerce" <?php if(in_array(" e-commerce",$categories)) {?> checked="checked" <?php } ?> class="form-check-input" >
 E-commerce
 </label>
 </div>
 <div class="form-check form-check-success">
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="fashion" <?php if(in_array("fashion ",$categories)) {?> checked="checked" <?php } ?> class="form-check-input" >
+<input type="checkbox" name="chkl[ ]" value="fashion" <?php if(in_array(" fashion",$categories)) {?> checked="checked" <?php } ?> class="form-check-input" >
 Fashion
 </label>
 </div>
 <div class="form-check form-check-info">
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="electronic" <?php if(in_array("electronic ",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
+<input type="checkbox" name="chkl[ ]" value="electronic" <?php if(in_array(" electronic",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
 Electronic
 </label>
 </div>
 <div class="form-check form-check-danger">
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="commercial" <?php if(in_array("commercial ",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input">
+<input type="checkbox" name="chkl[ ]" value="commercial" <?php if(in_array(" commercial",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input">
 Commercial
 </label>
 </div>
