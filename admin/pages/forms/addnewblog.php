@@ -14,7 +14,7 @@ if(isset($_POST['sub'])){
     $instructor_string= implode(',',$_POST['instructor']);
 
     $filedet=$_FILES['image']['tmp_name'];
-    $loc="../../images/blog/".$file;
+    $loc="../../images/blog/".$image;
     move_uploaded_file($filedet,$loc);
     
     $sql="INSERT INTO `blog`(`name`, `description`, `feature`, `status`, `categories`, `image`, `tag`) VALUES ('$name','$description','$check','$status','$chk','$image','$instructor_string')";
