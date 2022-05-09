@@ -78,27 +78,7 @@ while($row=mysqli_fetch_array($sql)){
 
 
 <?php
-if(isset($_POST['submit'])){
-  $status=$_POST['check_list'];
-  $id=$_POST['id'];
-$chk='';
-foreach($status as $chk1){
-  $chk.=$chk1;
-}
-if($chk == 'disable'){ 
-	$sql1 .=  $chk =  "disable"; 
-} else { 
-	$sql1 .=  $chk = "enable "; 
-}	
-echo"<script>alert(' $id$chk');</script>";
-  $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id ='$id'");
 
-if($sql){
-  echo "updated";
-}else{
-  echo "not updated";
-}
-}
 
 $sql=mysqli_query($conn,"select * from sidebar");
 $res=mysqli_fetch_array($sql);
@@ -154,12 +134,38 @@ function checkDelete(){
 <script src="../../js/typeahead.js"></script>
 <script src="../../js/select2.js"></script>
 
+<?php
+if(isset($_POST['submit'])){
+  $status=$_POST['check_list'];
+  $id=$_POST['id'];
+$chk='';
+foreach($status as $chk1){
+  $chk.=$chk1;
+}?>
 <script>
+  $msg='';
   $('.custom7').on('change', function(){
    this.value = this.checked ? 'disable' : 'enable';
-   alert(this.value);
+   //alert(this.value);
+$msg=this.value;
 }).change();
-</script>
+</script><?php
+/*if($chk == 'disable'){ 
+	$sql1 .=  $chk =  "disable"; 
+} else { 
+	$sql1 .=  $chk = "enable "; 
+}	*/
+echo"<script>alert(' $id$chk');</script>";
+  $sql=mysqli_query($conn,"update sidebar set status='$msg' where id ='$id'");
+
+if($sql){
+  echo "updated";
+}else{
+  echo "not updated";
+}
+}
+?>
+
 
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6f77d4c14ac56ef2","token":"16b338187db945179976004384e89bdf","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
