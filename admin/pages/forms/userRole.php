@@ -68,14 +68,19 @@ $sql=mysqli_query($conn,"select * from sidebar");
 while($row=mysqli_fetch_array($sql)){
   
 ?>
-  <input type="checkbox" name="check_list[]" value="<?php echo $row['id'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
+  <input type="checkbox" name="check_list[]" id="custom7" value="<?php echo $row['id'];?>" <?php if($row['status']=='disable'){?> checked='checked' <?php } ?> ><?php echo $row['name']; ?><br>
   
   
   <?php } ?>
   <input type="submit" class="btn btn-primary" name="submit" value="Submit">
 </form>
 
-
+<script>
+  $('#custom7').on('change', function(){
+   this.value = this.checked ? enable : disable;
+   // alert(this.value);
+}).change();
+</script>
 <?php
 if(isset($_POST['submit'])){
   $status=$_POST['check_list'];
@@ -83,11 +88,8 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
-if($chk==null){
-  $sql=mysqli_query($conn,"update sidebar set status='enable' where id in ($chk)");
-}else{
+
   $sql=mysqli_query($conn,"update sidebar set status='disable' where id in ($chk)");
-}
 
 if($sql){
   echo "updated";
