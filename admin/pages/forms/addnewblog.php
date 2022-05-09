@@ -4,6 +4,7 @@ include("../../include/configure.php");
 
 if(isset($_POST['sub'])){
     $name=$_POST['name'];
+    $short=$_POST['shortdescription'];
     $description=$_POST['description'];
     $check=$_POST['check'];
     $status = $_POST['status'] ;
@@ -17,7 +18,7 @@ if(isset($_POST['sub'])){
     $loc="../../images/blog/".$image;
     move_uploaded_file($filedet,$loc);
     
-    $sql="INSERT INTO `blog`(`name`, `description`, `feature`, `status`, `categories`, `image`, `tag`) VALUES ('$name','$description','$check','$status','$chk','$image','$instructor_string')";
+    $sql="INSERT INTO `blog`(`name`, `shortdesc`, `description`, `feature`, `status`, `categories`, `image`, `tag`) VALUES ('$name','$short','$description','$check','$status','$chk','$image','$instructor_string')";
     $qry=mysqli_query($conn,$sql);
     if($qry){
         header("location:allblog.php");
@@ -94,6 +95,10 @@ if(isset($_POST['sub'])){
 <div class="form-group">
 <label for="examplenme">Name</label>
 <input type="text" class="form-control" name="name" id="examplename1" required>
+</div>
+<div class="form-group">
+<label for="exampledesp">Head</label>
+<textarea class="form-control" name="shortdescription" id="" required></textarea>
 </div>
 <div class="form-group">
 <label for="exampledesp">Description</label>
