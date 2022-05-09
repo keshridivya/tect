@@ -75,12 +75,7 @@ while($row=mysqli_fetch_array($sql)){
   <input type="submit" class="btn btn-primary" name="submit" value="Submit">
 </form>
 
-<script>
-  $('#custom7').on('change', function(){
-   this.value = this.checked ? enable : disable;
-   alert(this.value);
-}).change();
-</script>
+
 <?php
 if(isset($_POST['submit'])){
   $status=$_POST['check_list'];
@@ -152,7 +147,12 @@ function checkDelete(){
 <script src="../../js/typeahead.js"></script>
 <script src="../../js/select2.js"></script>
 
-
+<script>
+  $('#custom7').on('change', function(){
+   this.value = this.checked ? 'enable' : 'disable';
+   alert(this.value);
+}).change();
+</script>
 
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6f77d4c14ac56ef2","token":"16b338187db945179976004384e89bdf","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
