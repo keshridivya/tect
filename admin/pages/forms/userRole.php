@@ -84,7 +84,7 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
-
+echo"<script>alert('$chk');</script>";
   $sql=mysqli_query($conn,"update sidebar set status='disable' where id in ($chk)");
 
 if($sql){
