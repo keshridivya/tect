@@ -2,6 +2,7 @@
 session_start();
 include("../../include/configure.php");
 
+$eid=$_GET['id'];
 if(isset($_POST['sub'])){
     $name=$_POST['name'];
     $short=$_POST['shortdescription'];
@@ -24,6 +25,10 @@ if(isset($_POST['sub'])){
         header("location:allblog.php");
     }
     }
+
+    $sql=mysqli_query($conn,"select * from blog where id='$eid'");
+    $res=mysqli_fetch_array($sql);
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -94,19 +99,19 @@ if(isset($_POST['sub'])){
 <form class="forms-sample" method="post" enctype="multipart/form-data">
 <div class="form-group">
 <label for="examplenme">Name</label>
-<input type="text" class="form-control" name="name" id="examplename1" required>
+<input type="text" class="form-control" name="name" value="<?php echo $res['name']; ?>" id="examplename1" required>
 </div>
 <div class="form-group">
 <label for="exampledesp">Head</label>
-<textarea class="form-control" name="shortdescription" id="" required></textarea>
+<textarea class="form-control" name="shortdescription" value="<?php echo $res['shortdesc']; ?>" required></textarea>
 </div>
 <div class="form-group">
 <label for="exampledesp">Description</label>
-<textarea class="form-control summernote" name="description" id="summernote" required></textarea>
+<textarea class="form-control summernote" name="description" value="<?php echo $res['description']; ?>" id="summernote" required></textarea>
 </div>
 <div class="form-group">
 <div class="custom-control custom-switch">
- <input type="checkbox" class="custom-control-input" value="yes" name="check" id="customSwitch1" required>
+ <input type="checkbox" class="custom-control-input" value="yes" name="check" id="customSwitch1" <?php if(in_array("yes",$res['feature'])) { ?> checked="checked" <?php } ?>required>
 <label class="custom-control-label" for="customSwitch1"><b>is featured?</b></label>
 </div>
 </div>
@@ -142,6 +147,7 @@ Blog List
 <h4 class="card-title">Status</h4>
 
 <select class="form-control form-control-sm" id="exampleFormControlSelect3" name="status" required>
+<option value="<?php echo $res['status']; ?>"><?php echo $res['status']; ?></option>
 <option>Published</option>
 <option>Not Published</option>
 </select>
@@ -156,26 +162,27 @@ Blog List
 <h4 class="card-title">Categories</h4>
 <div class="form-check form-check-primary" required>
     <div required>
+<?php  $categories=explode($arr['categories']); ?>
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="e-commerce" class="form-check-input" >
+<input type="checkbox" name="chkl[ ]" value="e-commerce" <?php if(in_array("e-commerce",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
 E-commerce
 </label>
 </div>
 <div class="form-check form-check-success">
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="fashion" class="form-check-input" >
+<input type="checkbox" name="chkl[ ]" value="fashion" <?php if(in_array("fashion",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
 Fashion
 </label>
 </div>
 <div class="form-check form-check-info">
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="electronic" class="form-check-input" >
+<input type="checkbox" name="chkl[ ]" value="electronic" <?php if(in_array("electronic",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
 Electronic
 </label>
 </div>
 <div class="form-check form-check-danger">
 <label class="form-check-label">
-<input type="checkbox" name="chkl[ ]" value="commercial" class="form-check-input">
+<input type="checkbox" name="chkl[ ]" value="commercial" <?php if(in_array("commercial",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input">
 Commercial
 </label>
 </div>
@@ -188,6 +195,12 @@ Commercial
 <div class="card">
 <div class="card-body">
 <h4 class="card-title">Image</h4>
+<?php if(isset($_GET['id'])){
+
+?>
+<img width="200" src="../../images/blog/<?=$res["image"];?>" />
+<input type="hidden" name="image_name" value="<?=$res["image"];?>" />
+<?php } ?>
 <span>
     <input id="uploadFile" placeholder="File Name here" disabled="disabled" required/>
     <div class="fileUpload btn btn-primary">
@@ -205,6 +218,7 @@ Commercial
 <div class="card-body">
 <h4 class="card-title">Tags</h4>
 <select class="js-example-basic-multiple form-control w-100" name="instructor[]" placeholder="write some tags" multiple="multiple">
+<option value="<?php echo $res['tag']; ?>"><?php echo $res['tag']; ?></option>
                       <option style="color:white" value="Website Designing ">Website Designing </option>
                       <option value="Ecommerce Website ">Ecommerce Website </option>
                       <option value="Software Development ">Software Development </option>
