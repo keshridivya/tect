@@ -524,7 +524,7 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-headding">
 						<h2>Our Testimonial</h2>
-						<p>The powerful and flexible theme for all kinds of businesses</p>
+						<p>Our customers are at the heart of our organization</p>
 					</div>
 				</div>
 			</div>
