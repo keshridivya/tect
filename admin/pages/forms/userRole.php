@@ -85,10 +85,10 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
-if (isset($chk) && ($chk == 'enable')) { 
-	$sql1 .= " $chk = enable "; 
+if (isset($chk) && ($chk == 'disable')) { 
+	$sql1 .=  $chk =  "disable"; 
 } else { 
-	$sql1 .= " $chk = disable  "; 
+	$sql1 .=  $chk = "enable "; 
 }	
 echo"<script>alert('$chk');</script>";
   $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id ='$id'");
