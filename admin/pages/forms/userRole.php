@@ -85,7 +85,7 @@ $chk='';
 foreach($status as $chk1){
   $chk.=$chk1;
 }
-if (isset($chk) && ($chk == 'disable')) { 
+if($chk == 'disable'){ 
 	$sql1 .=  $chk =  "disable"; 
 } else { 
 	$sql1 .=  $chk = "enable "; 
