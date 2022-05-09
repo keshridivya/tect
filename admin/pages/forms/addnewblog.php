@@ -147,7 +147,7 @@ Blog List
 <h4 class="card-title">Status</h4>
 
 <select class="form-control form-control-sm" id="exampleFormControlSelect3" name="status" required>
-<option value="<?php echo $res['status']; ?>"><?php echo $res['status']; ?></option>
+<option value="<?php echo $res['status']; ?>" selected><?php echo $res['status']; ?></option>
 <option>Published</option>
 <option>Not Published</option>
 </select>
@@ -162,7 +162,7 @@ Blog List
 <h4 class="card-title">Categories</h4>
 <div class="form-check form-check-primary" required>
     <div required>
-<?php  $categories=explode($arr['categories']); ?>
+<?php  $categories=explode($res['categories']); ?>
 <label class="form-check-label">
 <input type="checkbox" name="chkl[ ]" value="e-commerce" <?php if(in_array("e-commerce",$categories)) { ?> checked="checked" <?php } ?> class="form-check-input" >
 E-commerce
@@ -218,7 +218,7 @@ Commercial
 <div class="card-body">
 <h4 class="card-title">Tags</h4>
 <select class="js-example-basic-multiple form-control w-100" name="instructor[]" placeholder="write some tags" multiple="multiple">
-<option value="<?php echo $res['tag']; ?>"><?php echo $res['tag']; ?></option>
+<option value="<?php echo $res['tag']; ?>" selected><?php echo $res['tag']; ?> </option>
                       <option style="color:white" value="Website Designing ">Website Designing </option>
                       <option value="Ecommerce Website ">Ecommerce Website </option>
                       <option value="Software Development ">Software Development </option>
