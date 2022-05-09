@@ -111,7 +111,7 @@ if(isset($_POST['sub'])){
 </div>
 <div class="form-group">
 <div class="custom-control custom-switch">
- <input type="checkbox" class="custom-control-input" value="yes" name="check" id="customSwitch1" <?php if(in_array("yes",$res['feature'])) { ?> checked="checked" <?php } ?>required>
+ <input type="checkbox" class="custom-control-input" value="yes" name="check" id="customSwitch1" <?php if($res['feature']) { ?> checked="checked" <?php } ?>required>
 <label class="custom-control-label" for="customSwitch1"><b>is featured?</b></label>
 </div>
 </div>
