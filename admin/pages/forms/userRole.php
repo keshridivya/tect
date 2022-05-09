@@ -156,7 +156,7 @@ $msg=this.value;
 	$sql1 .=  $chk = "enable "; 
 }	*/
 echo"<script>alert(' $id$chk');</script>";
-  $sql=mysqli_query($conn,"update sidebar set status='$msg' where id ='$id'");
+  $sql=mysqli_query($conn,"update sidebar set status='$msg'");
 
 if($sql){
   echo "updated";
