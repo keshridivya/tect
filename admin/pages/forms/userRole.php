@@ -78,7 +78,7 @@ while($row=mysqli_fetch_array($sql)){
 <script>
   $('#custom7').on('change', function(){
    this.value = this.checked ? enable : disable;
-   // alert(this.value);
+   alert(this.value);
 }).change();
 </script>
 <?php
