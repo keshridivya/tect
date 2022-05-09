@@ -14,8 +14,31 @@ if(isset($_POST['sub'])){
     $instructor=$_POST['instructor'];
     foreach($checkbox1 as $chk1){$chk .= $chk1;}
     $instructor_string= implode(',',$_POST['instructor']);
-
     $filedet=$_FILES['image']['tmp_name'];
+
+    if(empty(($filedet)) && ($_POST['image_name']) && ($_GET['id'])){
+        $dnk = $_POST['image_name'];
+        $eid=$_GET['id'];
+        $sql=mysqli_query($conn,"UPDATE `blog` SET `name`='$name',`shortdesc`='$short',`description`='$description',`feature`='$check',`status`='$status',`categories`='$chk',`image`='$dnk',`tag`='$instructor_string' WHERE id='$eid'");
+            if($sql=1){
+                header("location:allblog.php");
+            }else{
+                mysqli_error($conn);
+            }
+    }
+    else if(!empty($filedet) && ($_POST['image_name']) || !empty($filedet) && (empty($_POST['image_name']) && ($_POST['id']))){
+        $loc="../../images/blog/".$image;
+        move_uploaded_file($filedet,$loc);
+            $id=$_GET['id'];
+            $sql=mysqli_query($conn,"UPDATE `blog` SET `name`='$name',`shortdesc`='$short',`description`='$description',`feature`='$check',`status`='$status',`categories`='$chk',`image`='$image',`tag`='$instructor_string' WHERE id='$eid'");
+            if($sql==1){
+                header("location:allblog.php");
+            }else{
+                mysqli_error($conn);
+            }
+
+    }else{
+    
     $loc="../../images/blog/".$image;
     move_uploaded_file($filedet,$loc);
     
@@ -24,6 +47,7 @@ if(isset($_POST['sub'])){
     if($qry){
         header("location:allblog.php");
     }
+}
     }
 
     $sql=mysqli_query($conn,"select * from blog where id='$eid'");
