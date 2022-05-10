@@ -206,10 +206,6 @@ if(isset($_FILES["file_upload"]["name"])){
     }
 }
 ?>
-                
-
-
-
                 <p class="mb-1 mt-3 font-weight-semibold"><?php echo $name ?></p>
                 <p class="fw-light text-muted mb-0"><?php  echo $email ?></p>
               </div>
