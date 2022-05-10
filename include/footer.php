@@ -132,4 +132,8 @@
       $(".custom-model-main").removeClass('model-open');
     });
     </script>
-
+<script>
+document.getElementById('image').onchange=function(){
+  document.getElementById('form').submit();
+}
+</script>

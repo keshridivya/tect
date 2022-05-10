@@ -31277,4 +31277,56 @@ div.tagsinput span.tag a {
   }
 }
 
+/*profile*/
+.profile-pic {
+  width: 200px;
+  max-height: 200px;
+  display: inline-block;
+}
+
+.file-upload {
+  display: none;
+}
+.circle {
+  border-radius: 100% !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 72px;
+}
+.p-ima {
+  position: absolute;
+  bottom: 250px;
+  right: 80px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.img{
+  width:50px;
+  height:50px;
+}
+.form .round{
+  position: absolute;
+    bottom: 0;
+    top:40px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.form .round input[type="file"]{
+position: absolute;
+transform:scale(3);
+opacity:0;
+}
+input[type="file"]::-webkit-file-upload-button{
+  cursor: pointer;
+}
+/*profile*/
+
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */

@@ -88,7 +88,7 @@ $name=$_SESSION['name'];
               <i class="icon-search"></i>
               <input type="search" class="form-control" placeholder="Search Here" title="Search here">
             </form>
-          </li>-->
+          </li>
           <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
               <i class="icon-mail icon-lg"></i>
@@ -166,7 +166,7 @@ $name=$_SESSION['name'];
                 </div>
               </a>
             </div>
-          </li>
+          </li>-->
           <?php
           $sql=mysqli_query($conn,"select profile_img from userlogin where email='$email'");
           $dnk=mysqli_fetch_assoc($sql);
@@ -175,29 +175,43 @@ $name=$_SESSION['name'];
             <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <img class="img-xs rounded-circle" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
-            
-            <div class="user-sidebar ">
-    <div class="profile-pic">
-    <a class="nav-link" id="UserDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-      <img class="img-xs rounded-circle" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
-      <form action="">
-        <input type="file" name="pic" accept="image/*">
-        <i class="fas fa-camera fa-2x"></i>
-      </form>
-    </div>
-  </div>
 
-              <div class="dropdown-header text-center">
-                <div class="edit_image">
-                <img class="img-md rounded-circle main-profile-img" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
-                <i class="mdi mdi-camera"></i>
-</div>
+              <div class="dropdown-header text-center small-12 medium-2 large-2 columns">
+              <div >
+                <img class="img-md rounded-circle img" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
+                </div>
+                <div class="p-ima">
+                <form method="post" id="form" class="form" enctype="multipart/form-data">
+                  <div class="round">
+      
+        <input class="image" name="file_upload" id="image" type="file" accept=".jpg, .jpeg, .png"/>
+        <!--<input type="submit" name="submit" value="Upload" class="btn btn-primary image"/>-->
+        <i class="mdi mdi-camera upload-button"></i>
+       </div>
+</form>
+     </div>
+
+<?php
+if(isset($_FILES["file_upload"]["name"])){
+    $email=$_SESSION['email'];
+    $file_name = $_FILES['file_upload']['name'];
+    $file_tmp = $_FILES['file_upload']['tmp_name'];
+    $loc="../../images/faces/".$file_name;
+    move_uploaded_file($file_tmp,$loc);
+    $sql=mysqli_query($conn,"update userlogin set profile_img='$file_name' where email='$email'");
+    if($sql==1){
+      header("refresh: 3;");
+    }else{
+        echo "<script>alert('Profile Image Not Updated')</script>";
+    }
+}
+?>
                 <p class="mb-1 mt-3 font-weight-semibold"><?php echo $name ?></p>
                 <p class="fw-light text-muted mb-0"><?php  echo $email ?></p>
               </div>
               <a class="dropdown-item" href="profile.php"><i class="dropdown-item-icon mdi mdi-account-outline text-primary me-2"></i> My Profile <span class="badge badge-pill badge-danger">1</span></a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
-              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>
+              <!--<a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-message-text-outline text-primary me-2"></i> Messages</a>
+              <a class="dropdown-item"><i class="dropdown-item-icon mdi mdi-calendar-check-outline text-primary me-2"></i> Activity</a>-->
               <a class="dropdown-item" href="../../../index.php"><i class="dropdown-item-icon mdi mdi-wan text-primary me-2"></i> Back to Site</a>
               <a class="dropdown-item" href="../samples/logout.php"><i class="dropdown-item-icon mdi mdi-power text-primary me-2"></i>Sign Out</a>
             </div>
