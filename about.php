@@ -187,7 +187,7 @@ session_start();
 	</section>-->
 	<!-- End Team Member Area -->
 	<!-- Start Testimonial Area -->
-	<section class="section-padding pt-0">
+	<section class="section-padding-2 pt-0">
 		<div class="container">
 			<!-- Section Headding -->
 			<div class="row mb-40">
