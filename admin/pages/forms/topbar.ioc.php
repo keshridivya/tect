@@ -196,18 +196,6 @@ if(isset($_FILES["file_upload"]["name"])){
     $email=$_SESSION['email'];
     $file_name = $_FILES['file_upload']['name'];
     $file_tmp = $_FILES['file_upload']['tmp_name'];
-
-    $validImage=['jpg','jpeg','png'];
-    $imageExtension=explode('.',$file_name);
-    $imageExtension=strtolower(end($imageExtension));
-    if(!in_array($imageExtension,$validImage)){
-        echo "<script>alert('Invalid Image Format');</script>";
-    }
-    else{
-      
-        $file_name = $_FILES['file_upload']['name'];
-
-    }
     $loc="../../images/faces/".$file_name;
     move_uploaded_file($file_tmp,$loc);
     $sql=mysqli_query($conn,"update userlogin set profile_img='$file_name' where email='$email'");
