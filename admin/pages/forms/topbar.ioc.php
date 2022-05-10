@@ -181,7 +181,7 @@ $name=$_SESSION['name'];
                 <img class="img-md rounded-circle img" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
                 </div>
                 <div class="p-ima">
-                <form method="post" id="form" enctype="multipart/form-data">
+                <form method="post" id="form" class="form" enctype="multipart/form-data">
                   <div class="round">
       
         <input class="image" name="file_upload" id="image" type="file" accept=".jpg, .jpeg, .png"/>

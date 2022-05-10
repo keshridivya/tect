@@ -31329,7 +31329,7 @@ color: #999;
   width:50px;
   height:50px;
 }
-#form .round{
+.form .round{
   position: absolute;
     bottom: 0;
     right: 0;
@@ -31340,7 +31340,7 @@ color: #999;
     border-radius: 50%;
     overflow: hidden;
 }
-#form .round input[type="file"]{
+.form .round input[type="file"]{
 position: absolute;
 transform:scale(3);
 opacity:0;
