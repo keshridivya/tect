@@ -7,8 +7,8 @@
 <!-- Preloader -->
 <div id="preloader">
     <div class="preloader">
-        <span></span>
-        <span></span>
+        <p><img src="assets/img/logo1.png"></p>
+       
     </div>
 </div>
 <!-- Start Header Area -->

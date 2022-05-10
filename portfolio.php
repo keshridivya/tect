@@ -3,7 +3,7 @@ include("include/configure.php");
 $selectquery="select * from portfolio";
 $doctors = mysqli_query($conn,$selectquery);
 if (mysqli_num_rows($doctors)>0){
-
+	
 }
 ?> 
 <!DOCTYPE html>
