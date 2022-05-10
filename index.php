@@ -630,96 +630,50 @@ You have to learn and achieve the target.</p>
 				<div class="col-lg-4 col-md-6 mb-30">
 					<div class="blog-item">
 						<!-- Thumbanil -->
+						<?php
+						$q=mysqli_query($conn,"select * from blog limit 3");
+						$result=mysqli_fetch_array($q);
+						?>
 						<div class="thumbnail">
 							<a href="single.html">
 								<img src="assets/img/HOME 5.png" alt="img">
 							</a>
 							<div class="date">
-								<span>04 Dec, 2021</span>
+								<span><?php $dnk=$result['create_date'];
+								$date=strtotime($dnk);
+								echo date("d  M, Y",$date);
+								?></span>
 							</div>
 						</div>
 						<!-- Content -->
 						<div class="content">
-							<h3><a href="single.html">Prevailed Remainder May Propriety Can and. </a></h3>
+							<h3><a href="single.html"><?php echo $result['shortdesc']; ?> </a></h3>
 							<div class="auth">
 								<ul>
 									<li>
 										<img src="assets/img/user.jpg" alt="img">
 										<span>In </span>
-										<a href="#">John Baus</a>
+										<a href="#"><?php echo $result['name']; ?> </a>
 									</li>
 									<li>
 										<span>In </span>
-										<a href="#">Business</a>
+										<a href="#"><?php echo $result['categories']; ?> </a>
 									</li>
 								</ul>
 							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna lectus. In justo odio, viverra quis metus id, imperdiet viverra quam...</p>
+							<p><?php echo $result['description']; ?></p>
 						</div>
 					</div>
 				</div>
 				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="blog-item">
-						<!-- Thumbanil -->
-						<div class="thumbnail">
-							<a href="single.html">
-								<img src="assets/img/HOME 6.png" alt="img">
-							</a>
-							<div class="date">
-								<span>04 Dec, 2021</span>
-							</div>
-						</div>
-						<!-- Content -->
-						<div class="content">
-							<h3><a href="single.html">Prevailed Remainder May Propriety Can and. </a></h3>
-							<div class="auth">
-								<ul>
-									<li>
-										<img src="assets/img/user.jpg" alt="img">
-										<span>In </span>
-										<a href="#">John Baus</a>
-									</li>
-									<li>
-										<span>In </span>
-										<a href="#">Business</a>
-									</li>
-								</ul>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna lectus. In justo odio, viverra quis metus id, imperdiet viverra quam...</p>
-						</div>
-					</div>
-				</div>
+				
 				<!-- Single -->
 				<div class="col-lg-4 col-md-6 mb-30">
 					<div class="blog-item">
 						<!-- Thumbanil -->
-						<div class="thumbnail">
-							<a href="single.html">
-								<img src="assets/img/HOME 7.png" alt="img">
-							</a>
-							<div class="date">
-								<span>04 Dec, 2021</span>
-							</div>
-						</div>
+						
 						<!-- Content -->
-						<div class="content">
-							<h3><a href="single.html">Prevailed Remainder May Propriety Can and. </a></h3>
-							<div class="auth">
-								<ul>
-									<li>
-										<img src="assets/img/user.jpg" alt="img">
-										<span>In </span>
-										<a href="#">John Baus</a>
-									</li>
-									<li>
-										<span>In </span>
-										<a href="#">Business</a>
-									</li>
-								</ul>
-							</div>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis urna lectus. In justo odio, viverra quis metus id, imperdiet viverra quam...</p>
-						</div>
+						
 					</div>
 				</div>
 			</div>
