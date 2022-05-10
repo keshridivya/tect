@@ -108,6 +108,12 @@ if(isset($_GET['delid'])){
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
+  <style>
+    .page-body-wrapper {
+    padding-top: 47px !important;
+    }
+}
+  </style>
 </head>
 
 <body>
@@ -271,7 +277,6 @@ if(isset($_GET['delid'])){
               </div>
             </div>
           </div>
-
 
 
 
