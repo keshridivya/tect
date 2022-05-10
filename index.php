@@ -627,13 +627,14 @@ You have to learn and achieve the target.</p>
 			</div>
 			<div class="row">
 				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="blog-item">
-						<!-- Thumbanil -->
-						<?php
+				<?php
 						$q=mysqli_query($conn,"select * from blog ");
 						$result=mysqli_fetch_array($q);
 						?>
+				<div class="col-lg-4 col-md-6 mb-30">
+					<div class="blog-item">
+						<!-- Thumbanil -->
+						
 						<div class="thumbnail">
 							<a href="single.html">
 								<img src="admin/images/blog/<?php echo $result['image']; ?>" alt="img">
