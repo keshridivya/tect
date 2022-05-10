@@ -74,7 +74,7 @@
                             <li class="menu-item-has-children">
                                 <a href="about.php">About Us</a>
                             <ul>
-                                <li><a href="ceo-govind-bavkar.html">CEO</a></li>
+                                <li><a href="ceo-govind-bavkar.php">CEO</a></li>
                                 <li><a href="team.php">Teams</a></li>
                             </ul>
                             </li>
@@ -127,7 +127,7 @@
                         <li class="menu-item-has-children">
                             <a href="about.php">About Us</a>
                             <ul class="sub-menu">
-                                <li><a href="ceo-govind-bavkar.html">CEO</a></li>
+                                <li><a href="ceo-govind-bavkar.php">CEO</a></li>
 								<li><a href="team.php">Teams</a></li>
                             </ul>
                         </li>
