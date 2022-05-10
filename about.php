@@ -148,7 +148,7 @@ session_start();
 	</section>
 	<!-- End Counter Area -->
 	<!-- Start Team Member Area -->
-	<section class="section-padding-2 section-bg">
+	<!-- <section class="section-padding-2 section-bg"> 
 		<div class="container">
 			<div class="row mb-40">
 				<div class="col-lg-8 offset-lg-2 text-center">
@@ -158,124 +158,9 @@ session_start();
 					</div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row">-->
 				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="team-item">
-						<div class="thumb">
-							<img src="assets/img/team/1.jpg" alt="team">
-						</div>
-						<div class="content">
-							<div class="left">
-								<h4>Monroe Parker</h4>
-								<p>Back End Developer</p>
-							</div>
-							<div class="team-social">
-								<i class="fas fa-share-alt"></i>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="team-item">
-						<div class="thumb">
-							<img src="assets/img/team/2.jpg" alt="team">
-						</div>
-						<div class="content">
-							<div class="left">
-								<h4>Monroe Parker</h4>
-								<p>Back End Developer</p>
-							</div>
-							<div class="team-social">
-								<i class="fas fa-share-alt"></i>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="team-item">
-						<div class="thumb">
-							<img src="assets/img/team/3.jpg" alt="team">
-						</div>
-						<div class="content">
-							<div class="left">
-								<h4>Monroe Parker</h4>
-								<p>Back End Developer</p>
-							</div>
-							<div class="team-social">
-								<i class="fas fa-share-alt"></i>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="team-item">
-						<div class="thumb">
-							<img src="assets/img/team/4.jpg" alt="team">
-						</div>
-						<div class="content">
-							<div class="left">
-								<h4>Monroe Parker</h4>
-								<p>Back End Developer</p>
-							</div>
-							<div class="team-social">
-								<i class="fas fa-share-alt"></i>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="team-item">
-						<div class="thumb">
-							<img src="assets/img/team/5.jpg" alt="team">
-						</div>
-						<div class="content">
-							<div class="left">
-								<h4>Monroe Parker</h4>
-								<p>Back End Developer</p>
-							</div>
-							<div class="team-social">
-								<i class="fas fa-share-alt"></i>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
+				<!-- <div class="col-lg-4 col-md-6 mb-30"> 
 					<div class="team-item">
 						<div class="thumb">
 							<img src="assets/img/team/6.jpg" alt="team">
@@ -299,17 +184,17 @@ session_start();
 				</div>
 			</div>
 		</div>
-	</section>
+	</section>-->
 	<!-- End Team Member Area -->
 	<!-- Start Testimonial Area -->
-	<section class="section-padding">
+	<section class="section-padding pt-0">
 		<div class="container">
 			<!-- Section Headding -->
 			<div class="row mb-40">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-headding">
 						<h2>Our Testimonial</h2>
-						<p>The powerful and flexible theme for all kinds of businesses</p>
+						<p>Our customers are at the heart of our organization</p>
 					</div>
 				</div>
 			</div>
@@ -317,14 +202,17 @@ session_start();
 				<div class="col-lg-12">
 					<div class="testimonial-full owl-carousel">
 						<!-- Single -->
+						<?php $sql=mysqli_query($conn,"select * from testimonial");
+							while($arr=mysqli_fetch_array($sql)){
+							?>
 						<div class="testimonial-item">
 							<div class="testimonial-single-header">
 								<div class="thumbnail">
-									<img src="assets/img/team/3.jpg" alt="testimonial">
+									<img src="admin/images/testimonial/<?php echo $arr['image']; ?>" alt="testimonial">
 								</div>
 								<div class="testimonial-title">
-									<h4>Rachel Adams</h4>
-									<p>Regular Clients</p>
+									<h4><?php echo $arr['name']; ?></h4>
+									<p><?php echo $arr['company']; ?></p>
 									<div class="ratting-tes">
 										<span><i class="fas fa-star"></i></span>
 										<span><i class="fas fa-star"></i></span>
@@ -335,53 +223,11 @@ session_start();
 								</div>
 							</div>
 							<div class="testimonial-single-footer">
-								<p>We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills.</p>
+								<p><?php echo $arr['discription']; ?></p>
 							</div>
 						</div>
-						<!-- Single -->
-						<div class="testimonial-item">
-							<div class="testimonial-single-header">
-								<div class="thumbnail">
-									<img src="assets/img/team/2.jpg" alt="testimonial">
-								</div>
-								<div class="testimonial-title">
-									<h4>Rachel Adams</h4>
-									<p>Regular Clients</p>
-									<div class="ratting-tes">
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial-single-footer">
-								<p>We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills.</p>
-							</div>
-						</div>
-						<!-- Single -->
-						<div class="testimonial-item">
-							<div class="testimonial-single-header">
-								<div class="thumbnail">
-									<img src="assets/img/team/1.jpg" alt="testimonial">
-								</div>
-								<div class="testimonial-title">
-									<h4>Rachel Adams</h4>
-									<p>Regular Clients</p>
-									<div class="ratting-tes">
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-									</div>
-								</div>
-							</div>
-							<div class="testimonial-single-footer">
-								<p>We are a team of professional and enthusiastic people, who like what they do and are always in the process of growing and improving their skills.</p>
-							</div>
-						</div>
+						<?php } ?>
+						
 					</div>
 				</div>
 			</div>
