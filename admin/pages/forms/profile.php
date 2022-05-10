@@ -159,7 +159,7 @@ $(".upload-button").on('click', function() {
 });*/
 
 document.getElementById('image').onchange=function(){
-  document.getElementById('form').submit;
+  document.getElementById('form').submit();
 }
 </script>
   <!-- End custom js for this page-->
