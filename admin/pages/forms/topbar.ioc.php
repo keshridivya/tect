@@ -184,7 +184,7 @@ $name=$_SESSION['name'];
                 <form method="post" id="form" class="form" enctype="multipart/form-data">
                   <div class="round">
       
-        <input class="image" name="file_upload" id="image" type="file" accept=".jpg, .jpeg, .png"/>
+        <input class="" name="file_upload" id="image" type="file" accept=".jpg, .jpeg, .png"/>
         <!--<input type="submit" name="submit" value="Upload" class="btn btn-primary image"/>-->
         <i class="mdi mdi-camera upload-button"></i>
        </div>
