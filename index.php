@@ -628,8 +628,8 @@ You have to learn and achieve the target.</p>
 			<div class="row">
 				<!-- Single -->
 				<?php
-						$q=mysqli_query($conn,"select * from blog ");
-						$result=mysqli_fetch_array($q);
+						$q=mysqli_query($conn,"select * from blog");
+						while($result=mysqli_fetch_array($q)){
 						?>
 				<div class="col-lg-4 col-md-6 mb-30">
 					<div class="blog-item">
@@ -666,7 +666,7 @@ You have to learn and achieve the target.</p>
 						</div>
 					</div>
 				</div>
-			
+			<?php } ?>
 			</div>
 		</div>
 	</section>
