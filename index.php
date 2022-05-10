@@ -631,7 +631,7 @@ You have to learn and achieve the target.</p>
 					<div class="blog-item">
 						<!-- Thumbanil -->
 						<?php
-						$q=mysqli_query($conn,"select * from blog limit 3");
+						$q=mysqli_query($conn,"select * from blog ");
 						$result=mysqli_fetch_array($q);
 						?>
 						<div class="thumbnail">
