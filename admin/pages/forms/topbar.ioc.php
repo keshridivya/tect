@@ -182,7 +182,7 @@ $name=$_SESSION['name'];
                 </div>
                 <div class="p-ima">
                 <form method="post" id="form" class="form" enctype="multipart/form-data">
-                  <div class="round">
+                  <div class="">
       
         <input class="" name="file_upload" id="image" type="file" accept=".jpg, .jpeg, .png"/>
         <!--<input type="submit" name="submit" value="Upload" class="btn btn-primary image"/>-->
