@@ -178,21 +178,36 @@ $name=$_SESSION['name'];
 
               <div class="dropdown-header text-center small-12 medium-2 large-2 columns">
               <div >
-                <img class="img-md rounded-circle " src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
+                <img class="img-md rounded-circle img" src="../../images/faces/<?php echo $dnk['profile_img']; ?>" alt="Profile image">
                 </div>
                 <div class="p-ima">
                 <form method="post" id="form" enctype="multipart/form-data">
-       <i class="mdi mdi-camera upload-button"></i>
-        <input class="" name="file_upload" id="image" type="file"/>
-        <input type="submit" name="submit" value="" class="btn btn-primary "/> 
+                  <div class="round">
+      
+        <input class="image" name="file_upload" id="image" type="file" accept=".jpg, .jpeg, .png"/>
+        <input type="submit" name="submit" value="Upload" class="btn btn-primary image"/>
+        <i class="mdi mdi-camera upload-button"></i>
+</div>
 </form>
      </div>
 
 <?php
-if(isset($_FILES['file_upload'])){
+if(isset($_FILES["file_upload"]["name"])){
     $email=$_SESSION['email'];
     $file_name = $_FILES['file_upload']['name'];
     $file_tmp = $_FILES['file_upload']['tmp_name'];
+
+    $validImage=['jpg','jpeg','png'];
+    $imageExtension=explode('.',$file_name);
+    $imageExtension=strtolower(end($imageExtension));
+    if(!in_array($imageExtension,$validImage)){
+        echo "<script>alert('Invalid Image Format');</script>";
+    }
+    else{
+      
+        $file_name = $_FILES['file_upload']['name'];
+
+    }
     $loc="../../images/faces/".$file_name;
     move_uploaded_file($file_tmp,$loc);
     $sql=mysqli_query($conn,"update userlogin set profile_img='$file_name' where email='$email'");
