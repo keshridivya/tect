@@ -192,7 +192,7 @@ $name=$_SESSION['name'];
      </div>
 
 <?php
-if(isset($_FILES["file_upload"]["name"])){
+// if(isset($_FILES["file_upload"]["name"])){
     $email=$_SESSION['email'];
     $file_name = $_FILES['file_upload']['name'];
     $file_tmp = $_FILES['file_upload']['tmp_name'];
@@ -216,7 +216,7 @@ if(isset($_FILES["file_upload"]["name"])){
     }else{
         echo "<script>alert('Profile Image Not Updated')</script>";
     }
-}
+//}
 ?>
                 
 
