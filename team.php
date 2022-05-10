@@ -10,12 +10,13 @@ if (mysqli_num_rows($doctors)>0){
 <html  class="no-js" lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="keywords" content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>PreeLand - Multipurpose Landing Page Template</title>
-	<link rel="icon" href="assets/img/icon.png" type="image/gif" sizes="16x16">
-	<link rel="icon" href="assets/img/icon.png" type="image/gif" sizes="18x18">
-	<link rel="icon" href="assets/img/icon.png" type="image/gif" sizes="20x20">
+	<title> Teams - Tectignis IT Solutions Website Development Company in India</title>
+	<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
+	<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="18x18">
+	<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="20x20">
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
