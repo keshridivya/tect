@@ -199,11 +199,11 @@ if(isset($_FILES["file_upload"]["name"])){
     $loc="../../images/faces/".$file_name;
     move_uploaded_file($file_tmp,$loc);
     $sql=mysqli_query($conn,"update userlogin set profile_img='$file_name' where email='$email'");
-    /*if($sql==1){
-        echo "<script>alert('Profile Image Updated Successfully$file_name')</script>";
+    if($sql==1){
+      header("refresh: 3;");
     }else{
         echo "<script>alert('Profile Image Not Updated')</script>";
-    }*/
+    }
 }
 ?>
                 
