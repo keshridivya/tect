@@ -636,7 +636,7 @@ You have to learn and achieve the target.</p>
 						?>
 						<div class="thumbnail">
 							<a href="single.html">
-								<img src="assets/img/HOME 5.png" alt="img">
+								<img src="admin/images/blog/<?php echo $result['image']; ?>" alt="img">
 							</a>
 							<div class="date">
 								<span><?php $dnk=$result['create_date'];
@@ -665,17 +665,7 @@ You have to learn and achieve the target.</p>
 						</div>
 					</div>
 				</div>
-				<!-- Single -->
-				
-				<!-- Single -->
-				<div class="col-lg-4 col-md-6 mb-30">
-					<div class="blog-item">
-						<!-- Thumbanil -->
-						
-						<!-- Content -->
-						
-					</div>
-				</div>
+			
 			</div>
 		</div>
 	</section>
