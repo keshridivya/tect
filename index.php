@@ -572,7 +572,7 @@ You have to learn and achieve the target.</p>
 	<section class="section-padding pt-0">
 		<div id="ourclients">
 			<div class="ourclientheader">
-		<h3 style="color: #ddd;"> Our Partners</h3>
+		<h2 style="color: #ddd;"> Our Partners</h2>
 		<p style="color: #ddd;">We are proud to be a part of the following companies</p>
 							</div>
         <div class="clients-wrap">

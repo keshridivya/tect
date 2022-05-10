@@ -3393,8 +3393,8 @@ h2.accordion-header {
   border-color: #fe3737;
 }
 .img-fluid1{
-	width:120px;
-	height:120px;
+	width:200px;
+	height:200px;
 	
 	border-radius: 50%;
 }
@@ -3409,7 +3409,7 @@ h2.accordion-header {
 	margin-right: auto;
 	background:#283d50;
 	padding-bottom:30px;
-	height:350px;
+	height:450px;
 	padding-top: 20px;
 	margin-bottom: 15px;
   }
@@ -3439,7 +3439,7 @@ h2.accordion-header {
   #ourclients .clients-wrap ul li img {
 	vertical-align: middle;
 	max-width: 100%;
-	width:150px;
+	width:200px;
 	max-height: 100%;
 	-webkit-transition: 0 linear left;
 	-moz-transition: 0 linear left;
