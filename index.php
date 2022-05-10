@@ -570,7 +570,6 @@ You have to learn and achieve the target.</p>
 <!--start our client area-->
 
 	<section class="section-padding pt-0">
-      <section >
 		<div id="ourclients">
 			<div class="ourclientheader">
 		<h3 style="color: #ddd;"> Our Partners</h3>
