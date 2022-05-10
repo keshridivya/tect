@@ -31277,4 +31277,67 @@ div.tagsinput span.tag a {
   }
 }
 
+/*profile*/
+.profile-pic {
+  width: 200px;
+  max-height: 200px;
+  display: inline-block;
+}
+
+.file-upload {
+  display: none;
+}
+.circle {
+  border-radius: 100% !important;
+  overflow: hidden;
+  width: 128px;
+  height: 128px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 72px;
+}
+.p-ima {
+  position: absolute;
+  bottom: 250px;
+  right: 80px;
+  color: #666666;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+.p-image {
+position: absolute;
+top: 167px;
+right: 30px;
+color: #666666;
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.p-image:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+}
+.upload-button {
+font-size: 1.2em;
+}
+
+.upload-button:hover {
+transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+color: #999;
+}
+#form{
+  position:absolute;
+  background:blue;
+  bottom: 0;
+  right:0;
+  width:32%;
+  height:32%;
+  line-height: 33px;
+  text-align: center;
+  border-radius:50%;
+  overflow:hidden;
+  color:black
+}
+/*profile*/
+
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */

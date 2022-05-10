@@ -139,6 +139,29 @@ if (mysqli_num_rows($portfolio)>0){
   <script src="../../js/file-upload.js"></script>
   <script src="../../js/typeahead.js"></script>
   <script src="../../js/select2.js"></script>
+  <script>
+  /*$(document).ready(function() {
+let readURL = function(input) {
+    if (input.files && input.files[0]) {
+        let reader = new FileReader();
+        reader.onload = function (e) {
+            $('.profile-pic').attr('src', e.target.result);
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$(".file-upload").on('change', function(){
+    readURL(this);
+});
+$(".upload-button").on('click', function() {
+   $(".file-upload").click();
+});
+});*/
+
+document.getElementById('image').onchange=function(){
+  document.getElementById('form').submit;
+}
+</script>
   <!-- End custom js for this page-->
 </body>
 
