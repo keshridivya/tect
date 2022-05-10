@@ -628,7 +628,7 @@ You have to learn and achieve the target.</p>
 			<div class="row">
 				<!-- Single -->
 				<?php
-						$q=mysqli_query($conn,"select * from blog");
+						$q=mysqli_query($conn,"select * from blog limit 3");
 						while($result=mysqli_fetch_array($q)){
 						?>
 				<div class="col-lg-4 col-md-6 mb-30">
