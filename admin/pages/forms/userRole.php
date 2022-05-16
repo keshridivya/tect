@@ -5,12 +5,11 @@ $id=$_GET['id'];
 //$conn=mysqli_connect("localhost","root","","category");
 
 if(isset($_POST['upload'])){
-    $role=$_POST['role'];
-    foreach($_POST['id'] as $key => $value){
-      $id=$_POST['id'][$key];
-  }
+  $role=$_POST['role'];
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
+        $id=$_POST['id'][$key];
+        $role=$_POST['role'][$key];
     }
     $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
     if($sql==1){
@@ -61,7 +60,7 @@ if(isset($_POST['upload'])){
   <form action="" method="post">
     <div class="form-group">
       <label for="exampleInputEmail1">Select Role</label>
-      <select class="form-select" name="role" id="exampleFormControlSelect1" required>
+      <select class="form-select" name="role[]" id="exampleFormControlSelect1" required>
         <option><b>Select role</b></option>
         <?php
         $query=mysqli_query($conn,"select * from userlogin");
@@ -81,14 +80,14 @@ if(isset($_POST['upload'])){
 <tr>
 <th>Sr.No</th>
 <th>Name</th>
-<th>Action</th>
+<th>Permission</th>
 </tr>
 </thead>
 <tbody>
 <?php $sql=mysqli_query($conn,"select * from sidebar ");
     $count=1;
     while($arr=mysqli_fetch_array($sql)){ ?>
-  <input type="hidden" name="id" value="<?php echo $arr['id'] ?>">
+  <input type="hidden" name="id[]" value="<?php echo $arr['id'] ?>">
 <tr class="table">
 <td><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
