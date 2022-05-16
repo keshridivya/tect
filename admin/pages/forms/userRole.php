@@ -6,7 +6,9 @@ $id=$_GET['id'];
 
 if(isset($_POST['upload'])){
     $role=$_POST['role'];
-    $id=$_POST['id'];
+    foreach($_POST['id'] as $key => $value){
+      $id=$_POST['id'][$key];
+  }
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
     }
