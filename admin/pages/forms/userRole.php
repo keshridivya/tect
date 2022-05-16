@@ -9,7 +9,7 @@ if(isset($_POST['upload'])){
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
         $id=$_POST['id'][$key];
-        $role=$_POST['role'][$key];
+       
     }
     $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
     if($sql==1){
@@ -60,7 +60,7 @@ if(isset($_POST['upload'])){
   <form action="" method="post">
     <div class="form-group">
       <label for="exampleInputEmail1">Select Role</label>
-      <select class="form-select" name="role[]" id="exampleFormControlSelect1" required>
+      <select class="form-select" name="role" id="exampleFormControlSelect1" required>
         <option><b>Select role</b></option>
         <?php
         $query=mysqli_query($conn,"select * from userlogin");
