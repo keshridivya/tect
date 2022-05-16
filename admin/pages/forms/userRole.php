@@ -6,8 +6,9 @@ $id=$_GET['id'];
 
 if(isset($_POST['upload'])){
   $role=$_POST['role'];
+  if($role!=""){
     foreach($_POST['user_permission'] as $key => $value){
-        $user_permission=$_POST['user_permission'][$key];
+        $user_permission=$_POST['sidebar_id'][$key];
         $id=$_POST['id'][$key];
        
     }
@@ -16,6 +17,7 @@ if(isset($_POST['upload'])){
       echo "<script>alert('Successfully Inserted');</script>";
     }
   }
+}
 
 ?>
 <!DOCTYPE html>
@@ -87,14 +89,15 @@ if(isset($_POST['upload'])){
 <?php $sql=mysqli_query($conn,"select * from sidebar ");
     $count=1;
     while($arr=mysqli_fetch_array($sql)){ ?>
-  
+  <input type="hidden" name="sidebar_id[]" value="<?php echo $arr['id'] ?>">
 <tr class="table">
-<td><input type="hidden" name="id[]" value="<?php echo $arr['id'] ?>"><?php echo $count; ?></td>
+<td><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
 <td>
   <select name="user_permission[]" class="form-select">
     <option value="1">True</option>
     <option value="0">False</option>
+  </select>
 </td>
 </tr>
 <?php
