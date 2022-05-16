@@ -89,8 +89,7 @@ if(isset($_POST['upload'])){
     while($arr=mysqli_fetch_array($sql)){ ?>
   
 <tr class="table">
-  <td ><input type="hidden" name="id[]" value="<?php echo $arr['id'] ?>"></td>
-<td><?php echo $count; ?></td>
+<td><input type="hidden" name="id[]" value="<?php echo $arr['id'] ?>"><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
 <td>
   <select name="user_permission[]" class="form-select">
