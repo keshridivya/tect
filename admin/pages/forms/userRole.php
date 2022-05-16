@@ -87,8 +87,9 @@ if(isset($_POST['upload'])){
 <?php $sql=mysqli_query($conn,"select * from sidebar ");
     $count=1;
     while($arr=mysqli_fetch_array($sql)){ ?>
-  <input type="hidden" name="id[]" value="<?php echo $arr['id'] ?>">
+  
 <tr class="table">
+  <td ><input type="hidden" name="id[]" value="<?php echo $arr['id'] ?>"></td>
 <td><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
 <td>
