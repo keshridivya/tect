@@ -5,6 +5,7 @@ if(!isset($_SESSION['id'])){
 }
 $name=$_SESSION['name'];
  $email=$_SESSION['email'];
+ $role=$_SESSION['role'];
 
  date_default_timezone_set('Asia/Calcutta');
  if(date("H") < 12){

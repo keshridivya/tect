@@ -3,6 +3,16 @@ session_start();
 include("../../include/configure.php");
 $id=$_GET['id'];
 //$conn=mysqli_connect("localhost","root","","category");
+
+if(isset($_POST['upload'])){
+    $role=$_POST['role'];
+    $id=$_POST['id'];
+    foreach($_POST['user_permission'] as $key => $value){
+        $user_permission=$_POST['user_permission'][$key];
+    }
+    $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
+  }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,108 +40,81 @@ $id=$_GET['id'];
 
 </head>
 <body>
+
+<!--main-->
 <div class="container-scroller">
 
 <?php include("topbar.ioc.php") ?>
-
-
 <?php include("sidebar.ioc.php") ?>
-<style>
-  .active{
-    background:yellow;
-  } 
-</style>
 <div class="main-panel">
 <div class="content-wrapper">
 <div class="row">
-  <form>
-   
-    <select>
-    <?php $que=mysqli_query($conn,"select roles from permission_role");
-    while($row=mysqli_fetch_array($que)){ ?>
-      <option value="<?php  echo $row['roles'] ?>"><?php  echo $row['roles'] ?></option>
-      
-      <?php } ?>
-    </select>
-</form>
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4" style="font-size:18px;line-height:10rem">
-      Company
-    </div>
-    <div class="col-md-8">
-     <div class="card-body lang-switch">
-     
-<form action="" method="post">
-<?php
-$sql=mysqli_query($conn,"select * from sidebar");
-while($row=mysqli_fetch_array($sql)){
-  $id=$row['id'];
-?>
-<input type="hidden" name="id" value="<?php echo $id; ?>">
-  <input type="checkbox" name="check_list[]" class="custom7" value="1" <?php if($row['status']=='0'){?> checked='checked' <?php } ?> onclick="myFunction()"><?php echo $row['name']; ?><br>
+<div class="col-lg-12 stretch-card">
+<div class="card">
+<div class="card-body">
+
+  <form action="" method="post">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Select Role</label>
+      <select class="form-select" name="role" id="exampleFormControlSelect1" required>
+        <option><b>Select role</b></option>
+        <?php
+        $query=mysqli_query($conn,"select * from userlogin");
+        while($row=mysqli_fetch_array($query))
+        {
+        ?>
+        <option value="<?php echo $row['id'] ?>"><?php echo $row['role'] ?></option>
+        <?php } ?>
+        </select>
   
-  
-  <?php } ?>
-  <input type="submit" class="btn btn-primary" name="submit" value="Submit">
-</form>
 
 
+<div class="table-responsive pt-3">
+
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Sr.No</th>
+<th>Name</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<?php $sql=mysqli_query($conn,"select * from sidebar ");
+    $count=1;
+    while($arr=mysqli_fetch_array($sql)){ ?>
+  <input type="hidden" name="id" value="<?php echo $arr['id'] ?>">
+<tr class="table">
+<td><?php echo $count; ?></td>
+<td><?php echo $arr['name']; ?></td>
+<td>
+  <select name="user_permission[]" class="form-select">
+    <option value="1">True</option>
+    <option value="0">False</option>
+</td>
+</tr>
 <?php
-if(isset($_POST['submit'])){
-  $status=$_POST['check_list'];
-  $id=$_POST['id'];
-$chk='';
-foreach($status as $chk1){
-  $chk.=$chk1;
-}
-if($chk == 'disable'){ 
-	$sql1 .=  $chk =  "disable"; 
-} else { 
-	$sql1 .=  $chk = "enable "; 
-}	
-echo"<script>alert(' $id$chk');</script>";
-  $sql=mysqli_query($conn,"update sidebar set status='$sql1' where id ='$id'");
-
-if($sql){
-  echo "updated";
-}else{
-  echo "not updated";
-}
-}
-
-$sql=mysqli_query($conn,"select * from sidebar");
-$res=mysqli_fetch_array($sql);
-$res['status'];
-$res['list'];
-if($res['status']=="enable"){?>
- <script>$(".company").css("display","block");</script> 
- <?php
-}else{
-  ?>
- <script>$(".company").css("display","none");</script> 
- <?php
-}
-
+$count++;
+    }
 ?>
-            </div>
-            
-           
-           
-    </div>
+</tbody>
+</table>
+<div class="mt-3">
+<input type="submit" name="upload" value="Set permission" class="btn btn-primary">
   </div>
+</form>
 </div>
 </div>
 </div>
 </div>
 </div>
-<?php include("footer.ioc.php") ?>
+</div>
 </div>
 
 </div>
 
 </div>
-
+<!--main-->
 
 <script src="../../vendors/js/vendor.bundle.base.js"></script>
 <script language="JavaScript" type="text/javascript">

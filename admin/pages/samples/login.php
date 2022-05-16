@@ -16,6 +16,7 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
       header("location:../forms/users.php");
       $_SESSION['name']=$num['username'];
       $_SESSION['email']=$username;
+      $_SESSION['role']=$num['role'];
       $_SESSION['id']=$num['id'];
     }
     else{
