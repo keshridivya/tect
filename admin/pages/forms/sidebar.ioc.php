@@ -2,7 +2,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
         <?php
-$sql=mysqli_query($conn,"select * from sidebar inner join permission_role on sidebar.id=permission_role.sidebar_id where permission_role.status='1' and permission_role.roles=$role");
+$sql=mysqli_query($conn,"select * from sidebar inner join permission_role on sidebar.id=permission_role.sidebar_id where permission_role.status='Enable' and permission_role.roles=$role");
 while($row=mysqli_fetch_array($sql)){
 ?>
           <li class="nav-item company">
@@ -17,7 +17,7 @@ while($row=mysqli_fetch_array($sql)){
           <li class="nav-item"  <?php if($name!='Sir'){ ?>style="display:none"<?php } ?>>
 <a class="nav-link" href="userRole.php">
 <i class="mdi mdi-radioactive menu-icon"></i>
-<span class="menu-title">Activities Log</span>
+<span class="menu-title">Role Permission</span>
 </a>
 </li>
 

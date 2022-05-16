@@ -10,13 +10,14 @@ if(isset($_POST['upload'])){
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
         $id=$_POST['sidebar_id'][$key];
+
         $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
     }
     echo "<script>alert('Successfully Inserted');</script>";
    /* echo "<script>alert('$id $user_permission $role');</script>"; */
-    
   }
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -34,10 +35,8 @@ if(isset($_POST['upload'])){
 <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
 <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
 
-
 <link rel="stylesheet" href="../../vendors/select2/select2.min.css">
 <link rel="stylesheet" href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
-
 
 <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
 
@@ -64,15 +63,15 @@ if(isset($_POST['upload'])){
       <select class="form-select" name="role" id="exampleFormControlSelect1" required>
         <option><b>Select role</b></option>
         <?php
+        $roles='';
         $query=mysqli_query($conn,"select * from userlogin");
         while($row=mysqli_fetch_assoc($query))
         {
+          $roles=$row['role'];
         ?>
         <option value="<?php echo $row['id'] ?>"><?php echo $row['role'] ?></option>
         <?php } ?>
         </select>
-  
-
 
 <div class="table-responsive pt-3">
 
@@ -85,7 +84,9 @@ if(isset($_POST['upload'])){
 </tr>
 </thead>
 <tbody>
-<?php $sql=mysqli_query($conn,"select * from sidebar ");
+<?php 
+
+$sql=mysqli_query($conn,"select * from sidebar ");
     $count=1;
     while($arr=mysqli_fetch_assoc($sql)){ ?>
   <input type="hidden" name="sidebar_id[]" value="<?php echo $arr['id']; ?>">
@@ -94,8 +95,8 @@ if(isset($_POST['upload'])){
 <td><?php echo $arr['name']; ?></td>
 <td>
   <select name="user_permission[]" class="form-select">
-    <option value="1">True</option>
-    <option value="0">False</option>
+    <option value="Enable">Enable</option>
+    <option value="Disable">Disable</option>
   </select>
 </td>
 </tr>
