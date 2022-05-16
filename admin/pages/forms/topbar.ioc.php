@@ -3,9 +3,10 @@
 if(!isset($_SESSION['id'])){
     header("location:../samples/login.php");
 }
+
 $name=$_SESSION['name'];
  $email=$_SESSION['email'];
- $role=$_SESSION['role'];
+ $role=$_SESSION['id'];
 
  date_default_timezone_set('Asia/Calcutta');
  if(date("H") < 12){
