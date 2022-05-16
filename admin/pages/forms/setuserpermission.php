@@ -1,17 +1,17 @@
 <?php
 session_start();
 include("../../include/configure.php");
-$id=$_GET['id'];
+$msg= '';
 //$conn=mysqli_connect("localhost","root","","category");
 
+$roleId=$_GET['perm'];
 if(isset($_POST['upload'])){
-  $role=$_POST['role'];
-  if($role!=""){
+  if($roleId!=""){
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
         $id=$_POST['sidebar_id'][$key];
         
-        $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
+        $sql=mysqli_query($conn,"UPDATE `permission_role` SET `status`='$user_permission' WHERE roles='$roleId' and sidebar_id='$id'");
     }
     header("location:users.php");
    /* echo "<script>alert('$id $user_permission $role');</script>"; */
@@ -57,23 +57,8 @@ if(isset($_POST['upload'])){
 <div class="card">
 <div class="card-body">
 
-  <form action="" method="post">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Select Role</label>
-      <select class="form-select" name="role" id="exampleFormControlSelect1" required>
-        <option><b>Select role</b></option>
-        <?php
-        $query=mysqli_query($conn,"select * from userlogin");
-        while($row=mysqli_fetch_assoc($query))
-        {
-        ?>
-        <option value="<?php echo $row['id'] ?>"><?php echo $row['role'] ?></option>
-        <?php } ?>
-        </select>
-  
-
 <div class="table-responsive pt-3">
-
+<form>
 <table class="table table-bordered">
 <thead>
 <tr>
@@ -83,7 +68,9 @@ if(isset($_POST['upload'])){
 </tr>
 </thead>
 <tbody>
-<?php $sql=mysqli_query($conn,"select * from sidebar ");
+<?php  
+$roleId=$_GET['perm'];
+$sql=mysqli_query($conn,"select sidebar.name as name,permission_role.status as status from sidebar inner join permission_role on sidebar.id=permission_role.sidebar_id where permission_role.roles='$roleId'");
     $count=1;
     while($arr=mysqli_fetch_assoc($sql)){ ?>
   <input type="hidden" name="sidebar_id[]" value="<?php echo $arr['id']; ?>">
@@ -91,10 +78,14 @@ if(isset($_POST['upload'])){
 <td><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
 <td>
-  <select name="user_permission[]" class="form-select">
-    <option value="1">True</option>
-    <option value="0">False</option>
-  </select>
+    <?php
+    if($arr['status']==1){
+        $msg= "True";}
+        else{
+            $msg=  "False";
+        }
+    ?>
+  <input type="text" name="user_permission[]" value="<?php echo $msg ?>">
 </td>
 </tr>
 <?php

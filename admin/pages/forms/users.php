@@ -112,6 +112,17 @@ if(isset($_GET['delid'])){
     .page-body-wrapper {
     padding-top: 47px !important;
     }
+    .btn-xs {
+    padding: 0.125rem 0.25rem;
+    font-size: .75rem !important;
+    line-height: 1.5;
+    border-radius: 0.15rem;
+}
+.btn-outline-secondary {
+    color: #6c757d;
+}
+.btn-xs:hover{
+  background:#6c757d !important;
 }
   </style>
 </head>
@@ -234,6 +245,9 @@ if(isset($_GET['delid'])){
                               Gender
                             </th>
                             <th>
+                              User Role
+                            </th>
+                            <th>
                               Action
                             </th>							
                           </tr>
@@ -259,6 +273,10 @@ if(isset($_GET['delid'])){
                             </td>
                             <td>
                             <?php echo $arr['gender']; ?>
+                            </td>
+                            <td>
+                            <a href="setuserpermission.php?perm=<?php echo $arr['id']; ?>" class="btn btn-xs btn-outline-secondary"> <i class="mdi mdi-key-variant"></i> Set Permission</a>
+                           
                             </td>
                             <td>
                               <a href="users.php?delid=<?php echo $arr['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">
