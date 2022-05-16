@@ -10,12 +10,14 @@ if(isset($_POST['upload'])){
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
         $id=$_POST['sidebar_id'][$key];
-       
-    }
-    $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
+        $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
     if($sql==1){
       echo "<script>alert('Successfully Inserted');</script>";
     }
+       
+    }
+   /* echo "<script>alert('$id $user_permission $role');</script>"; */
+    
   }
 }
 
