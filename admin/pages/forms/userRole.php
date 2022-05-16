@@ -8,8 +8,8 @@ if(isset($_POST['upload'])){
   $role=$_POST['role'];
   if($role!=""){
     foreach($_POST['user_permission'] as $key => $value){
-        $user_permission=$_POST['sidebar_id'][$key];
-        $id=$_POST['id'][$key];
+        $user_permission=$_POST['user_permission'][$key];
+        $id=$_POST['sidebar_id'][$key];
        
     }
     $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
@@ -66,7 +66,7 @@ if(isset($_POST['upload'])){
         <option><b>Select role</b></option>
         <?php
         $query=mysqli_query($conn,"select * from userlogin");
-        while($row=mysqli_fetch_array($query))
+        while($row=mysqli_fetch_assoc($query))
         {
         ?>
         <option value="<?php echo $row['id'] ?>"><?php echo $row['role'] ?></option>
@@ -88,8 +88,8 @@ if(isset($_POST['upload'])){
 <tbody>
 <?php $sql=mysqli_query($conn,"select * from sidebar ");
     $count=1;
-    while($arr=mysqli_fetch_array($sql)){ ?>
-  <input type="hidden" name="sidebar_id[]" value="<?php echo $arr['id'] ?>">
+    while($arr=mysqli_fetch_assoc($sql)){ ?>
+  <input type="hidden" name="sidebar_id[]" value="<?php echo $arr['id']; ?>">
 <tr class="table">
 <td><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
