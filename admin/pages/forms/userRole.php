@@ -13,6 +13,9 @@ if(isset($_POST['upload'])){
         $user_permission=$_POST['user_permission'][$key];
     }
     $sql=mysqli_query($conn,"INSERT INTO `permission_role`(`roles`, `sidebar_id`, `status`) VALUES ('$role','$id','$user_permission')");
+    if($sql==1){
+      echo "<script>alert('Successfully Inserted');</script>";
+    }
   }
 
 ?>
