@@ -10,14 +10,18 @@ if(isset($_POST['upload'])){
     foreach($_POST['user_permission'] as $key => $value){
         $user_permission=$_POST['user_permission'][$key];
         $id=$_POST['sidebar_id'][$key];
+
+        if($user_permission=="True"){
+          $msg="1";
+        }else{
+          $msg="0";
+        }
         
-        $sql=mysqli_query($conn,"UPDATE `permission_role` SET `status`='$user_permission' WHERE roles='$roleId' and sidebar_id='$id'");
+        $sql=mysqli_query($conn,"UPDATE `permission_role` SET `status`='$msg' WHERE roles='$roleId' and sidebar_id='$id'");
     }
     header("location:users.php");
-   /* echo "<script>alert('$id $user_permission $role');</script>"; */
   }
-}
-
+ }
 
 ?>
 <!DOCTYPE html>
@@ -58,7 +62,7 @@ if(isset($_POST['upload'])){
 <div class="card-body">
 
 <div class="table-responsive pt-3">
-<form>
+<form method="post">
 <table class="table table-bordered">
 <thead>
 <tr>
@@ -70,7 +74,7 @@ if(isset($_POST['upload'])){
 <tbody>
 <?php  
 $roleId=$_GET['perm'];
-$sql=mysqli_query($conn,"select sidebar.name as name,permission_role.status as status from sidebar inner join permission_role on sidebar.id=permission_role.sidebar_id where permission_role.roles='$roleId'");
+$sql=mysqli_query($conn,"select sidebar.name as name,sidebar.id as id,permission_role.status as status from sidebar inner join permission_role on sidebar.id=permission_role.sidebar_id where permission_role.roles='$roleId'");
     $count=1;
     while($arr=mysqli_fetch_assoc($sql)){ ?>
   <input type="hidden" name="sidebar_id[]" value="<?php echo $arr['id']; ?>">
@@ -78,14 +82,14 @@ $sql=mysqli_query($conn,"select sidebar.name as name,permission_role.status as s
 <td><?php echo $count; ?></td>
 <td><?php echo $arr['name']; ?></td>
 <td>
-    <?php
-    if($arr['status']==1){
-        $msg= "True";}
-        else{
-            $msg=  "False";
-        }
-    ?>
-  <input type="text" name="user_permission[]" value="<?php echo $msg ?>">
+  <?php
+  if($arr['status']=='1'){
+    $msg="True";}
+    elseif($arr['status']=='0'){
+      $msg="False";
+    }
+  ?>
+  <input type="text" name="user_permission[]" value="<?php echo $msg; ?>">
 </td>
 </tr>
 <?php

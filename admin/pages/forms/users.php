@@ -16,7 +16,8 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
 	
-
+$res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
+$row=mysqli_fetch_array($res);
 if(isset($_POST['sub'])){
 
   $name=$_POST['name'];
@@ -33,17 +34,17 @@ if(isset($_POST['sub'])){
  $mail = new PHPMailer(true);
  try {
   //Server settings
-  $mail->SMTPDebug = SMTP::DEBUG_SERVER;    
+  $mail->SMTPDebug = $row['protocol']::DEBUG_SERVER;    
   $mail->isSMTP();                             
-  $mail->Host       = 'smtp.hostinger.com';      
-  $mail->SMTPAuth   = true;                             
-  $mail->Username   = "vedant.naidu@tectignis.in";           
-  $mail->Password   = 'Vedant@123';                          
+  $mail->Host       = $row['host'];    
+  $mail->SMTPAuth   = true;                           
+  $mail->Username   = $row['email'];           
+  $mail->Password   = $row['password'];                          
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-  $mail->Port       = 465;                             
+  $mail->Port       = $row['port'];                            
 
   //Recipients
-  $mail->setFrom('vedant.naidu@tectignis.in', 'Tectignis It Solution');
+  $mail->setFrom($row['email'], 'Tectignis It Solution');
   $mail->addAddress($email_no, $name);    
   
   //Content
