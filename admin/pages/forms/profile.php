@@ -98,11 +98,11 @@ include("../../include/configure.php");
             </div>  
           </div>
           <?php
-$selectquery="select * from portfolio";
+/*$selectquery="select * from portfolio";
 $portfolio = mysqli_query($conn,$selectquery);
 if (mysqli_num_rows($portfolio)>0){
 
-}
+}*/
 ?>
 
         </div>

@@ -34,7 +34,8 @@ if(isset($_POST['sub'])){
  $mail = new PHPMailer(true);
  try {
   //Server settings
-  $mail->SMTPDebug = $row['protocol']::DEBUG_SERVER;    
+  $mail->SMTPDebug = $row['protocol']::DEBUG_SERVER; 
+  $mail->SMTPDebug=0;   
   $mail->isSMTP();                             
   $mail->Host       = $row['host'];    
   $mail->SMTPAuth   = true;                           

@@ -4,3 +4,8 @@
 <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
 </div>
 </footer>
+<script>
+document.getElementById('image').onchange=function(){
+  document.getElementById('form').submit();
+}
+</script>
