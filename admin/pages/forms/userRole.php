@@ -110,13 +110,14 @@ $count++;
 </div>
 </div>
 </div>
+
 </div>
 </div>
 </div>
 
-</div>
+<?php include("footer.ioc.php") ?>
 
-</div>
+
 <!--main-->
 
 <script src="../../vendors/js/vendor.bundle.base.js"></script>

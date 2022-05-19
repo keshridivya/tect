@@ -4,9 +4,9 @@ session_start();
 if(!isset($_SESSION['username'])){
  //header("location:../samples/login.php");
 }
+$res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
+$row=mysqli_fetch_array($res);
 
-	//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -15,9 +15,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
-	
-$res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
-$row=mysqli_fetch_array($res);
+
 if(isset($_POST['sub'])){
 
   $name=$_POST['name'];
@@ -27,14 +25,13 @@ if(isset($_POST['sub'])){
    $status=1;
    $pass= rand(100000, 999999);
 
-
    $to=$email_no;
    $sub="Password";
  
  $mail = new PHPMailer(true);
  try {
   //Server settings
-  $mail->SMTPDebug = $row['protocol']::DEBUG_SERVER; 
+  $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
   $mail->SMTPDebug=0;   
   $mail->isSMTP();                             
   $mail->Host       = $row['host'];    
@@ -57,13 +54,13 @@ if(isset($_POST['sub'])){
   if($mail->send()){
     $passwordhash=password_hash($pass,PASSWORD_BCRYPT);
 
-    $sql=mysqli_query($conn,"INSERT INTO `userlogin`(`username`, `email`, `password`, `gender`, `role`,`status`) VALUES ('$name','$email_no','$passwordhash','$gender','$role','$status')");
+    /*$sql=mysqli_query($conn,"INSERT INTO `userlogin`(`username`, `email`, `password`, `gender`, `role`,`status`) VALUES ('$name','$email_no','$passwordhash','$gender','$role','$status')");
     if($sql=1){
       header("location:users.php");
     }
     else{
       echo "<script>alert('Something Wrong');</script>";
-    }
+    }*/
   
   }
   
