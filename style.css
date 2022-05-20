@@ -8,10 +8,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	/* cursor: alias; */
-	  cursor: url('https://anuary.com/dev/hp/pad3/public/images/hand-cursor.png'), auto;  
-	/* cursor: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto;  */
-	/* cursor:url('assets/img/index/web.jpg'), pointer; */
+cursor: url(assets/img/cursor.png), pointer;
 }
 
 a,
