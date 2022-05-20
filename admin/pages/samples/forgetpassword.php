@@ -37,13 +37,13 @@ require 'PHPMailer/src/Exception.php';
 				$mail->isSMTP();                                            //Send using SMTP
 				$mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
 				$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				$mail->Username   = "vedant.naidu@tectignis.in";                     //SMTP username
-				$mail->Password   = 'Vedant@123';                               //SMTP password
+				$mail->Username   = "snehal.ambavale@tectignis.in";                     //SMTP username
+				$mail->Password   = 'Admin@123';                               //SMTP password
 				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 				$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				//Recipients
-				$mail->setFrom('vedant.naidu@tectignis.in', 'Tectignis It Solution');
+				$mail->setFrom('snehal.ambavale@tectignis.in', 'Tectignis It Solution');
 				$mail->addAddress($email, 'Tectignis Employee');     //Add a recipient
 				
 				//Content
