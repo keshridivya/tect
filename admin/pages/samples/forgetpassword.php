@@ -102,7 +102,7 @@ require 'PHPMailer/src/Exception.php';
 <div class="brand-logo">
 <img src="../../images/logo.svg" alt="logo">
 </div>
-<h4>Enter your password ?</h4>
+<h4>Enter your Email ?</h4>
 <form class="pt-3" method="post">
 <div class="form-group">
 <input type="email" class="form-control form-control-lg" name="mail" id="exampleInputEmail1" placeholder="Enter Your Email ID">
