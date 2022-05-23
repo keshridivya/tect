@@ -3,6 +3,10 @@ include("../../include/configure.php");
 ?>
 
 <?php session_start();
+
+$res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
+ $row=mysqli_fetch_array($res);
+
 	//Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
@@ -35,15 +39,15 @@ require 'PHPMailer/src/Exception.php';
 				//Server settings
 				$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
 				$mail->isSMTP();                                            //Send using SMTP
-				$mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
-				$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-				$mail->Username   = "snehal.ambavale@tectignis.in";                     //SMTP username
-				$mail->Password   = 'Admin@123';                               //SMTP password
-				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-				$mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+				$mail->Host       = $row['host'];    
+				$mail->SMTPAuth   = true;                           
+				$mail->Username   = $row['email'];           
+				$mail->Password   = $row['password'];                          
+				$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
+				$mail->Port       = $row['port'];                                      //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
 				//Recipients
-				$mail->setFrom('snehal.ambavale@tectignis.in', 'Tectignis It Solution');
+				$mail->setFrom($row['email'], 'Tectignis It Solution');
 				$mail->addAddress($email, 'Tectignis Employee');     //Add a recipient
 				
 				//Content

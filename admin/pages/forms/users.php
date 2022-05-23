@@ -33,15 +33,15 @@ if(isset($_POST['sub'])){
   //Server settings
   $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
   $mail->isSMTP();                             
-  $mail->Host       = 'smtp.gmail.com';    
+  $mail->Host       = $row['host'];    
   $mail->SMTPAuth   = true;                           
-  $mail->Username   = "naiduvedant@gmail.com";           
-  $mail->Password   = '4E&7Zu%#!G984^#6FHZ*';                          
+  $mail->Username   = $row['email'];           
+  $mail->Password   = $row['password'];                          
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-  $mail->Port       = 465;                            
+  $mail->Port       = $row['port'];                            
 
   //Recipients
-  $mail->setFrom("naiduvedant@gmail.com", 'Tectignis It Solution');
+  $mail->setFrom($row['email'], 'Tectignis It Solution');
   $mail->addAddress($email_no, $name);    
   
   //Content
