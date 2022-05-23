@@ -69,32 +69,32 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="index.php">Home</a>
+                                <a href="index">Home</a>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="about.php">About Us</a>
+                                <a href="about">About Us</a>
                             <ul>
-                                <li><a href="ceo-govind-bavkar.php">CEO</a></li>
-                                <li><a href="team.php">Teams</a></li>
+                                <li><a href="ceo-govind-bavkar">CEO</a></li>
+                                <li><a href="team">Teams</a></li>
                             </ul>
                             </li>
                             <li class="menu-item-has-children">
-                                <a href="services.php">Services</a>
+                                <a href="services">Services</a>
                                 <ul>
                                     <?php $sql=mysqli_query($conn,"select * from servicelist");
                                     while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
+                                    <li><a href="website-designing?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </li>
                             <li>
-                                <a href="portfolio.php">Portfolio</a>
+                                <a href="portfolio">Portfolio</a>
                             </li>								
                             <li>
-                                <a href="blog.php">Blog</a>
+                                <a href="blog">Blog</a>
                             </li>								
                             <li>
-                                <a href="contact.php">Contact Us</a>
+                                <a href="contact">Contact Us</a>
                             </li>
                         </ul>
                     </nav>
