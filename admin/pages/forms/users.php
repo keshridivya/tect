@@ -36,7 +36,7 @@ if(isset($_POST['sub'])){
   $mail->Host       = 'smtp.hostinger.com';    
   $mail->SMTPAuth   = true;                           
   $mail->Username   = "vedant.naidu@tectignis.in";           
-  $mail->Password   = 'Admin#2022';                          
+  $mail->Password   = 'Vedant@123';                          
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
   $mail->Port       = 465;                            
 
