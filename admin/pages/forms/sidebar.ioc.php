@@ -15,7 +15,7 @@ while($row=mysqli_fetch_array($sql)){
           <?php  } ?>     
             
           <li class="nav-item"  <?php if($name!='Sir'){ ?>style="display:none"<?php } ?>>
-<a class="nav-link" href="userRole.php">
+<a class="nav-link" href="userRole">
 <i class="mdi mdi-radioactive menu-icon"></i>
 <span class="menu-title">User Role</span>
 </a>

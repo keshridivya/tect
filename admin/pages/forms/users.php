@@ -4,8 +4,8 @@ session_start();
 if(!isset($_SESSION['username'])){
  //header("location:../samples/login.php");
 }
-$res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
-$row=mysqli_fetch_array($res);
+// $res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
+// $row=mysqli_fetch_array($res);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -34,15 +34,15 @@ if(isset($_POST['sub'])){
   $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
   $mail->SMTPDebug=0;   
   $mail->isSMTP();                             
-  $mail->Host       = $row['host'];    
+  $mail->Host       = 'smtp.hostinger.com';    
   $mail->SMTPAuth   = true;                           
-  $mail->Username   = $row['email'];           
-  $mail->Password   = $row['password'];                          
+  $mail->Username   = "snehal.ambavale@tectignis.in";           
+  $mail->Password   = 'Admin@123';                          
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-  $mail->Port       = $row['port'];                            
+  $mail->Port       = 465;                            
 
   //Recipients
-  $mail->setFrom($row['email'], 'Tectignis It Solution');
+  $mail->setFrom("snehal.ambavale@tectignis.in", 'Tectignis It Solution');
   $mail->addAddress($email_no, $name);    
   
   //Content

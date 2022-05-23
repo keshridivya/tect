@@ -18,7 +18,7 @@
             <!-- Logo -->
             <div class="col-lg-3 align-self-center">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index">
                         <img src="assets/img/logo2.png" alt="img">
                     </a>
                 </div>
@@ -115,38 +115,38 @@
                     <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
                 </div>
                 <div class="mobile-logo">
-                    <a href="index.html">
+                    <a href="index">
                         <img src="assets/img/logo2.png" alt="logo" />
                     </a>
                 </div>
                 <div id="menu" class="text-left">
                     <ul class="offcanvas_main_menu">
 								<li>
-									<a href="index.php">Home</a>
+									<a href="index">Home</a>
 								</li>
                         <li class="menu-item-has-children">
-                            <a href="about.php">About Us</a>
+                            <a href="about">About Us</a>
                             <ul class="sub-menu">
-                                <li><a href="ceo-govind-bavkar.php">CEO</a></li>
-								<li><a href="team.php">Teams</a></li>
+                                <li><a href="ceo-govind-bavkar">CEO</a></li>
+								<li><a href="team">Teams</a></li>
                             </ul>
                         </li>
 								<li class="menu-item-has-children">
-									<a href="services.php">Services</a>
+									<a href="services">Services</a>
 									<ul class="sub-menu">
                                     <?php $sql=mysqli_query($conn,"select * from servicelist");
                                     while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
+                                    <li><a href="website-designing?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
                                     <?php } ?>
 									</ul>
 								</li>
 								<li>
-									<a href="portfolio.php">Portfolio</a>
+									<a href="portfolio">Portfolio</a>
 								</li>								
 								<li>	
-									<a href="blog.php">Blog</a>
+									<a href="blog">Blog</a>
 								</li>
-								<li><a href="contact.php">Contact Us</a></li>
+								<li><a href="contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
