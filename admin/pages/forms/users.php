@@ -4,8 +4,8 @@ session_start();
 if(!isset($_SESSION['username'])){
  //header("location:../samples/login.php");
 }
-// $res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
-// $row=mysqli_fetch_array($res);
+$res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
+ $row=mysqli_fetch_array($res);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -33,13 +33,12 @@ if(isset($_POST['sub'])){
   //Server settings
   $mail->SMTPDebug = SMTP::DEBUG_SERVER; 
   $mail->isSMTP();                             
-  $mail->Host       = "smtp.gmail.com";    
-  $mail->SMTPAuth   = true;  
-  $mail->SMTPSecure = 'ssl';                         
+  $mail->Host       = 'smtp.gmail.com';    
+  $mail->SMTPAuth   = true;                           
   $mail->Username   = "naiduvedant@gmail.com";           
   $mail->Password   = '4E&7Zu%#!G984^#6FHZ*';                          
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-  $mail->Port       = 25;                            
+  $mail->Port       = 465;                            
 
   //Recipients
   $mail->setFrom("naiduvedant@gmail.com", 'Tectignis It Solution');
@@ -54,13 +53,13 @@ if(isset($_POST['sub'])){
   if($mail->send()){
     $passwordhash=password_hash($pass,PASSWORD_BCRYPT);
 
-    /*$sql=mysqli_query($conn,"INSERT INTO `userlogin`(`username`, `email`, `password`, `gender`, `role`,`status`) VALUES ('$name','$email_no','$passwordhash','$gender','$role','$status')");
+  $sql=mysqli_query($conn,"INSERT INTO `userlogin`(`username`, `email`, `password`, `gender`, `role`,`status`) VALUES ('$name','$email_no','$passwordhash','$gender','$role','$status')");
     if($sql=1){
       header("location:users.php");
     }
     else{
       echo "<script>alert('Something Wrong');</script>";
-    }*/
+    }
   
   }
   

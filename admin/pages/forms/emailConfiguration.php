@@ -7,11 +7,11 @@ if(!isset($_SESSION['username'])){
 if(isset($_POST['emailSettingSubmit'])){
     $protocol=$_POST['protocol'];
     $encryption=$_POST['encryption'];
-    $host=$_POST['host'];
+    $host=mysql_real_escape_string($conn,$_POST['host']);
     $port=$_POST['port'];
     $email=$_POST['email'];
     $username=$_POST['username'];
-    $password=$_POST['password'];
+    $password=mysql_real_escape_string($conn,$_POST['password']);
 
     $sql=mysqli_query($conn,"update email_configuration set protocol='$protocol',encryption='$encryption',host='$host',port='$port',email='$email',username='$username',password='$password'");
     if($sql){
