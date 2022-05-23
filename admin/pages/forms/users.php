@@ -38,7 +38,7 @@ if(isset($_POST['sub'])){
   $mail->Username   = "naiduvedant@gmail.com";           
   $mail->Password   = '4E&7Zu%#!G984^#6FHZ*';                          
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
-  $mail->Port       = 465;                            
+  $mail->Port       = 25;                            
 
   //Recipients
   $mail->setFrom("naiduvedant@gmail.com", 'Tectignis It Solution');
