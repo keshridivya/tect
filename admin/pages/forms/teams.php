@@ -6,10 +6,22 @@ if(isset($_POST['empadd'])){
   $file=$_FILES['empimage']['name'];    
   $empname=$_POST['empname'];
   $empdesignation=$_POST['empdesignation'];
+  $id=$_GET['id'];
+  if(empty($_FILES['empimage']['tmp_name']) && ($_POST['image_team']) && ($_GET['id'])){
+    $image=$_POST['image_team'];
+     $sql=mysqli_query($conn,"update `teams` SET `name`='$empname',`designation`='$empdesignation',`images`='$image' WHERE id='$id'");                               
+  }
+  else if(!empty($_FILES['empimage']['tmp_name']) && ($_POST['image_team']) || !empty($_FILES['empimage']['tmp_name']) && (empty($_POST['image_team']) && ($_GET['id']))){
+    $filedet=$_FILES['empimage']['tmp_name'];
+    $loc="../../images/employee/".$file;
+    move_uploaded_file($filedet,$loc);
+    $sql=mysqli_query($conn,"update `teams` SET `name`='$empname',`designation`='$empdesignation',`images`='$file' WHERE id='$id'");
+  }else{
+
   $filedet=$_FILES['empimage']['tmp_name'];
   $loc="../../images/employee/".$file;
   move_uploaded_file($filedet,$loc);
-  $sql=mysqli_query($conn,"insert into teams (name,designation,images) values('$empname','$empdesignation','$file')");
+  $sql=mysqli_query($conn,"insert into teams (name,designation,images) values('$empname','$empdesignation','$file')");}
   
   if($sql==1){
      header("location:teams.php");
@@ -25,7 +37,18 @@ if(isset($_GET['delid'])){
     header("location:teams.php");
   }
 }
-  
+
+$name1="";
+$designation="";
+$image="";
+if(isset($_GET['id'])){
+$sql=mysqli_query($conn,"select * from teams where id='$_GET[id]'");
+while($row=mysqli_fetch_array($sql)){
+  $name1=$row['name'];
+  $designation=$row['designation'];
+  $image=$row['images'];
+}
+}
 ?>
 
 <!DOCTYPE html>
@@ -68,13 +91,14 @@ if(isset($_GET['delid'])){
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Teams</h4>
+                  
                   <form class="form-sample" method="post" enctype="multipart/form-data">
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Employee Name</b></label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" name="empname">
+                            <input type="text" class="form-control" value="<?php echo $name1; ?>" name="empname">
                           </div>
                         </div>
                       </div>
@@ -84,7 +108,7 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Designation</b></label>
 							 <div class="col-sm-9">
-                      <input type="text" class="form-control" id="d" name="empdesignation">
+                      <input type="text" class="form-control" id="d" value="<?php echo $designation; ?>" name="empdesignation">
                           </div>
                         </div>
                       </div>
@@ -92,7 +116,13 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Photo</b></label>
                           <div class="col-sm-9">
-                            <input type="file" class="form-control" name="empimage">
+                            <?php
+                            if(isset($_GET['id'])){
+                              ?>
+                              <img src="../../images/employee/<?php echo $image; ?>" width="100px" height="100px">
+                              <input type="hidden" value="<?php echo $image; ?>" name="image_team">
+                              <?php } ?>
+                            <input type="file" class="form-control"  name="empimage">
                           </div>
                         </div>
                       </div>
@@ -143,7 +173,7 @@ if (mysqli_num_rows($doctors)>0){
                           <td>
                             
                             
-                        <a class="btn btn-primary btn-rounded btn-icon" href="team_delete.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-border-color"></i>
+                        <a class="btn btn-primary btn-rounded btn-icon" href="teams.php?id=<?php echo $row["id"]; ?>"><i class="mdi mdi-border-color"></i>
 </a>                    
 
 <a class="btn btn-danger btn-rounded btn-icon" href="teams.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">

@@ -6,10 +6,25 @@ if(isset($_POST['festival_add'])){
   $festival_name=$_POST['festival_name'];
   $from_date=$_POST['from_date'];
   $end_date=$_POST['end_date'];
+  $from_date1=$_POST['from_date1'];
+  $end_date1=$_POST['end_date1'];
+  $id=$_GET['eid'];
+  if(empty(($_FILES['festival_image']['tmp_name'])) && ($_POST['old_image']) && ($_GET['eid'])){
+    $image=$_POST['old_image'];
+    $sql=mysqli_query($conn,"update `festival_offer` SET `festival_name`='$festival_name',`from_date`='$from_date1',`end_date`='$end_date1',`festival_image`='$image' WHERE id='$id'");
+  } 
+  else if(!empty($_FILES['festival_image']['tmp_name']) && ($_POST['old_image']) || !empty($_FILES['festival_image']['tmp_name']) && (empty($_POST['old_image']) && ($_GET['eid']))){
+    $filedet=$_FILES['festival_image']['tmp_name'];
+    $loc="../../images/festival/".$file;
+    move_uploaded_file($filedet,$loc);
+    $sql=mysqli_query($conn,"update `festival_offer` SET `festival_name`='$festival_name',`from_date`='$from_date',`end_date`='$end_date',`festival_image`='$file' WHERE id='$id'");
+  } 
+  else{
+
   $filedet=$_FILES['festival_image']['tmp_name'];
   $loc="../../images/festival/".$file;
   move_uploaded_file($filedet,$loc);
-  $sql=mysqli_query($conn,"insert into festival_offer (festival_name,from_date,end_date,festival_image) values('$festival_name','$from_date','$end_date','$file')");
+  $sql=mysqli_query($conn,"insert into festival_offer (festival_name,from_date,end_date,festival_image) values('$festival_name','$from_date','$end_date','$file')"); }
   
   if($sql==1){
      header("location:festival.php");
@@ -25,7 +40,19 @@ if(isset($_GET['delid'])){
     header("location:festival.php");
   }
 }
-  
+ 
+$festival_name="";
+$from_date="";
+$end_date="";
+$image="";
+if(isset($_GET['eid'])){
+  $sql=mysqli_query($conn,"select * from festival_offer where id='$_GET[eid]'");
+  $row=mysqli_fetch_array($sql);
+  $festival_name=$row['festival_name'];
+  $from_date=$row['from_date'];
+  $end_date=$row['end_date'];
+  $image=$row['festival_image'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +103,7 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Name</b></label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control"name="festival_name">
+                            <input type="text" class="form-control" value="<?php echo $festival_name; ?>" name="festival_name">
                           </div>
                         </div>
                       </div>
@@ -86,7 +113,10 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>From Date&Time</b></label>
 							 <div class="col-sm-9">
-                      <input type="datetime-local" class="form-control" id=""name="from_date">
+                      <input type="datetime-local" <?php if(isset($_GET['eid'])){?>style="display:none;"<?php } ?> class="form-control"  name="from_date">
+                      <?php if(isset($_GET['eid'])){?>
+                        <input type="text" class="form-control" value="<?php echo $from_date; ?>" name="from_date1">
+                        <?php } ?>
                           </div>
                         </div>
                       </div>
@@ -94,7 +124,10 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>To Date&Time</b></label>
 							 <div class="col-sm-9">
-                      <input type="datetime-local" class="form-control" id="" name="end_date">
+                      <input type="datetime-local" class="form-control" <?php if(isset($_GET['eid'])){?>style="display:none;"<?php } ?> id="" value="<?php echo $end_date; ?>" name="end_date">
+                      <?php if(isset($_GET['eid'])){?>
+                        <input type="text" class="form-control" value="<?php echo $end_date; ?>" name="end_date1">
+                        <?php } ?>
                           </div>
                         </div>
                       </div>
@@ -102,6 +135,10 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Photo</b></label>
                           <div class="col-sm-9">
+                          <?php if(isset($_GET['eid'])){?>
+                            <img src="../../images/festival/<?php echo $image; ?>" width="100px" height="100px">
+                            <input type="hidden" name="old_image" value="<?php echo $image; ?>">
+                            <?php } ?>
                             <input type="file" class="form-control" name="festival_image">
                           </div>
                         </div>
@@ -152,8 +189,7 @@ if (mysqli_num_rows($doctors)>0){
                           <td><?php echo $row["end_date"]; ?></td>
                           <td><img src="../../images/festival/<?php echo $row["festival_image"]; ?>"></td>
 						  <td>
-                            <button type="button" class="btn btn-primary btn-rounded btn-icon">
-                        <i class="mdi mdi-delete"></i></button>                     
+              <a class="btn btn-primary btn-rounded btn-icon" href="festival.php?eid=<?php echo $row['id']; ?>" title="Edit Blog"><i class="mdi mdi-border-color"></i></a>                   
                      
 <a class="btn btn-danger btn-rounded btn-icon" href="festival.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">
                           <i class="mdi mdi-delete"></i>

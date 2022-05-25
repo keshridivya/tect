@@ -13,7 +13,6 @@ if(isset($_POST['portfolio_add'])){
     $dnk = $_POST['portImage'];
     
     $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`link`='$website_link',`image`='$dnk ' WHERE id='$id'");    
-    echo "<script>alert('$dnk')</script>";
     }
    
   else if(!empty($_FILES['portfolio_image']['tmp_name']) && ($_POST['portImage']) || !empty($_FILES['portfolio_image']['tmp_name']) && (empty($_POST['portImage']) && ($_GET['eid']))){

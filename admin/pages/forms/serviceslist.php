@@ -60,13 +60,13 @@ if(isset($_GET['delid'])){
   }
 }
 
-$name='';
+$name1='';
 $description='';
  if(isset($_GET['id'])){
     $id=$_GET['id'];
     $sqls = mysqli_query($conn,"SELECT * FROM service WHERE id ='$id'");
     $arr = mysqli_fetch_assoc($sqls);
-    $name=$arr['name'];
+    $name1=$arr['name'];
     $description=$arr['desrciption'];
  }
 ?>
@@ -115,7 +115,7 @@ $description='';
 <div class="form-group row">
 <label class="col-sm-3 col-form-label"><b>Service Name</b></label>
 <div class="col-sm-9">
-<input type="text" class="form-control" value="<?php echo $name; ?>" name="empname" required>
+<input type="text" class="form-control" value="<?php echo $name1 ?>" name="empname" required>
 </div>
 </div>
 <div class="form-group row">

@@ -276,20 +276,35 @@ Submit
 <thead>
 <tr>
 <th>Sr.No</th>
-<th>Name</th>
-<th>From date&time</th>
-<th>To date&time</th>
-<th>Photo</th>
+<th>Title</th>
+<th>Location</th>
+<th>Job Type</th>
+<th>Salary</th>
+<th>Education</th>
+<th>Lang</th>
+<th>Logo</th>
+<th>Description</th>
 <th>Action</th>
+
 </tr>
 </thead>
+<?php
+$sql=mysqli_query($conn,"select * from career");
+$dnk=1;
+while($row=mysqli_fetch_array($sql))
+{
+?>
 <tbody>
 <tr class="table">
 <td>1</td>
-<td>Photoshop</td>
-<td>$ 77.99</td>
-<td>May 15, 2015</td>
-<td>Photoshop</td>
+<td><?php echo $row['title']; ?></td> 
+<td><?php echo $row['location']; ?></td>
+<td><?php echo $row['job_type']; ?></td>
+<td><?php echo $row['salary']; ?></td>
+<td><?php echo $row['education']; ?></td>
+<td><?php echo $row['lang']; ?></td>
+<td><?php echo $row['logo']; ?></td>
+<td><?php echo $row['description']; ?></td>
 <td>
 <button type="button" class="btn btn-primary btn-rounded btn-icon">
 <i class="mdi mdi-delete"></i></button>
@@ -299,6 +314,7 @@ Submit
 </td>
 </tr>
 </tbody>
+<?php $dnk++; }?>
 </table>
 </div>
 </div>

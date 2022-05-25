@@ -60,13 +60,13 @@ if(isset($_POST['but_upload'])){
       header("location:videos.php");
     }
   }
-  $name='';
+  $name1='';
 $location='';
  if(isset($_GET['id'])){
     $id=$_GET['id'];
     $sql = mysqli_query($conn,"select * from video WHERE id ='$id'");
     $arr = mysqli_fetch_assoc($sql);
-    $name=$arr['title'];
+    $name1=$arr['title'];
     $location=$arr['location'];
  }
  ?>
@@ -118,7 +118,7 @@ $location='';
 <div class="form-group row">
 <label class="col-sm-3 col-form-label"><b>Title</b></label>
 <div class="col-sm-9">
-<input type="text" class="form-control" value="<?php echo $name; ?>" name="title">
+<input type="text" class="form-control" value="<?php echo $name1; ?>" name="title">
 </div>
 </div>
 </div>
