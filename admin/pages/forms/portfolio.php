@@ -12,13 +12,15 @@ if(isset($_POST['portfolio_add'])){
     $id=$_GET['eid'];
     $dnk = $_POST['portImage'];
     
-    $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`website_link`='$website_link',`image`='$dnk ' WHERE id='$id'");    
+    $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`link`='$website_link',`image`='$dnk ' WHERE id='$id'");    
+    echo "<script>alert('$dnk')</script>";
     }
+   
   else if(!empty($_FILES['portfolio_image']['tmp_name']) && ($_POST['portImage']) || !empty($_FILES['portfolio_image']['tmp_name']) && (empty($_POST['portImage']) && ($_GET['eid']))){
     $id=$_GET['eid'];
     $loc="../../images/portfolio/".$file;
     move_uploaded_file($filedet,$loc);
-    $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`website_link`='$website_link',`image`='$file' WHERE id='$id'");
+    $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`link`='$website_link',`image`='$file' WHERE id='$id'");
   }else{
 
   $loc="../../images/portfolio/".$file;
