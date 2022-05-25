@@ -1,9 +1,7 @@
 <?php
 include("../../include/configure.php");
 session_start();
-if(!isset($_SESSION['username'])){
- //header("location:../samples/login.php");
-}
+
 $res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
  $row=mysqli_fetch_array($res);
 
