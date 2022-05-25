@@ -8,13 +8,13 @@ if(isset($_POST['portfolio_add'])){
   $filedet=$_FILES['portfolio_image']['tmp_name'];
   $id=$_GET['eid'];
 
-  if(empty(($_FILES['portfolio_image']['tmp_name'])) && ($_POST['image_name']) && ($_GET['eid'])){
+  if(empty(($_FILES['portfolio_image']['tmp_name'])) && ($_POST['portImage']) && ($_GET['eid'])){
     $id=$_GET['eid'];
-    $dnk = $_POST['image_name'];
+    $dnk = $_POST['portImage'];
     
     $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`website_link`='$website_link',`image`='$dnk ' WHERE id='$id'");    
     }
-  else if(!empty($_FILES['portfolio_image']['tmp_name']) && ($_POST['image_name']) || !empty($_FILES['portfolio_image']['tmp_name']) && (empty($_POST['image_name']) && ($_GET['eid']))){
+  else if(!empty($_FILES['portfolio_image']['tmp_name']) && ($_POST['portImage']) || !empty($_FILES['portfolio_image']['tmp_name']) && (empty($_POST['portImage']) && ($_GET['eid']))){
     $id=$_GET['eid'];
     $loc="../../images/portfolio/".$file;
     move_uploaded_file($filedet,$loc);
