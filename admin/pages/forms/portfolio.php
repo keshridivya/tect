@@ -6,9 +6,23 @@ if(isset($_POST['portfolio_add'])){
   $company_name=$_POST['company_name'];
   $website_link=$_POST['website_link'];
   $filedet=$_FILES['portfolio_image']['tmp_name'];
+  $id=$_GET['eid'];
+
+  if(empty(($_FILES['portfolio_image']['tmp_name'])) && ($_POST['image_name']) && ($_GET['eid'])){
+    $id=$_GET['eid'];
+    $dnk = $_POST['image_name'];
+    
+    $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`website_link`='$website_link',`image`='$dnk ' WHERE id='$id'");    
+    }
+  else if(!empty($_FILES['portfolio_image']['tmp_name']) && ($_POST['image_name']) || !empty($_FILES['portfolio_image']['tmp_name']) && (empty($_POST['image_name']) && ($_GET['eid']))){
+    $loc="../../images/portfolio/".$file;
+    move_uploaded_file($filedet,$loc);
+    $sql=mysqli_query($conn,"update `portfolio` SET `company_name`='$company_name',`website_link`='$website_link',`image`='$file' WHERE id='$id'");
+  }else{
+
   $loc="../../images/portfolio/".$file;
   move_uploaded_file($filedet,$loc);
-  $sql=mysqli_query($conn,"insert into portfolio (company_name,link,image) values('$company_name','$website_link','$file')");
+  $sql=mysqli_query($conn,"insert into portfolio (company_name,link,image) values('$company_name','$website_link','$file')");}
   
   if($sql==1){
      header("location:portfolio.php");
@@ -17,12 +31,24 @@ if(isset($_POST['portfolio_add'])){
   }
 
 }
+
 if(isset($_GET['delid'])){
   $id=mysqli_real_escape_string($conn,$_GET['delid']);
   $sql=mysqli_query($conn,"delete from portfolio where id='$id'");
   if($sql=1){
     header("location:portfolio.php");
   }
+}
+
+$company_name="";
+$website_link="";
+$image="";
+if(isset($_GET['eid'])){
+  $sql=mysqli_query($conn,"select * from portfolio where id='$_GET[eid]'");
+  $row=mysqli_fetch_array($sql);
+  $company_name=$row['company_name'];
+  $website_link=$row['link'];
+  $image=$row['image'];
 }
   
 ?>
@@ -72,19 +98,25 @@ if(isset($_GET['delid'])){
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Company Name</b></label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" name="company_name">
+                            <input type="text" class="form-control" value="<?php echo $company_name; ?>" name="company_name">
                           </div>
                         </div>
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Website link</b></label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control"name="website_link">
+                            <input type="text" class="form-control" value="<?php echo $website_link; ?>" name="website_link">
                           </div>
                         </div>                 
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label"><b>Upload Image</b></label>
                           <div class="col-sm-9">
-                            <input type="file" class="form-control"name="portfolio_image">
+                            <?php
+                            if(isset($_GET['eid'])){
+                              ?>
+                              <img src="../../images/portfolio/<?php echo $image; ?>" width="100" height="100">
+                              <input type="hidden" value="<?php echo $image; ?>" name="portImage">
+                            <?php }  ?>
+                            <input type="file" class="form-control"  name="portfolio_image">
                           </div>
                         </div>
                       </div>
@@ -130,8 +162,7 @@ if (mysqli_num_rows($portfolio)>0){
                           <td><?php echo $row["link"]; ?></td>
                           <td><img src="../../images/portfolio/<?php echo $row["image"]; ?>"></td>
 						  <td>                   
-                            <button type="button" class="btn btn-primary btn-rounded btn-icon">
-                        <i class="mdi mdi-border-color"></i></button> 
+              <a class="btn btn-primary btn-rounded btn-icon" href="portfolio.php?eid=<?php echo $row['id']; ?>" title="Edit Blog"><i class="mdi mdi-border-color"></i></a>
                             
 <a class="btn btn-danger btn-rounded btn-icon" href="portfolio.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">
                           <i class="mdi mdi-delete"></i>								

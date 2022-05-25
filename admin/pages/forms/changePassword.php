@@ -84,7 +84,7 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
           <div class="row">
             <div class="col-12 grid-margin">
               <div class="card mt-5">
-              <div class="col-lg-12 mx-auto">
+              <!-- <div class="col-lg-12 mx-auto"> -->
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <!-- <div class="brand-logo">
                 <img src="../../images/logo.svg" alt="logo">
@@ -107,7 +107,6 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
                 </div>
                 <?php } ?>
                 
-                </div>
                 <div class="mt-3 mb-3 text-center">
                   <input type="submit" name="login" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"value="Change">
                 </div>
@@ -115,17 +114,17 @@ if(isset($_POST['login']) && !empty($_POST['login'])){
               </form>
             </div>
           </div>
-        </div>
                       </div>
               </div>
             </div>
+            <?php include("footer.ioc.php") ?>
           </div>
-        </div>
+          
+          
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
 
-
-          <?php include("footer.ioc.php") ?>
+       
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
