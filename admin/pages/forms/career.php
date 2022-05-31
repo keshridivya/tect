@@ -1,29 +1,7 @@
 <?php session_start();
 include("../../include/configure.php");
-if(isset($_POST['sub'])){
-    $description=$_POST['description'];
-    $salary=$_POST['salary'];
-    $title = $_POST['title'] ;
-    $location = $_POST['location'] ;
-    $checkbox1 = $_POST['chkl'] ;
-    $course = $_POST['course'] ;
-    $language = $_POST['language'] ;
-    $time = $_POST['time'] ;
-    $image=$_FILES['file']['name'];
-    foreach($checkbox1 as $chk1){$chk .= $chk1.",";}
-    foreach($course as $chkl1){$chkl .= $chkl1.",";}
-    foreach($language as $chk3){$chk3 .= $chk3.",";}
 
-    $filedet=$_FILES['file']['tmp_name'];
-    $loc="../../images/career_logo/".$image;
-    move_uploaded_file($filedet,$loc);
-    
-    $sql="INSERT INTO `career`(`logo`,`title`,`location`, `description`, `job_type`, `salary`, `education`, `lang`, `time`) VALUES ('$image','$title','$location','$description','$chk','$salary','$chkl','$chk3','$time')";
-    $qry=mysqli_query($conn,$sql);
-    if($qry){
-        header("location:career.php");
-    }
-    }
+    include("edit_career.php"); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -68,19 +46,24 @@ if(isset($_POST['sub'])){
 <div class="form-group row">
 <label class="col-sm-3 col-form-label">Logo</label>
 <div class="col-sm-9">
+  <?php
+  if(isset($_GET['eid'])){ ?>  
+    <img src="../../images/career_logo/<?php echo $logo; ?>" width="100px" height="100px">
+    <input type="hidden" name="logo" value="<?php echo $logo; ?>">
+<?php } ?>
 <input type="file" class="form-control" name="file">
 </div>
 </div>
 <div class="form-group row">
 <label class="col-sm-3 col-form-label">Location</label>
 <div class="col-sm-9">
-<input type="text" class="form-control" name="location">
+<input type="text" class="form-control" value="<?php echo $location; ?>" name="location">
 </div>
 </div>
 <div class="form-group row">
 <label class="col-sm-3 col-form-label">Job Title</label>
 <div class="col-sm-9">
-<input type="text" class="form-control" name="title">
+<input type="text" class="form-control" value="<?php echo $title; ?>" name="title">
 </div>
 </div>
 </div>
@@ -88,7 +71,7 @@ if(isset($_POST['sub'])){
 <div class="form-group row">
 <label class="col-sm-3 col-form-label">Job Description</label>
 <div class="col-sm-9">
-<textarea class="form-control" rows="3" name="description"></textarea>
+<textarea class="form-control" rows="3" name="description" ><?php echo $description;?></textarea>
 </div>
 </div>
 <div class="form-group row">
@@ -96,7 +79,7 @@ if(isset($_POST['sub'])){
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="full time" name="chkl[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="full time" name="chkl[ ]"  <?php if(isset($_GET['eid'])){if(in_array("full time",$job_type)) echo 'checked="checked"'; }?> >
 Full time
 </label>
 </div>
@@ -104,7 +87,7 @@ Full time
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="part time" name="chkl[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="part time" name="chkl[ ]"  <?php if(isset($_GET['eid'])){if(in_array("part time",$job_type)) echo 'checked="checked"'; }?> >
 Part time
  </label>
 </div>
@@ -113,7 +96,7 @@ Part time
 <div class="form-group row">
 <label class="col-sm-3 col-form-label">Salary</label>
 <div class="col-sm-9">
-<input type="text" class="form-control" name="salary">
+<input type="text" class="form-control" name="salary" value="<?php echo $location; ?>">
 </div>
 </div>
 <div class="form-group row">
@@ -121,7 +104,7 @@ Part time
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="ssc" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="ssc" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("ssc",$education)) echo 'checked="checked"'; }?>>
 SSC
 </label>
 </div>
@@ -129,7 +112,7 @@ SSC
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="hsc" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="hsc" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("hsc",$education)) echo 'checked="checked"'; }?>>
 HSC
 </label>
 </div>
@@ -137,7 +120,7 @@ HSC
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="gradute" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="gradute" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("gradute",$education)) echo 'checked="checked"'; }?>>
 Graduate
 </label>
 </div>
@@ -145,7 +128,7 @@ Graduate
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="under graduate" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="under graduate" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("under graduate",$education)) echo 'checked="checked"'; }?>>
 Under Graduate
 </label>
 </div>
@@ -153,7 +136,7 @@ Under Graduate
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="bsc.it/cs" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="bsc.it/cs" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("bsc.it/cs",$education)) echo 'checked="checked"'; }?>>
 BSC.IT/CS
 </label>
 </div>
@@ -161,7 +144,7 @@ BSC.IT/CS
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="bca" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="bca" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("bca",$education)) echo 'checked="checked"'; }?>>
 BCA
 </label>
 </div>
@@ -170,7 +153,7 @@ BCA
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="b.com/bms/bbf" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="b.com/bms/bbf" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("b.com/bms/bbf",$education)) echo 'checked="checked"'; }?>>
 B.COM/BMS/BBF
 </label>
 </div>
@@ -178,7 +161,7 @@ B.COM/BMS/BBF
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="msc.it/cs" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="msc.it/cs" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("msc.it/cs",$education)) echo 'checked="checked"'; }?>>
 MSC.IT/CS
 </label>
 </div>
@@ -186,7 +169,7 @@ MSC.IT/CS
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="m.com" name="course[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="m.com" name="course[ ]"  <?php if(isset($_GET['eid'])){if(in_array("m.com",$education)) echo 'checked="checked"'; }?>>
 M.COM
 </label>
 </div>
@@ -197,7 +180,7 @@ M.COM
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="html" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="html" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("html",$lang)) echo 'checked="checked"'; }?>>
 HTML
 </label>
 </div>
@@ -205,7 +188,7 @@ HTML
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="c" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="c" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("c",$lang)) echo 'checked="checked"'; }?>>
 C
 </label>
 </div>
@@ -213,7 +196,7 @@ C
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="c++" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="c++" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("c++",$lang)) echo 'checked="checked"'; }?>>
 C++
 </label>
 </div>
@@ -221,7 +204,7 @@ C++
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="phython" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="phython" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("phython",$lang)) echo 'checked="checked"'; }?>>
 PYTHON
 </label>
 </div>
@@ -229,7 +212,7 @@ PYTHON
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="java" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="java" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("java",$lang)) echo 'checked="checked"'; }?>>
 JAVA
 </label>
 </div>
@@ -237,7 +220,7 @@ JAVA
 <div class="col-sm-2">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="adv.java" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="adv.java" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("adv.java",$lang)) echo 'checked="checked"'; }?>>
 Adv.JAVA
 </label>
 </div>
@@ -245,7 +228,7 @@ Adv.JAVA
 <div class="col-sm-1">
 <div class="form-check form-check-primary">
 <label class="form-check-label">
-<input type="checkbox" class="form-check-input" value="sql" name="language[ ]" unchecked>
+<input type="checkbox" class="form-check-input" value="sql" name="language[ ]" <?php if(isset($_GET['eid'])){if(in_array("sql+",$lang)) echo 'checked="checked"'; }?>>
 Sql
 </label>
 </div>
@@ -254,7 +237,10 @@ Sql
 <div class="form-group row">
 <label class="col-sm-3 col-form-label">Timing</label>
 <div class="col-sm-9">
-<input type="time" name="time" class="form-control">
+<input type="time" name="time" <?php if(isset($_GET['eid'])){ ?> style="display:none" <?php } ?>class="form-control">
+<?php if(isset($_GET['eid'])){ ?>
+<input type="text" name="editime" value="<?php echo $time; ?>" class="form-control">
+<?php } ?>
 </div>
 </div>
 </div>
@@ -296,21 +282,19 @@ while($row=mysqli_fetch_array($sql))
 ?>
 <tbody>
 <tr class="table">
-<td>1</td>
+<td><?php echo $dnk; ?></td>
 <td><?php echo $row['title']; ?></td> 
 <td><?php echo $row['location']; ?></td>
 <td><?php echo $row['job_type']; ?></td>
 <td><?php echo $row['salary']; ?></td>
 <td><?php echo $row['education']; ?></td>
 <td><?php echo $row['lang']; ?></td>
-<td><?php echo $row['logo']; ?></td>
+<td><img src="../../images/career_logo/<?php echo $row['logo']; ?>"></td>
 <td><?php echo $row['description']; ?></td>
 <td>
-<button type="button" class="btn btn-primary btn-rounded btn-icon">
-<i class="mdi mdi-delete"></i></button>
-<button type="button" class="btn btn-primary btn-rounded btn-icon">
-<i class="mdi mdi-border-color"></i>
-</button>
+<a class="btn btn-primary btn-rounded btn-icon" href="career.php?eid=<?php echo $row['id']; ?>" title="Edit Blog"><i class="mdi mdi-border-color"></i></a>                   
+<a class="btn btn-danger btn-rounded btn-icon" href="career.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">
+<i class="mdi mdi-delete"></i></a>
 </td>
 </tr>
 </tbody>
