@@ -69,15 +69,32 @@ if(isset($_GET['eid'])){
   <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
   <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="../../vendors/select2/select2.min.css">
-  <link rel="stylesheet" href="../../vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
-  <!-- End plugin css for this page -->
+
   <!-- inject:css -->
   <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+  <style>
+    .hoverTitles{
+      color: black;
+      cursor: pointer;
+      font-weight: 500;
+      /* font-size: small; */
+
+    }
+    .active1{
+      cursor: pointer;
+      font-weight: 500;
+    }
+      .hoverTitles:hover{
+      color: #007bff !important;
+    }
+    a{
+      text-decoration:none;
+    }
+  </style>
 </head>
 
 <body>
@@ -89,12 +106,57 @@ if(isset($_GET['eid'])){
       <!-- partial -->
       <div class="main-panel">        
         <div class="content-wrapper">
+           <!-- Info boxes -->
+           <div class="row">
+
+            <div class="col-4 ">
+            <div class="card-body grid-margin ">
+              <a href="Portfolio.php">
+              <div class="d-flex flex-row align-items-start active1">
+                  <i class=" pt-1 mt-1 pr-2 mr-2 fa-lg	fas fa-digital-tachograph"></i>
+                  <div class="ms-3">
+                      <h5 class="pb-0 mb-0" style="line-height:1;">Digital Marketing</h5>
+                        <small class="text-muted small pt-0 mt-0">Add/Edit Digital Marketing Portfolio</small>
+                  </div>
+              </div>
+            </a>
+            </div>
+
+           </div>
+           <div class="col-4">
+             <div class="card-body">
+                  <a href="Portfolio_web.php">
+               <div class="d-flex flex-row align-items-start hoverTitles">
+                  <i class="pt-1 mt-1 pr-2 mr-2 fa-lg 	fas fa-laptop-code"></i>
+                  <div class="ms-3">
+                      <h5 class="pb-0 mb-0" style="line-height:1;">Web Development</h5>
+                        <small class="text-muted small pt-0 mt-0">Add/Edit Web Development Portfolio</small>
+                  </div>
+              </div>
+              </a>
+            </div>
+           </div>
+           <div class="col-4">
+              <div class="card-body">
+                <a href="Portfolio_app.php">
+                <div class="d-flex flex-row align-items-start hoverTitles">
+                  <i class="pt-1 mt-1 pr-2 mr-2 fa-lg 	fas fa-mobile-alt"></i>
+                  <div class="ms-3">
+                      <h5 class="pb-0 mb-0" style="line-height:1;">App Development</h5>
+                        <small class="text-muted small pt-0 mt-0">Add/Edit App Development Portfolio</small>
+                  </div>
+               </div>
+               </a>
+             </div>
+           </div>
+         </div>
+   
           <div class="row">
             <div class="col-12 grid-margin">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Portfolio</h4>
-<form class="form-sample" method="post" enctype="multipart/form-data">
+                 <form class="form-sample" method="post" enctype="multipart/form-data">
                   <div class="row">
                       <div class="col-md-12">
                         <div class="form-group row">

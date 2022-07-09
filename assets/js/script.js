@@ -1,8 +1,5 @@
 (function($){
 	'use script';
-	$(window).on('load', function(event) {
-        $('#preloader').delay(500).fadeOut(500);
-    });
 	// WOW JS
 	new WOW().init();
 	// Scroll Area
