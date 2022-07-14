@@ -63,7 +63,46 @@ session_start();
 				</div>
 			</div>
 			<!-- Single -->
-		
+			<div class='row'>
+			<?php $sql=mysqli_query($conn,"select * from service");
+			
+			while($arr=mysqli_fetch_assoc($sql)){ 
+			$count=mysqli_num_rows($sql);
+			$id=$arr['id'];
+echo "<div class='col-lg-4 col-sm-6 mb-30'>";
+							if($id%2 != 0) {
+								echo "
+								
+								<a href=". $arr['desrciption']."><div class='info-box-s1'>
+								<div class='icon'>
+							<img src='admin/images/employee/". $arr['image']."' alt='code'>
+						</div>
+						<div class='content'>
+							<h4 class='text-gradient'>".$arr['name']."</h4>
+						</div>
+					</div></a>
+				";
+											}
+											else {
+												echo "
+							<a href=". $arr['desrciption']."><div class='info-box-s1 active'>
+								<div class='icon'>
+							<img src='admin/images/employee/". $arr['image']."' alt='code'>
+						</div>
+						<div class='content'>
+							<h4 class='text-gradient'>".$arr['name']."</h4>
+						</div>
+					</div></a>
+					
+				";
+											} 
+											echo "</div>";
+									}
+				?>
+			
+
+
+			</div>
 		</div>
 	</section>
 	<!-- End Services Area -->
