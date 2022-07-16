@@ -96,7 +96,7 @@ while($arr=mysqli_fetch_assoc($sql)){  ?>
 			<div class="row">
 				<div class="col-12">
 					<p><?php echo $arr['meta_long']; ?></p>
-					<p><?php echo $arr['meta_long2']; ?></p>
+					<!-- <p><?php echo $arr['meta_long2']; ?></p> -->
 				</div>
 			</div>
 		</div>
@@ -104,7 +104,6 @@ while($arr=mysqli_fetch_assoc($sql)){  ?>
 	<?php } }?>
 	<!-- End Services Area -->
 	<!-- Start Subscribe Area -->
-	<?php include("include/gatmail.php"); ?>
 	<!-- End Subscribe Area -->
 	<!-- Start Footer Area -->
 	<?php include("include/footer.php"); ?>

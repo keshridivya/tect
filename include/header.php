@@ -4,13 +4,7 @@
 
 </head>
 <body>
-<!-- Preloader -->
-<div id="preloader">
-    <div class="preloader">
-        <p><img src="assets/img/logo1.png"></p>
-       
-    </div>
-</div>
+
 <!-- Start Header Area -->
 <header class="header">
     <div class="container">
@@ -65,20 +59,20 @@
      </div>
 
                 <!-- Menu -->
-                <div class="menu">
+                <div class="menu cont">
                     <nav>
                         <ul>
-                            <li>
+                            <li class="menu1  menu-item">
                                 <a href="index">Home</a>
                             </li>
-                            <li class="menu-item-has-children">
+                            <li class="menu1  menu-item">
                                 <a href="about">About Us</a>
                             <ul>
                                 <li><a href="ceo-govind-bavkar">CEO</a></li>
                                 <li><a href="team">Teams</a></li>
                             </ul>
                             </li>
-                            <li class="menu-item-has-children">
+                            <li class="menu1 menu-item">
                                 <a href="services">Services</a>
                                 <ul>
                                     <?php $sql=mysqli_query($conn,"select * from servicelist");
@@ -87,13 +81,13 @@
                                     <?php } ?>
                                 </ul>
                             </li>
-                            <li>
+                            <li class="menu1 menu-item">
                                 <a href="portfolio">Portfolio</a>
                             </li>								
-                            <li>
+                            <li class="menu1 menu-item">
                                 <a href="blog">Blog</a>
                             </li>								
-                            <li>
+                            <li class="menu1 menu-item">
                                 <a href="contact">Contact Us</a>
                             </li>
                         </ul>

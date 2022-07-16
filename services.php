@@ -58,7 +58,7 @@ session_start();
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="section-headding">
 						<h2>Our Awesome Services</h2>
-						<p>The powerful and flexible theme for all kinds of businesses</p>
+						<!-- <p>The powerful and flexible theme for all kinds of businesses</p> -->
 					</div>
 				</div>
 			</div>
@@ -73,28 +73,26 @@ echo "<div class='col-lg-4 col-sm-6 mb-30'>";
 							if($id%2 != 0) {
 								echo "
 								
-								<div class='info-box-s1'>
+								<a href=". $arr['desrciption']."><div class='info-box-s1'>
 								<div class='icon'>
 							<img src='admin/images/employee/". $arr['image']."' alt='code'>
 						</div>
 						<div class='content'>
-							<h4 class='text-gradient'><a href=''>".$arr['name']."</a></h4>
-							<p>". $arr['desrciption']." </p>
+							<h4 class='text-gradient'>".$arr['name']."</h4>
 						</div>
-					</div>
+					</div></a>
 				";
 											}
 											else {
 												echo "
-								<div class='info-box-s1 active'>
+							<a href=". $arr['desrciption']."><div class='info-box-s1 active'>
 								<div class='icon'>
 							<img src='admin/images/employee/". $arr['image']."' alt='code'>
 						</div>
 						<div class='content'>
-							<h4 class='text-gradient'><a href=''>".$arr['name']."</a></h4>
-							<p>". $arr['desrciption']." </p>
+							<h4 class='text-gradient'>".$arr['name']."</h4>
 						</div>
-					</div>
+					</div></a>
 					
 				";
 											} 

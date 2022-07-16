@@ -1,11 +1,7 @@
 <?php
 include("include/configure.php");
-$selectquery="select * from portfolio";
-$doctors = mysqli_query($conn,$selectquery);
-if (mysqli_num_rows($doctors)>0){
-	
-}
 ?> 
+
 <!DOCTYPE html>
 <html  class="no-js" lang="en">
 <head>
@@ -56,13 +52,20 @@ if (mysqli_num_rows($doctors)>0){
 			<div class="row">
 				<div class="portfolio-category mb-40 text-center">
 					<ul>
-						<li data-filter="all">All</li>
-						<li data-filter=".marketing">Marketing</li>
-						<li data-filter=".digital">Digital</li>
-						<li data-filter=".design">Design</li>
+						<!-- <li data-filter="all">All</li> -->
+						<li data-filter=".marketing" class="mixitup-control-active">Digital Marketing</li>
+						<li data-filter=".digital">App Development</li>
+						<li data-filter=".design">Web Development</li>
 					</ul>
 				</div>
-				<div class="row portfolio-full portF">
+				<div class="row portfolio-full portF" >
+				    <?php
+                       $selectquery="select * from portfolio";
+                       $doctors = mysqli_query($conn,$selectquery);
+                       if (mysqli_num_rows($doctors)>0){
+	
+                       }
+                    ?> 
 					<!-- Single -->
 					<?php
 											$i=0;
@@ -81,6 +84,62 @@ if (mysqli_num_rows($doctors)>0){
 						$i++;
 						}
 					?> 	
+
+<!-- App Development -->
+
+                    <?php
+                       $selectquery="select * from portfolio_app";
+                       $doctors = mysqli_query($conn,$selectquery);
+                       if (mysqli_num_rows($doctors)>0){
+	
+                       }
+                    ?> 
+					<?php
+											$i=0;
+											while($row = mysqli_fetch_array($doctors)) {
+											?>  
+				
+						<div class="col-lg-4 col-md-6 mb-30 mix digital" style="display:none !important;">
+					<a href="<?php echo $row["link"]; ?>" >
+						<div class="portfolio-item">
+							<div class="thumbnail">
+								<img src="admin/images/portfolio_app/<?php echo $row["image"]; ?>" alt="portfolio_app">
+							</div>
+						</div>
+						</a>
+					</div>
+					<?php
+						$i++;
+						}
+					?> 	
+<!-- Web Development -->
+
+
+                     <?php
+                       $selectquery="select * from portfolio_web";
+                       $doctors = mysqli_query($conn,$selectquery);
+                       if (mysqli_num_rows($doctors)>0){
+	
+                       }
+                    ?> 
+					<?php
+											$i=0;
+											while($row = mysqli_fetch_array($doctors)) {
+											?>  
+					<div class="col-lg-4 col-md-6 mb-30 mix design" style="display:none !important;">
+					<a href="<?php echo $row["link"]; ?>" >
+						<div class="portfolio-item">
+							<div class="thumbnail">
+								<img src="admin/images/portfolio_web/<?php echo $row["image"]; ?>" alt="portfolio_web">
+							</div>
+						</div>
+						</a>
+					</div>
+					<?php
+						$i++;
+						}
+					?> 	
+					
 				</div>
 			</div>
 			<div class="row">
@@ -92,7 +151,6 @@ if (mysqli_num_rows($doctors)>0){
 	</div>
 	<!-- End Services Area -->
 	<!-- Start Subscribe Area -->
-	<?php include("include/getmail.php") ?>
 	<!-- End Subscribe Area -->
 	<!-- Start Footer Area -->
 	<?php  include("include/footer.php") ?>
