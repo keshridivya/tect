@@ -60,7 +60,7 @@ session_start();
                             </ul>
                         </li>
 								<li class="menu-item-has-children">
-									<a href="services.html">Services</a>
+									<a href="services.php">Services</a>
 									<ul class="sub-menu">
 										<li><a href="service.html">Website Designing</a></li>
 										<li><a href="ecommerce-website-design-development.html">Ecommerce Website</a></li>
