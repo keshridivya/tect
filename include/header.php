@@ -75,15 +75,15 @@
                             <li class="menu1 menu-item">
                                 <a href="AllServices">Services</a>
                                 <ul>
-                                    <li><a href="services/Website-Designing" id="1">Website Designing</a></li>
-                                    <li><a href="services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
-                                    <li><a href="services/Software-Development" id="3">Software Development</a></li>
-                                    <li><a href="services/Mobile-App-Development" id="4">Mobile App Development</a></li>
-                                    <li><a href="services/Digital-Marketing" id="5">Digital Marketing</a></li>
-                                    <li><a href="services/Graphic-Designing" id="6">Graphic Designing</a></li>
-                                    <li><a href="services/Hardware-Networking" id="7">Hardware Networking</a></li>
-                                    <li><a href="services/CCTV-Camera" id="8">CCTV camera</a></li>
-                                    <li><a href="services/IT-Consulting" id="9">IT Consulting</a></li>
+                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
+                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
+                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
+                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
+                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
+                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
+                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
+                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
+                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
                                 </ul>
                             </li>
                             <li class="menu1 menu-item">
@@ -133,15 +133,15 @@
 								<li class="menu-item-has-children">
 									<a href="AllServices">Services</a>
 									<ul class="sub-menu">
-                                    <li><a href="services/Website-Designing" id="1">Website Designing</a></li>
-                                    <li><a href="services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
-                                    <li><a href="services/Software-Development" id="3">Software Development</a></li>
-                                    <li><a href="services/Mobile-App-Development" id="4">Mobile App Development</a></li>
-                                    <li><a href="services/Digital-Marketing" id="5">Digital Marketing</a></li>
-                                    <li><a href="services/Graphic-Designing" id="6">Graphic Designing</a></li>
-                                    <li><a href="services/Hardware-Networking" id="7">Hardware Networking</a></li>
-                                    <li><a href="services/CCTV-Camera" id="8">CCTV camera</a></li>
-                                    <li><a href="services/IT-Consulting" id="9">IT Consulting</a></li>
+                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
+                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
+                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
+                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
+                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
+                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
+                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
+                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
+                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
                                 </ul>
 								</li>
 								<li>
