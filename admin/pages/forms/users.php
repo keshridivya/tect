@@ -5,6 +5,7 @@ session_start();
 $res=mysqli_query($conn,"SELECT * FROM `email_configuration` ");
  $row=mysqli_fetch_array($res);
 
+ //4E&7Zu%#!G984^#6FHZ*
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
