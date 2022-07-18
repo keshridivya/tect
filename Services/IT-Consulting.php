@@ -32,7 +32,7 @@ session_start();
 <!--head and body in include file-->
 
 
-<?php include("include/header.1php"); ?>
+<?php include("include/header1.php"); ?>
 	
 
 	<!-- Start Breadcrumb Area -->

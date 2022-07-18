@@ -32,7 +32,7 @@ session_start();
 <!--head and body in include file-->
 
 
-<?php include("../include/header.php"); ?>
+<?php include("include/header1.php"); ?>
 	
 
 	<!-- Start Breadcrumb Area -->
@@ -105,7 +105,7 @@ session_start();
 	<!-- Start Subscribe Area -->
 	<!-- End Subscribe Area -->
 	<!-- Start Footer Area -->
-	<?php include("../include/footer.php"); ?>
+	<?php include("include/footer.php"); ?>
 
     <!-- Js File -->
     <script src="../assets/js/modernizr.min.js"></script>
