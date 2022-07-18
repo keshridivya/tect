@@ -77,7 +77,7 @@
                                 <ul>
                                     <?php $sql=mysqli_query($conn,"select * from servicelist");
                                     while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
+                                    <li><a href="service?name=<?php echo $arr['name'] ?>"><?php echo $arr['service_list'] ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </li>
@@ -130,7 +130,7 @@
 									<ul class="sub-menu">
                                     <?php $sql=mysqli_query($conn,"select * from servicelist");
                                     while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
+                                    <li><a href="service?name=<?php echo $arr['name'] ?>"><?php echo $arr['service_list'] ?></a></li>
                                     <?php } ?>
 									</ul>
 								</li>

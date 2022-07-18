@@ -30,7 +30,7 @@
 							<ul>
                                     <?php $sql=mysqli_query($conn,"select * from servicelist");
                                     while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing.php?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
+                                    <li><a href="service.php?name=<?php echo $arr['name'] ?>"><?php echo $arr['service_list'] ?></a></li>
                                     <?php } ?>
                                     <!--<li><a href="ecommerce-website-design-development.php">Ecommerce Website</a></li>
                                     <li><a href="software-development.php">Software Development</a></li>
