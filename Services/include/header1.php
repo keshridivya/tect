@@ -73,7 +73,7 @@
                             </ul>
                             </li>
                             <li class="menu1 menu-item">
-                                <a href="../services">Services</a>
+                                <a href="../AllServices">Services</a>
                                 <ul>
                                     <li><a href="Website-Designing" id="1">Website Designing</a></li>
                                     <li><a href="Ecommerce-Website" id="2">Ecommerce Website</a></li>
@@ -115,7 +115,7 @@
                 </div>
                 <div class="mobile-logo">
                     <a href="../index">
-                        <img src="assets/img/logo2.png" alt="logo" />
+                        <img src="../assets/img/logo2.png" alt="logo" />
                     </a>
                 </div>
                 <div id="menu" class="text-left">
@@ -124,14 +124,14 @@
 									<a href="../index">Home</a>
 								</li>
                         <li class="menu-item-has-children">
-                            <a href="about">About Us</a>
+                            <a href="../about">About Us</a>
                             <ul class="sub-menu">
                                 <li><a href="../ceo-govind-bavkar">CEO</a></li>
 								<li><a href="../team">Teams</a></li>
                             </ul>
                         </li>
 								<li class="menu-item-has-children">
-									<a href="../services">Services</a>
+									<a href="../AllServices">Services</a>
 									<ul class="sub-menu">
                                     <li><a href="Website-Designing" id="1">Website Designing</a></li>
                                     <li><a href="Ecommerce-Website" id="2">Ecommerce Website</a></li>
@@ -145,7 +145,7 @@
                                 </ul>
 								</li>
 								<li>
-									<a href="portfolio">Portfolio</a>
+									<a href="../portfolio">Portfolio</a>
 								</li>								
 								<li>	
 									<a href="../blog">Blog</a>

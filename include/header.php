@@ -131,7 +131,7 @@
                             </ul>
                         </li>
 								<li class="menu-item-has-children">
-									<a href="AllServices">Services</a>
+									<a href="AllServices.php">Services</a>
 									<ul class="sub-menu">
                                     <li><a href="services/Website-Designing" id="1">Website Designing</a></li>
                                     <li><a href="services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
