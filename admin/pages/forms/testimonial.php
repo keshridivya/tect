@@ -5,12 +5,13 @@ if(isset($_POST['tadd'])){
   $file=$_FILES['timage']['name'];    
   $tname=$_POST['tname'];
   $tcompany=$_POST['tcompany'];
+  $stars = $_POST['stars'];
   $tdiscription=mysqli_real_escape_string($conn,$_POST['tdisc']);
   if(empty(($_FILES['timage']['tmp_name'])) && ($_POST['image_name']) && ($_GET['id'])){
     $id=$_GET['id'];
     $ba_image = $_POST['image_name'];
     
-    $sql=mysqli_query($conn,"UPDATE `testimonial` SET `name`='$tname',`company`='$tcompany',`image`='$ba_image',`discription`='$tdiscription' WHERE id='$id'");
+    $sql=mysqli_query($conn,"UPDATE `testimonial` SET `name`='$tname',`company`='$tcompany',`image`='$ba_image',`discription`='$tdiscription',`stars`='$stars' WHERE id='$id'");
         if($sql=1){
             header("location:testimonial.php");
         }else{
@@ -26,7 +27,7 @@ else if(!empty($_FILES['timage']['tmp_name']) && ($_POST['image_name']) || !empt
   move_uploaded_file($filedet,$loc);
   $id=$_GET['id'];
 
-  $sql=mysqli_query($conn,"UPDATE `testimonial` SET `name`='$tname',`company`='$tcompany',`image`='$file ',`discription`='$tdiscription' WHERE id='$id'");
+  $sql=mysqli_query($conn,"UPDATE `testimonial` SET `name`='$tname',`company`='$tcompany',`image`='$file ',`discription`='$tdiscription' ,`stars`='$stars' WHERE id='$id'");
   
   if($sql==1){
      header("location:testimonial.php");
@@ -38,7 +39,7 @@ else if(!empty($_FILES['timage']['tmp_name']) && ($_POST['image_name']) || !empt
   $filedet=$_FILES['timage']['tmp_name'];
   $loc="../../images/testimonial/".$file;
   move_uploaded_file($filedet,$loc);
-  $sql=mysqli_query($conn,"insert into testimonial (name,company,image,discription) values('$tname','$tcompany','$file','$tdiscription')");
+  $sql=mysqli_query($conn,"insert into testimonial (name,company,image,discription,stars) values('$tname','$tcompany','$file','$tdiscription','$stars')");
   if($sql==1){
      header("location:testimonial.php");
   }else{
@@ -64,6 +65,7 @@ $image='';
     $arr = mysqli_fetch_assoc($sqls);
     $name=$arr['name'];
     $description=$arr['discription'];
+    $stars = $arr['stars'];
     $company=$arr['company'];
     $image=$arr['image'];
  }
@@ -123,7 +125,7 @@ $image='';
                             <input type="hidden" name="image_name" value="<?=$arr["image"];?>" />
                             <?php } ?>
                           </div>
-                        </div>
+                        </div>  
                       </div>
                       <div class="col-md-12">
                         <div class="form-group row">
@@ -145,9 +147,27 @@ $image='';
                     <div class="row">
                       <div class="col-md-12">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label"><b>Description</b></label>
-							 <div class="col-sm-9">
+                            <label class="col-sm-3 col-form-label"><b>Description</b></label>
+						          	 <div class="col-sm-9">
                       <input type="text" class="form-control" id="" value="<?php echo $description; ?>" name="tdisc">
+                           </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group row">
+                          <label class="col-sm-3 col-form-label"><b>Ratings</b></label>
+						      	 <div class="col-sm-9">
+                     <select class="form-select" name="stars" id="exampleFormControlSelect1" required>
+                                <option><b>Select Star</b></option>
+                               <option value="1">1Star</option>
+                               <option value="2">2Star</option>
+                               <option value="3">3Star</option>
+                               <option value="4">4Star</option>
+                               <option value="5">5Star</option>
+                             </select>
                           </div>
                         </div>
                       </div>
@@ -181,9 +201,11 @@ if (mysqli_num_rows($doctors)>0){
                           <th>Sr.No</th>
                           <th>Name</th>
 						  <th>Company Name</th>
+              <th>Action</th>	
                           <th>Description</th>
                           <th>Photo</th>
-                          <th>Action</th>							
+                          <th>Action</th>	
+
                         </tr>
                       </thead>
                       <tbody>
@@ -195,13 +217,14 @@ if (mysqli_num_rows($doctors)>0){
                           <td><?php echo $row["id"]; ?></td>
                           <td><?php echo $row["name"]; ?></td>
                           <td><?php echo $row["company"]; ?></td>
+                          <td><?php echo $row["stars"]; ?></td>
                           <td><?php echo $row["discription"]; ?></td>
                           <td><img src="../../images/testimonial/<?php echo $row["image"]; ?>"></td>
 						  <td>
               <a class="btn btn-primary btn-rounded btn-icon" href="testimonial.php?id=<?php echo $row['id']; ?>" title="Edit Blog"><i class="mdi mdi-border-color"></i></a>                   
                         <a class="btn btn-danger btn-rounded btn-icon" href="testimonial.php?delid=<?php echo $row['id']; ?>" onclick="return checkDelete()" class="btn btn-primary btn-rounded btn-icon">
                           <i class="mdi mdi-delete"></i></a>
-                          </td>							
+                          </td>	
                         </tr>
                         <?php
 											$i++;

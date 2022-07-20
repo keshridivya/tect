@@ -34,6 +34,8 @@ session_start();
 	<link rel="stylesheet" href="style.css" />
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 
 	<style type="text/css">
 		.slide_margin {
@@ -43,6 +45,54 @@ session_start();
 		.slide_margin li {
 			margin-right: 50px;
 		}
+
+
+
+
+		.ratingCheck{
+display:inline-flex;
+transform: rotateY(180deg);
+}
+.ratingCheck label{
+    display:block;
+    cursor: pointer;
+    width:20px;
+    background:transperent;
+}
+.ratingCheck label:before{
+    content:'\f005';
+    font-family: FontAwesome;
+    position: relative;
+    display: block;
+    font-size:17px;
+}
+.ratingCheck label:after{
+    content:"\f005";
+    font-family: FontAwesome;
+    position: absolute;
+    display: block;
+    font-size:17px;
+    color:#ff344f;
+    top:0;
+    opacity:0;
+    transition:.5s;
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+.ratingCheck input{
+    display:none;
+}
+.ratingCheck>.fff {
+    color:#ffd31d;
+}
+.pagination .active .fa-circle{
+  color:#ff344f !important;
+}
+.span{
+	color:black;
+	font-size:12px;
+	margin-left:10px;
+}
+
 	</style>
 
 <style>
@@ -742,15 +792,28 @@ session_start();
 							<div class="testimonial-single-header">
 							
 								<div class="testimonial-title">
-									<h4><?php echo $arr['name']; ?></h4>
-									<p><?php echo $arr['company']; ?></p>
-									<div class="ratting-tes">
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="far fa-star"></i></span>
-									</div>
+									<h4 class="ms-2"><?php echo $arr['name']; ?></h4>
+									<p class="ms-2"><?php echo $arr['company']; ?></p>
+                                
+                              
+                                <ul>
+                                                   
+                                                    <li class="ratingCheck">
+                                                    <input type="radio" id="stars5" name="rate" value="5">
+                                                    <label for="stars5" <?php if( ($arr['stars'] >=5)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars4" name="rate" value="4">
+                                                    <label for="stars4" <?php if( ($arr['stars'] >= 4)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars3" name="rate" value="3" >
+                                                    <label for="stars3" <?php if( ($arr['stars'] >= 3)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars2" name="rate" value="2">
+                                                    <label for="stars2" <?php if( ($arr['stars'] >= 2)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars1" name="rate" value="1" >
+                                                    <label for="stars1" <?php if( ($arr['stars'] >= 1)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars1" name="rate" value="1" >
+                                                    <label for="stars1" <?php if( ($arr['stars'] >= 1)){ ?>class="fff"<?php } ?>></label>
+                                                    </li>
+                                                    <span class="span"><?php echo $arr['stars'];?>.0</span>
+                                                </ul>
 								</div>
 							</div>
 							<div class="testimonial-single-footer">
