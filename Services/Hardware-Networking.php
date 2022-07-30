@@ -64,13 +64,13 @@ session_start();
 					<h4 class="sc_subtitle"><span> - <?php echo $arr['core_feature']; ?> </span></h4>
 					<h2 class="sc_title text-gradient"><?php echo $arr['title']; ?></h2>
 					<p><?php echo $arr['short_description']; ?></p>
-					<ul>
+					<!-- <ul>
 						<li><?php echo $arr['up_list_1']; ?></li>
 						<li><?php echo $arr['up_list_2']; ?></li>
 						<li><?php echo $arr['up_list_3']; ?></li>
 						<li><?php echo $arr['up_list_4']; ?></li>
 					</ul>
-					<p><?php echo $arr['long_desc']; ?></p>
+					<p><?php echo $arr['long_desc']; ?></p> -->
 				</div>
 				<div class="col-lg-6 mb-30">
 					<img src="../admin/images/service/<?php echo $arr['image1'];?>" alt="serices">

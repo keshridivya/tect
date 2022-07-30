@@ -69,6 +69,8 @@ session_start();
 						<li><?php echo $arr['up_list_2']; ?></li>
 						<li><?php echo $arr['up_list_3']; ?></li>
 						<li><?php echo $arr['up_list_4']; ?></li>
+						<li>Youtube Banner Design.</li>
+						<li>Thumbnail Design.</li>
 					</ul>
 					<p><?php echo $arr['long_desc']; ?></p>
 				</div>
@@ -87,7 +89,7 @@ session_start();
 						<li><?php echo $arr['point']; ?></li>
 						<li><?php echo $arr['point2']; ?></li>
 						<li><?php echo $arr['point3']; ?></li>
-						<li><?php echo $arr['point4']; ?></li>
+						<!-- <li><?php echo $arr['point4']; ?></li> -->
 					</ul>
 					<p><?php echo $arr['meta_lis']; ?></p>
 				</div>
