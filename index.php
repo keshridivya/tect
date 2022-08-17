@@ -281,14 +281,14 @@ transform: rotateY(180deg);
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/test.jpg" alt="img">
-						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
+						<img src="assets/img/test.webp" alt="img">
+						<!-- <?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
 						<div class="vedio-btn-ab">
 							<a data-rel="lightcase" href="http://localhost/tectignisUniversity/tectignis/New%20Tectignis/template/videos/<?php echo $row['location'] ?>">
 									<i class="fas fa-play"></i> <span>Check This Vedio</span></a>
 						</div>
-						<?php } ?>
+						<?php } ?> -->
 					</div>
 				</div>
 			</div>
@@ -354,13 +354,13 @@ transform: rotateY(180deg);
 
 					<div class="analytics-toll-img">
 						<img src="assets/img/1HOME 3.png" alt="img">
-						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
+						<!-- <?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
 						<div class="vedio-btn-ab">
 							<a data-rel="lightcase" href="http://localhost/tectignisUniversity/tectignis/New%20Tectignis/template/videos/<?php echo $row['location'] ?>">
 									<i class="fas fa-play"></i> <span>Check This Vedio</span></a>
 						</div>
-						<?php } ?>
+						<?php } ?> -->
 					</div>
 				</div>
 
