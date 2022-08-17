@@ -281,7 +281,7 @@ transform: rotateY(180deg);
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/1HOME 3.png" alt="img">
+						<img src="assets/img/test.jpg" alt="img">
 						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
 						<div class="vedio-btn-ab">

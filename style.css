@@ -368,6 +368,7 @@ img{
  * #-Hero Area
 */
 .hero-area {
+	background-image: url(assets/img/backgrounds/index.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -386,7 +387,7 @@ img{
 	z-index: -1;
 	top: 0;
 	left: 0;
-	opacity: .8;
+	opacity: .5;
 }
 .hero-caption h2 {
 	font-size: 60px;
