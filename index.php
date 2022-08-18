@@ -281,7 +281,7 @@ transform: rotateY(180deg);
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/" alt="img">
+						<img src="assets/img/sections/digital-marketing.webp" alt="img">
 					</div>
 				</div>
 			</div>
@@ -346,7 +346,7 @@ transform: rotateY(180deg);
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/1HOME 3.png" alt="img">
+						<img src="assets/img/sections/web-mobile-app.webp" alt="img">
 					</div>
 				</div>
 
