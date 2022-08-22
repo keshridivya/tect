@@ -2121,6 +2121,7 @@ font-size: 17px;
 /*
  * #-Breadcrumb Area
 */
+
 .breadcrumb-area {
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -2128,6 +2129,22 @@ font-size: 17px;
 	padding-top: 170px;
 	text-align: center;
 	padding-bottom: 100px;
+	position: relative;
+	z-index: 1;
+	/* padding-top: 100px; */
+}
+.breadcrumb-area::after {
+	content: "";
+	background-image: linear-gradient(310deg,#7928ca,#ff0080);
+	clear: both;
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	opacity: .4;
 }
 .breadcrumb-content h2 {
 	font-size: 40px;

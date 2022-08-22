@@ -30,7 +30,7 @@ include("include/configure.php");
 <?php include("include/header.php"); ?>
 
 	<!-- Start Breadcrumb Area -->
-	<section class="breadcrumb-area" style="background-image: url('assets/img/OUR PORTFOLIO 1.png');">
+	<section class="breadcrumb-area" style="background-image: url('assets/img/backgrounds/portfolio.webp');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
