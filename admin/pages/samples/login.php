@@ -3,8 +3,8 @@ session_start();
 include("../../include/configure.php");
 $msg='';
 if(isset($_POST['login']) && !empty($_POST['login'])){
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$username = mysqli_real_escape_string($conn,$_POST['username']);
+	$password = mysqli_real_escape_string($conn,$_POST['password']);
   $query=mysqli_query($conn,"select * from userlogin where email='$username' ");
   
   $num=mysqli_fetch_array($query);

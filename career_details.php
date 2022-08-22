@@ -153,7 +153,7 @@ if(isset($_POST['s_ubmit'])){
 								<div class="col-lg-12 mb-30">
 									<div class="tagcloud">
 										<span><b>Education: </b></span>
-										<?php $links = array();
+										                        <?php $links = array();
                                             $parts = explode(',', $arr['education']);
                                             foreach ($parts as $tag)
                                             {
