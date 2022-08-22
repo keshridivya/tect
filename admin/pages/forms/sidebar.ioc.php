@@ -21,7 +21,7 @@ while($row=mysqli_fetch_array($sql)){
 </a>
 </li>
 
-         <!-- <li class="nav-item">
+         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
               <span class="menu-title">Pages</span>
@@ -81,7 +81,7 @@ while($row=mysqli_fetch_array($sql)){
               <i class="menu-icon mdi mdi-layers-outline"></i>
               <span class="menu-title">Activities Log</span>
             </a>
-          </li>-->
+          </li>
         </ul>
       </nav>
      

@@ -36,7 +36,7 @@
 <!-- Contact Us Form -->
 <button id="close"  onclick ="div_hide()"><i class="bi bi-x"></i></button>
 <div class="width:50%"></div>
-<form action="include/api.php" id="form" method="post" name="form" class="w3-center w3-animate-zoom" >
+<form action="../include/api.php" id="form" method="post" name="form" class="w3-center w3-animate-zoom" >
 <h2 class="h2" >Get quote</h2>
 <input id="name" name="name" placeholder="Your name" class="text" type="text" required>
 <input id="email" name="email" placeholder="Your email" class="text" type="text" required>
@@ -73,12 +73,17 @@
                             </ul>
                             </li>
                             <li class="menu1 menu-item">
-                                <a href="services">Services</a>
+                                <a href="All-Services">Services</a>
                                 <ul>
-                                    <?php $sql=mysqli_query($conn,"select * from servicelist");
-                                    while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
-                                    <?php } ?>
+                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
+                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
+                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
+                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
+                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
+                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
+                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
+                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
+                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
                                 </ul>
                             </li>
                             <li class="menu1 menu-item">
@@ -126,13 +131,18 @@
                             </ul>
                         </li>
 								<li class="menu-item-has-children">
-									<a href="services">Services</a>
+									<a href="All-Services">Services</a>
 									<ul class="sub-menu">
-                                    <?php $sql=mysqli_query($conn,"select * from servicelist");
-                                    while($arr=mysqli_fetch_array($sql)){ ?>
-                                    <li><a href="website-designing?id=<?php echo $arr['id'] ?>"><?php echo $arr['service_list'] ?></a></li>
-                                    <?php } ?>
-									</ul>
+                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
+                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
+                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
+                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
+                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
+                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
+                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
+                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
+                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
+                                </ul>
 								</li>
 								<li>
 									<a href="portfolio">Portfolio</a>

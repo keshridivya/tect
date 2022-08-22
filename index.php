@@ -34,6 +34,8 @@ session_start();
 	<link rel="stylesheet" href="style.css" />
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
 
 	<style type="text/css">
 		.slide_margin {
@@ -43,6 +45,54 @@ session_start();
 		.slide_margin li {
 			margin-right: 50px;
 		}
+
+
+
+
+		.ratingCheck{
+display:inline-flex;
+transform: rotateY(180deg);
+}
+.ratingCheck label{
+    display:block;
+    cursor: pointer;
+    width:20px;
+    background:transperent;
+}
+.ratingCheck label:before{
+    content:'\f005';
+    font-family: FontAwesome;
+    position: relative;
+    display: block;
+    font-size:17px;
+}
+.ratingCheck label:after{
+    content:"\f005";
+    font-family: FontAwesome;
+    position: absolute;
+    display: block;
+    font-size:17px;
+    color:#ff344f;
+    top:0;
+    opacity:0;
+    transition:.5s;
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+.ratingCheck input{
+    display:none;
+}
+.ratingCheck>.fff {
+    color:#ffd31d;
+}
+.pagination .active .fa-circle{
+  color:#ff344f !important;
+}
+.span{
+	color:black;
+	font-size:12px;
+	margin-left:10px;
+}
+
 	</style>
 
 <style>
@@ -231,14 +281,7 @@ session_start();
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/1HOME 3.png" alt="img">
-						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
-						while($row=mysqli_fetch_array($sql)){ ?>
-						<div class="vedio-btn-ab">
-							<a data-rel="lightcase" href="http://localhost/tectignisUniversity/tectignis/New%20Tectignis/template/videos/<?php echo $row['location'] ?>">
-									<i class="fas fa-play"></i> <span>Check This Vedio</span></a>
-						</div>
-						<?php } ?>
+						<img src="assets/img/sections/digital-marketing.webp" alt="img">
 					</div>
 				</div>
 			</div>
@@ -303,14 +346,7 @@ session_start();
 				<div class="col-lg-6">
 
 					<div class="analytics-toll-img">
-						<img src="assets/img/1HOME 3.png" alt="img">
-						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
-						while($row=mysqli_fetch_array($sql)){ ?>
-						<div class="vedio-btn-ab">
-							<a data-rel="lightcase" href="http://localhost/tectignisUniversity/tectignis/New%20Tectignis/template/videos/<?php echo $row['location'] ?>">
-									<i class="fas fa-play"></i> <span>Check This Vedio</span></a>
-						</div>
-						<?php } ?>
+						<img src="assets/img/sections/web-mobile-app.webp" alt="img">
 					</div>
 				</div>
 
@@ -378,23 +414,7 @@ session_start();
 		</div>
 	</section>
 
-	<!-- End analytics Area -->
-	<!-- Start Template Need Area -->
-	<!-- <section class="template-need" style="background-image:url('assets/img/cta-1.png');">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<h4>Join over 40,000 businesses worldwide.</h4>
-					<h2>The only one template you need.</h2>
-				</div>
-				<div class="col-lg-6 align-self-center">
-				<a class="button-2 text-right" id="popup" onclick="div_show()" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Get Quote</a>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- End Template Need Area -->
-	<!-- Start useful resource Area -->
+	
 	<section class="section-padding section-bg">
 		<div class="container">
 			<div class="row">
@@ -471,147 +491,7 @@ session_start();
 			</div>
 		</div>
 	</section>
-	<!-- End useful resource Area -->
-	<!-- Start Applicant Area -->
-	<!-- <section class="section-padding-2">
-		<div class="container">
-			<div class="row mb-70">
 
-			<div class="col-lg-6 align-self-center mb-30">
-					<div class="applicant-content">
-						<h2 class="text-gradient">Designed with The Of applicant in mind.</h2>
-						<p> Duis Design thinking is simply a method for solving problems and discovering new opportunities using a structured creative process. </p>
-						<div class="applicant-list-full">
-
-						<div class="item">
-								<div class="icon">
-									<i class="fas fa-code"></i>
-								</div>
-								<div class="content">
-									<h4> IOT </h4>
-									<p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles. Let’s dive in.</p>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="icon">
-									<i class="fas fa-tools"></i>
-								</div>
-								<div class="content">
-									<h4>Cloud</h4>
-									<p>The Featured Snippets+ Tool goes through tons of data and APIs to give you actionable and easy-to-implement steps to optimize your site for Google's featured snippets and build more visibility in SERPs.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-6 mb-30">
-					<div class="applicant-img applicant-img-2">
-						<img src="assets/img/index/web.jpg" alt="dashkit">
-					</div>
-				</div>
-			</div>
-			<div class="row mt-30">
-
-			<div class="col-lg-6 mb-30 order-lg-first order-last">
-					<div class="applicant-img applicant-img-2">
-						<img src="assets/img/HOME 3.png" alt="dashkit">
-					</div>
-				</div>
-
-				<div class="col-lg-6 align-self-center mb-30">
-					<div class="applicant-content">
-						<h2 class="text-gradient">Designed with The Of applicant in mind.</h2>
-						<p> while design thinking is typically thought of as a tool for designers to create new products, recruiting teams can use a modified version of it to improve processes and enhance services. </p>
-						<div class="applicant-list-full">
-
-						<div class="item">
-								<div class="icon">
-									<i class="fas fa-code"></i>
-								</div>
-								<div class="content">
-									<h4> Bootstrap users since the beginning </h4>
-									<p>Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries.</p>
-								</div>
-							</div>
-
-							<div class="item">
-								<div class="icon">
-									<i class="fas fa-tools"></i>
-								</div>
-								<div class="content">
-									<h4>Explore the Snippets tool</h4>
-									<p>Google featured snippets are prime real estate in the SERPs, but if you want to capture them for your site, it’s hard to know where to start.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-	<!-- End Applicant Area -->
-	<!-- Start Turn Ideas Area -->
-
-	<!-- <section class="section-padding-3">
-		<div class="container">
-			Section Headding 
-			<div class="row mb-40">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="section-headding">
-						<h2>Turn your ideas <br>Into reality in seconds</h2>
-						<p>Decide what needs to happen in order to move towards an outcome. ...</p>
-					</div>
-				</div>
-			</div>
-			<div class="row turn_ideas_section">
-				<div class="col-lg-4">
-					<div class="trun_ideas_nav">
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link active" id="topa-tab" data-bs-toggle="tab" data-bs-target="#topa" role="tab" aria-controls="topa" aria-selected="true"><i class="fas fa-file-alt"></i> Website Designing</button>
-						  	</li>
-						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="saasde-tab" data-bs-toggle="tab" data-bs-target="#saasde" role="tab" aria-controls="saasde" aria-selected="false"><i class="far fa-file-code"></i> Digital Marketing</button>
-						  	</li>
-						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="softwareanaly-tab" data-bs-toggle="tab" data-bs-target="#softwareanaly" role="tab" aria-controls="softwareanaly" aria-selected="false"><i class="fas fa-chart-line"></i> App Development</button>
-						  	</li>
-						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="exchangefeed-tab" data-bs-toggle="tab" data-bs-target="#exchangefeed" role="tab" aria-controls="exchangefeed" aria-selected="false"><i class="fas fa-exchange-alt"></i> Graphics Designing</button>
-						  	</li>
-						  	<li class="nav-item" role="presentation">
-						    	<button class="nav-link" id="foremployees-tab" data-bs-toggle="tab" data-bs-target="#foremployees" role="tab" aria-controls="foremployees" aria-selected="false"><i class="fas fa-user-injured"></i> Hardware</button>
-						  	</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-lg-8">
-					<div class="tab-content" id="myTabContent">
-					  	<div class="tab-pane trun_ideas_contetn fade show active" id="topa" role="tabpanel" aria-labelledby="topa-tab">
-					  		<img src="assets/img/index/wd.png" alt="dashbord">
-					  	</div>
-					  	<div class="tab-pane trun_ideas_contetn fade" id="saasde" role="tabpanel" aria-labelledby="saasde-tab">
-					  		<img src="assets/img/index/ad.jpg" alt="dashbord">
-					  	</div>
-					  	<div class="tab-pane trun_ideas_contetn fade" id="softwareanaly" role="tabpanel" aria-labelledby="softwareanaly-tab">
-					  		<img src="assets/img/index/dm.png" alt="dashbord">
-					  	</div>
-					  	<div class="tab-pane trun_ideas_contetn fade" id="exchangefeed" role="tabpanel" aria-labelledby="exchangefeed-tab">
-					  		<img src="assets/img/index/gd.png" alt="dashbord">
-					  	</div>
-					  	<div class="tab-pane trun_ideas_contetn fade" id="foremployees" role="tabpanel" aria-labelledby="foremployees-tab">
-					  		<img src="assets/img/index/hn.png" alt="dashbord">
-					  	</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<!-- End Turn Ideas Area -->
-	<!-- Start Pricing Plane -->
 	<section class="section-padding-2 pt-0">
 		<div class="container">
 			<!-- Section Headding -->
@@ -742,15 +622,28 @@ session_start();
 							<div class="testimonial-single-header">
 							
 								<div class="testimonial-title">
-									<h4><?php echo $arr['name']; ?></h4>
-									<p><?php echo $arr['company']; ?></p>
-									<div class="ratting-tes">
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="far fa-star"></i></span>
-									</div>
+									<h4 class="ms-2"><?php echo $arr['name']; ?></h4>
+									<p class="ms-2"><?php echo $arr['company']; ?></p>
+                                
+                              
+                                <ul>
+                                                   
+                                                    <li class="ratingCheck">
+                                                    <input type="radio" id="stars5" name="rate" value="5">
+                                                    <label for="stars5" <?php if( ($arr['stars'] >=5)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars4" name="rate" value="4">
+                                                    <label for="stars4" <?php if( ($arr['stars'] >= 4)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars3" name="rate" value="3" >
+                                                    <label for="stars3" <?php if( ($arr['stars'] >= 3)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars2" name="rate" value="2">
+                                                    <label for="stars2" <?php if( ($arr['stars'] >= 2)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars1" name="rate" value="1" >
+                                                    <label for="stars1" <?php if( ($arr['stars'] >= 1)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars1" name="rate" value="1" >
+                                                    <label for="stars1" <?php if( ($arr['stars'] >= 1)){ ?>class="fff"<?php } ?>></label>
+                                                    </li>
+                                                    <span class="span"><?php echo $arr['stars'];?>.0</span>
+                                                </ul>
 								</div>
 							</div>
 							<div class="testimonial-single-footer">

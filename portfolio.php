@@ -71,7 +71,7 @@ include("include/configure.php");
 											$i=0;
 											while($row = mysqli_fetch_array($doctors)) {
 											?>  
-					<div class="col-lg-4 col-md-6 mb-30 mix marketing">
+					<div class="col-lg-6 col-md-6 col-sm-12 mb-30 mix marketing">
 					<a href="<?php echo $row["link"]; ?>" >
 						<div class="portfolio-item">
 							<div class="thumbnail">
@@ -99,7 +99,7 @@ include("include/configure.php");
 											while($row = mysqli_fetch_array($doctors)) {
 											?>  
 				
-						<div class="col-lg-4 col-md-6 mb-30 mix digital" style="display:none !important;">
+						<div class="col-lg-6 col-md-6 mb-30 col-sm-12 mix digital" style="display:none !important;">
 					<a href="<?php echo $row["link"]; ?>" >
 						<div class="portfolio-item">
 							<div class="thumbnail">
@@ -126,7 +126,7 @@ include("include/configure.php");
 											$i=0;
 											while($row = mysqli_fetch_array($doctors)) {
 											?>  
-					<div class="col-lg-4 col-md-6 mb-30 mix design" style="display:none !important;">
+					<div class="col-lg-6 col-md-6 mb-30 mix design" style="display:none !important;">
 					<a href="<?php echo $row["link"]; ?>" >
 						<div class="portfolio-item">
 							<div class="thumbnail">
@@ -142,11 +142,11 @@ include("include/configure.php");
 					
 				</div>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-lg-12 mb-20 text-center">
 					<a class="button-1" href="#">Load More <i class="fas fa-spinner fa-spin"></i></a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<!-- End Services Area -->

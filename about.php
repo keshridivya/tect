@@ -27,6 +27,68 @@ session_start();
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
+		
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		.slide_margin {
+			display: none;
+		}
+
+		.slide_margin li {
+			margin-right: 50px;
+		}
+
+
+
+
+		.ratingCheck{
+display:inline-flex;
+transform: rotateY(180deg);
+}
+.ratingCheck label{
+    display:block;
+    cursor: pointer;
+    width:20px;
+    background:transperent;
+}
+.ratingCheck label:before{
+    content:'\f005';
+    font-family: FontAwesome;
+    position: relative;
+    display: block;
+    font-size:17px;
+}
+.ratingCheck label:after{
+    content:"\f005";
+    font-family: FontAwesome;
+    position: absolute;
+    display: block;
+    font-size:17px;
+    color:#ff344f;
+    top:0;
+    opacity:0;
+    transition:.5s;
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+.ratingCheck input{
+    display:none;
+}
+.ratingCheck>.fff {
+    color:#ffd31d;
+}
+.pagination .active .fa-circle{
+  color:#ff344f !important;
+}
+.span{
+	color:black;
+	font-size:12px;
+	margin-left:10px;
+}
+
+	</style>
+</head>
 
 <?php include("include/header.php") ?>
 	<!-- Start Breadcrumb Area -->
@@ -147,48 +209,8 @@ session_start();
 			</div>
 		</div>
 	</section>
-	<!-- End Counter Area -->
-	<!-- Start Team Member Area -->
-	<!-- <section class="section-padding-2 section-bg"> 
-		<div class="container">
-			<div class="row mb-40">
-				<div class="col-lg-8 offset-lg-2 text-center">
-					<div class="section-headding">
-						<h2>Our Team Members</h2>
-						<p>The powerful and flexible theme for all kinds of businesses</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">-->
-				<!-- Single -->
-				<!-- <div class="col-lg-4 col-md-6 mb-30"> 
-					<div class="team-item">
-						<div class="thumb">
-							<img src="assets/img/team/6.jpg" alt="team">
-						</div>
-						<div class="content">
-							<div class="left">
-								<h4>Monroe Parker</h4>
-								<p>Back End Developer</p>
-							</div>
-							<div class="team-social">
-								<i class="fas fa-share-alt"></i>
-								<ul>
-									<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-									<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-									<li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>-->
-	<!-- End Team Member Area -->
 	<!-- Start Testimonial Area -->
-	<section class="section-padding-2 pt-0">
+	<section class="section-padding pt-0">
 		<div class="container">
 			<!-- Section Headding -->
 			<div class="row mb-40">
@@ -206,25 +228,40 @@ session_start();
 						<?php $sql=mysqli_query($conn,"select * from testimonial");
 							while($arr=mysqli_fetch_array($sql)){
 							?>
-						<div class="testimonial-item">
+						<div class="testimonial-item" style="background-color:#f2f2f2; height: 450px;">
 							<div class="testimonial-single-header">
-								<div class="thumbnail">
-									<img src="admin/images/testimonial/<?php echo $arr['image']; ?>" alt="testimonial">
-								</div>
+							
 								<div class="testimonial-title">
-									<h4><?php echo $arr['name']; ?></h4>
-									<p><?php echo $arr['company']; ?></p>
-									<div class="ratting-tes">
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-										<span><i class="fas fa-star"></i></span>
-									</div>
+									<h4 class="ms-2"><?php echo $arr['name']; ?></h4>
+									<p class="ms-2"><?php echo $arr['company']; ?></p>
+                                
+                              
+                                <ul>
+                                                   
+                                                    <li class="ratingCheck">
+                                                    <input type="radio" id="stars5" name="rate" value="5">
+                                                    <label for="stars5" <?php if( ($arr['stars'] >=5)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars4" name="rate" value="4">
+                                                    <label for="stars4" <?php if( ($arr['stars'] >= 4)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars3" name="rate" value="3" >
+                                                    <label for="stars3" <?php if( ($arr['stars'] >= 3)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars2" name="rate" value="2">
+                                                    <label for="stars2" <?php if( ($arr['stars'] >= 2)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars1" name="rate" value="1" >
+                                                    <label for="stars1" <?php if( ($arr['stars'] >= 1)){ ?>class="fff"<?php } ?>></label>
+                                                    <input type="radio" id="stars1" name="rate" value="1" >
+                                                    <label for="stars1" <?php if( ($arr['stars'] >= 1)){ ?>class="fff"<?php } ?>></label>
+                                                    </li>
+                                                    <span class="span"><?php echo $arr['stars'];?>.0</span>
+                                                </ul>
 								</div>
 							</div>
 							<div class="testimonial-single-footer">
-								<p><?php echo $arr['discription']; ?></p>
+								<p style="text-light">
+								<i class="fa fa-quote-left" aria-hidden="true"></i>
+								 <?php echo $arr['discription']; ?>
+								 <i class="fa fa-quote-right" aria-hidden="true"></i>
+								</p>
 							</div>
 						</div>
 						<?php } ?>
@@ -234,6 +271,7 @@ session_start();
 			</div>
 		</div>
 	</section>
+
 	<!-- End Testimonial Area -->
 	<!-- Start Subscribe Area -->
 	<?php include("include/getmail.php") ?>
