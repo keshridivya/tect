@@ -56,10 +56,6 @@ if(isset($_POST['s_ubmit'])){
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
 						<h2>Career Details</h2>
-						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li>Career Details</li>
-						</ul>
 					</div>
 				</div>
 			</div>

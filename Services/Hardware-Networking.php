@@ -45,10 +45,6 @@ session_start();
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
 						<h2><?php echo $arr['service_list']; ?></h2>
-						<ul>
-							<li><a href="../index.php">Home</a></li>
-							<li><?php echo $arr['service_list']; ?></li>
-						</ul>
 					</div>
 				</div>
 			</div>

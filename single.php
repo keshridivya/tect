@@ -38,10 +38,6 @@ session_start();
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
 						<h2>Blog Details</h2>
-						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li>Blog Details</li>
-						</ul>
 					</div>
 				</div>
 			</div>

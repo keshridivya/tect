@@ -39,16 +39,12 @@ session_start();
 	<?php 
 	$sql=mysqli_query($conn,"select * from servicelist where name='Ecommerce_Website'");
 ($arr=mysqli_fetch_array($sql))  ?>
-	<section class="breadcrumb-area" style="background-image: url('../assets/img/breadcrumb.jpg');">
+	<section class="breadcrumb-area" style="background-image: url('../assets/img/backgrounds/ecommerce.webp');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
 						<h2><?php echo $arr['service_list']; ?></h2>
-						<ul>
-							<li><a href="../index.php">Home</a></li>
-							<li><?php echo $arr['service_list']; ?></li>
-						</ul>
 					</div>
 				</div>
 			</div>

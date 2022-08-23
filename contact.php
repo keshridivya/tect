@@ -54,10 +54,6 @@ if(isset($_POST['sub'])){
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
 						<h2>Contact Us</h2>
-						<ul>
-							<li><a href="index.php">Home</a></li>
-							<li>Contact Us</li>
-						</ul>
 					</div>
 				</div>
 			</div>

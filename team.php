@@ -39,10 +39,6 @@ if (mysqli_num_rows($doctors)>0){
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
 						<h2>Our Team Members</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>Team Members</li>
-						</ul>
 					</div>
 				</div>
 			</div>
