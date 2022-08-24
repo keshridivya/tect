@@ -39,7 +39,7 @@ session_start();
 	<?php 
 	$sql=mysqli_query($conn,"select * from servicelist where name='Hardware_Networking'");
 ($arr=mysqli_fetch_array($sql))  ?>
-	<section class="breadcrumb-area" style="background-image: url('../assets/img/breadcrumb.jpg');">
+	<section class="breadcrumb-area" style="background-image: url('../assets/img/backgrounds/hardware.webp');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">

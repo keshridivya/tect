@@ -33,7 +33,7 @@ session_start();
 
 	
 	<!-- Start Breadcrumb Area -->
-	<section class="breadcrumb-area" style="background-image: url('assets/img/OUR BLOG.png');">
+	<section class="breadcrumb-area" style="background-image: url('assets/img/backgrounds/blog.webp');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
