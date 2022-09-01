@@ -78,23 +78,6 @@ session_start();
                 <div class="col-lg-6 mb-30 order-lg-first order-last">
                     <img src="../admin/images/service/<?php echo $arr['image2'];?>" alt="img">
                 </div>
-                <!-- <div class="col-lg-6 mb-30 align-self-center">
-                    <h3><?php echo $arr['meta_title']; ?></h3>
-                    <p><?php echo $arr['meta_short']; ?></p>
-                    <ul>
-                        <li><?php echo $arr['point']; ?></li>
-                        <li><?php echo $arr['point2']; ?></li>
-                        <li><?php echo $arr['point3']; ?></li>
-                        <li><?php echo $arr['point4']; ?></li>
-                    </ul>
-                    <p><?php echo $arr['meta_lis']; ?></p>
-                </div> -->
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p><?php echo $arr['meta_long']; ?></p>
-                    <!-- <p><?php echo $arr['meta_long2']; ?></p> -->
-                </div>
             </div>
         </div>
     </section>
