@@ -1,7 +1,6 @@
 <?php
 include("include/configure.php");
 session_start();
-
 ?>
 
 <!DOCTYPE html>
