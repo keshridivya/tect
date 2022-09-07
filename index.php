@@ -422,7 +422,7 @@ transform: rotateY(180deg);
 				<div class="col-12 col-lg-5">
 					<div class="usefull-resourses-form">
 						<div class="thum">
-							<img src="assets/img/index/hw1.webp" alt="img">
+							<img src="assets/img/index/hw1.webp" alt="img" >
 						</div>
 						<div class="use_form">
 							<form action="include/api.php" method="post">
