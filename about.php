@@ -151,7 +151,7 @@ transform: rotateY(180deg);
 				<div class="col-lg-4 offset-lg-1">
 					<div class="about-img-ab">
 						<div class="thumb">
-							<img src="assets/img/ABOUT US 2.png" alt="about">
+							<img src="assets/img/ABOUT US 2.webp" alt="about">
 						</div>
 						<div class="con">
 							<h4>Get insights on Search </h4>

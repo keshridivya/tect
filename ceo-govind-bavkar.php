@@ -28,7 +28,7 @@ include("include/configure.php");
 
 	<?php include("include/header.php"); ?>
 	<!-- Start Breadcrumb Area -->
-	<section class="breadcrumb-area" style="background-image: url('assets/img/breadcrumb.jpg');">
+	<section class="breadcrumb-area" style="background-image: url('assets/img/breadcrumb.webp');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -62,12 +62,12 @@ include("include/configure.php");
 					<p align="justify">He founded the IT Solutions Company in Navi Mumbai in the year of 2020, Govind Laxman Bavkar is CEO and Founder of Tectignis IT Solutions Pvt Ltd which deals in website development, software development, digital marketing service like SEO, SEM, SMM and Email Marketing and Many More. In the journey of 2 years, We have worked with the 100+ Businesses and still counting and we have earned a place in Start-up India by the Department for Promotion of Industry and  Internal Trade and Mr. Govind Bavkar also earned the another title of "Young Entrepreneur" by The Indian Achiever's Award 2021 And Mr. Govind Bavkar also recognized by Go Global Awards for Top Placer Information Technology, So  Starting with a Vision to do something extraordinary the young boy transformed into a young entrepreneur and If he can dream it and live that dream. so why won't you live your dream?</p>
 				</div>
 				<div class="col-lg-6 mb-30">
-					<img src="assets/img/ceo.png" alt="serices">
+					<img src="assets/img/ceo.webp" alt="serices">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6 mb-30 order-lg-first order-last">
-					<img src="assets/img/ceo1.png" alt="img">
+					<img src="assets/img/ceo1.webp" alt="img">
 			</div>
 				<div class="col-lg-6 mb-30 align-self-center">
 					<h3>Consistency is The Key of Success</h3>
@@ -84,12 +84,12 @@ include("include/configure.php");
 					<p align="justify">Firstly we all know that traditional education can't help us out but transform our life and add-up some values to our society I have worked on myself to achieve the dreams which were shining into my eyes and then I have decided and I have started a Self-learning journey with all the discipline and dedication and at the same time with the Curiosity to learn something new and implement it on a daily basis to get the results (Success or Failure) and to level up myself in those learning skills, I have done all things which it takes to achieve. This practice made me a Quick Decision Maker and Good in Numbers (Calculation).</p>
 				</div>
 				<div class="col-lg-6 mb-30">
-					<img src="assets/img/learning.png" alt="serices">
+					<img src="assets/img/learning.webp" alt="serices">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6 mb-30 order-lg-first order-last">
-					<img src="assets/img/timemoney.png" alt="img">
+					<img src="assets/img/timemoney.webp" alt="img">
 			</div>
 				<div class="col-lg-6 mb-30 align-self-center">
 					<p align="justify">I have always valued Time, Therefore time is some time which we get an equal amount on a daily basis and we all should know how to utilize our time so initially I have learned time management and implemented that technique into real-life and so I would say time management is the part of that ladder which is going to take towards your destination, however, I learned that firstly, then afterward I have planned my whole day as in a daily schedule so once I used to come back from college, I used to open my laptop and learned the new things and explore the new those with the help of internet to learn new things and the high paying skills like Graphic Design, Digital Marketing, Finance, Hardware & Networking. However, I would give one piece of advice to the youngsters that do not look up for money during their initial days gain the knowledge and learn the new things and explore the new things, work to make an investment into yourself and others. even while i have started digital marketing agency in Navi Mumbai during that time this time management things helped me allot so Time is way more important than money. Give time to yourself, your employees, and you’re learning.</p>
