@@ -54,7 +54,7 @@ if(isset($_POST['signup'])){
 }
 }
 ?>
-<section class="subscribe-area" style="background-image: url('assets/img/sub.png');">
+<section class="subscribe-area" style="background-image: url('assets/img/sub.webp');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
