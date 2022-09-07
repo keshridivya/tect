@@ -30,10 +30,12 @@ session_start();
 	<!-- <link rel="stylesheet" href="style.css"> -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" /> -->
+	<link rel="stylesheet" href="assets\css\reset.min.css">
 	<link rel="stylesheet" href="style.css" />
 	
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" > -->
+	<link rel="stylesheet" href="assets\css\fontawesome.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 
@@ -772,7 +774,8 @@ transform: rotateY(180deg);
     <script src="assets/js/ajax-form.js"></script>
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+	<script src="assets\js\jquery.min.js"></script>
 <!-- <script>
           
 		  $(function() {
@@ -806,7 +809,8 @@ transform: rotateY(180deg);
   }
 });
       </script> -->
-	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+	  <script src="assets\js\jquery-3.6.0.js">
 	<script src="assets/js/infiniteslidev2.js"></script>
 
 	  <script type="text/javascript">
