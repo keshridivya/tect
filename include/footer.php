@@ -12,7 +12,7 @@
 						<div class="f-widgets-item">
 							<div class="f-logo">
 								<a href="#">
-									<img src="assets/img/logo1.png" alt="logo">
+									<img src="assets/img/logo1.webp" alt="logo">
 								</a>
 							</div>
 							<p><?php echo $arr['shortdesc'] ?></p>

@@ -115,7 +115,7 @@
                 </div>
                 <div class="mobile-logo">
                     <a href="../index">
-                        <img src="../assets/img/logo2.png" alt="logo" />
+                        <img src="../assets/img/logo2.webp" alt="logo" />
                     </a>
                 </div>
                 <div id="menu" class="text-left">
