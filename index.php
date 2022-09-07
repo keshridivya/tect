@@ -13,9 +13,9 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" /> -->
 	<title>Tectignis IT Solutions Website Development Company in India</title>
-	<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="16x16">
-	<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="18x18">
-	<link rel="icon" href="assets/img/favicon.png" type="image/gif" sizes="20x20">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
