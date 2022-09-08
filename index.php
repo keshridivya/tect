@@ -30,12 +30,12 @@ session_start();
 	<!-- <link rel="stylesheet" href="style.css"> -->
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" /> -->
-	<link rel="stylesheet" href="assets\css\reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+	<!-- <link rel="stylesheet" href="assets\css\reset.min.css"> -->
 	<link rel="stylesheet" href="style.css" />
 	
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" > -->
-	<link rel="stylesheet" href="assets\css\fontawesome.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<!-- <link rel="stylesheet" href="assets\css\fontawesome.css"> -->
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 
@@ -679,7 +679,7 @@ transform: rotateY(180deg);
 							</div>
 	<div class="module mt-5">
 		<ul class="slide_margin">
-            <li><img src="assets/img/our_client/harmony.webp" width="225px" height="225px"  alt="" /></li>
+            <li><img src="assets/img/our_client/harmony.png" width="225px" height="225px"  alt="" /></li>
 			<li><img src="assets/img/our_client/gobest.webp" width="225px" height="225px"  alt="" /></li>
 			<li><img src="assets/img/our_client/lic.webp" width="225px" height="225px"  alt="" /></li>
 			<li><img src="assets/img/our_client/hpcl.webp" width="225px" height="225px"  alt="" /></li>
@@ -774,8 +774,8 @@ transform: rotateY(180deg);
     <script src="assets/js/ajax-form.js"></script>
 
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
-	<script src="assets\js\jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script src="assets\js\jquery.min.js"></script> -->
 <!-- <script>
           
 		  $(function() {
