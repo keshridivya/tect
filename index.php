@@ -679,7 +679,7 @@ transform: rotateY(180deg);
 							</div>
 	<div class="module mt-5">
 		<ul class="slide_margin">
-            <li><img src="assets/img/our_client/harmony.png" width="225px" height="225px"  alt="" /></li>
+            <li><img src="assets/img/our_client/harmony.webp" width="225px" height="225px"  alt="" /></li>
 			<li><img src="assets/img/our_client/gobest.webp" width="225px" height="225px"  alt="" /></li>
 			<li><img src="assets/img/our_client/lic.webp" width="225px" height="225px"  alt="" /></li>
 			<li><img src="assets/img/our_client/hpcl.webp" width="225px" height="225px"  alt="" /></li>
@@ -809,8 +809,8 @@ transform: rotateY(180deg);
   }
 });
       </script> -->
-	  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-	  <script src="assets\js\jquery-3.6.0.js">
+	  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	  <!-- <script src="assets\js\jquery-3.6.0.js"> -->
 	<script src="assets/js/infiniteslidev2.js"></script>
 
 	  <script type="text/javascript">
