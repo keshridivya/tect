@@ -18,16 +18,17 @@ session_start();
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="assets/css/lightcase.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/fontawesome.all.min.css"> -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/typed.css"> -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/normalize.css"> <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
+    <link rel="stylesheet" href="assets/css/normalize.css"> 
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <!-- <link rel="stylesheet" href="assets\css\reset.min.css"> -->
@@ -36,21 +37,7 @@ session_start();
     <!-- <link rel="stylesheet" href="assets\css\fontawesome.css"> -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <style type="text/css">
-        
-[class^="bi-"]::before,
-[class*=" bi-"]::before {
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-        .slide_margin {
+    .slide_margin {
             display: none;
         }
 
@@ -142,6 +129,21 @@ html {
 a {
   text-decoration: none;
 }
+       
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+     
     </style>
     <style>
         .btnReadMore {
@@ -176,7 +178,7 @@ a {
 
 <body>
     <link rel="stylesheet" href="assets/css/stylesheet.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     </head>
 
     <body>
@@ -263,7 +265,7 @@ a {
             <div class="offcanvas_menu">
                 <div class="offcanvas_menu_wrapper">
                     <div class="canvas_close"> <a href="javascript:void(0)"><i class="fas fa-times"></i></a> </div>
-                    <div class="mobile-logo"> <a href="index"> <img src="assets/img/logo2.png" alt="logo" /> </a> </div>
+                    <div class="mobile-logo"> <a href="index"> <img src="assets/img/logo2.webp" alt="logo" /> </a> </div>
                     <div id="menu" class="text-left">
                         <ul class="offcanvas_main_menu">
                             <li> <a href="index">Home</a> </li>
@@ -1264,7 +1266,10 @@ a {
             </div>
         </footer> <!-- End Footer Area -->
         <div class="scroll-area"> <i class="fa fa-arrow-up"></i> </div>
-        <script>function check_empty() { if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") { alert("Fill All Fields !"); } else { document.getElementById('form').submit(); alert("Form Submitted Successfully..."); } }//Function To Display Popup function div_show() {document.getElementById('abc').style.display = "block";document.getElementsByTagName('body').style.opacity = "0.3";}//Function to Hide Popup function div_hide(){document.getElementById('abc').style.display = "none";}</script>
+        <script>function check_empty() { if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") { alert("Fill All Fields !"); } else { document.getElementById('form').submit(); alert("Form Submitted Successfully..."); } }//Function To Display Popup 
+        function div_show() {document.getElementById('abc').style.display = "block";document.getElementsByTagName('body').style.opacity = "0.3";}
+        //Function to Hide Popup 
+        function div_hide(){document.getElementById('abc').style.display = "none";}</script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
         <script> $(".Click-here").on('click', function () { $(".custom-model-main").addClass('model-open'); }); $(".close-btn, .bg-overlay").click(function () { $(".custom-model-main").removeClass('model-open'); });</script>
         <!-- Js File -->
@@ -1273,7 +1278,7 @@ a {
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/jquery.nav.min.js"></script>
+        <!-- <script src="assets/js/jquery.nav.min.js"></script> -->
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/mixitup.min.js"></script>
         <script src="assets/js/wow.min.js"></script>
