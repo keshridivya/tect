@@ -116,25 +116,17 @@ html [type="button"], /* 1 */
 
 
 
-/* Padding Top */
-
 .pt-30{padding-top:30px;}
 .pt-70{padding-top:70px;}
 .pt-150{padding-top:150px;}
 
 
-/* Padding Bottom */
 .pb-20{padding-bottom:20px;}
 .pb-30{padding-bottom:30px;}
 .pb-70{padding-bottom:70px;}
 .pb-200{padding-bottom:200px;}
 
-
 .mt-5{margin-top:5px;}
-
-
-
-
 .mb-5{margin-bottom:5px;}
 .mb-30{margin-bottom:30px;}
 .mb-40{margin-bottom:40px;}
