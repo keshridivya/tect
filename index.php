@@ -9,6 +9,7 @@ session_start();
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
     <meta name="keywords"
         content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@ session_start();
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="assets/css/lightcase.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/fontawesome.all.min.css"> -->
@@ -29,7 +30,7 @@ session_start();
     <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
     <link rel="stylesheet" href="assets/css/normalize.css"> 
     <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" /> -->
     <!-- <link rel="stylesheet" href="assets\css\reset.min.css"> -->
     <link rel="stylesheet" href="style.css" />
