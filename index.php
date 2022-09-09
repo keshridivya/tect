@@ -1253,9 +1253,9 @@ a {
                             <div class="footer_social">
                                 <ul>
                                     <li><a href="https://www.facebook.com/tectignisofficial/"><i
-                                                class="fab fa-facebook-f"></i></a></li>
+                                                class="fa fa-facebook"></i></a></li>
                                     <li><a href="https://www.instagram.com/tectignisofficial/"><i
-                                                class="fab fa-instagram" style="background: #f9004d;"></i></a></li>
+                                                class="fa fa-instagram" style="background: #f9004d;"></i></a></li>
                                 </ul>
                             </div>
                         </div>
