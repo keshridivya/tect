@@ -201,6 +201,7 @@ table {
             opacity: 0.8 !important;
             transition: .5s ease !important;
         }
+       
     </style>
 </head>
 <!--head and body in include file-->
