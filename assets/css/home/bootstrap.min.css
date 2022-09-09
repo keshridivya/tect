@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
@@ -331,7 +333,7 @@ button, select {
 .ms-3 {
     margin-left: 1rem !important
 }
-.p-5 {
+.p-5 { 
     padding: 3rem !important
 }
 .pt-0 {
