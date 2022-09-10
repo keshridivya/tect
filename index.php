@@ -395,7 +395,7 @@ session_start();
             <div class="off_canvars_overlay"></div>
             <div class="offcanvas_menu">
                 <div class="offcanvas_menu_wrapper">
-                    <div class="canvas_close"> <a href="javascript:void(0)"><i class="fas fa-times"></i></a> </div>
+                    <div class="canvas_close"> <a href="javascript:void(0)"><i class="fa fa-times"></i></a> </div>
                     <div class="mobile-logo"> <a href="index"> <img src="assets/img/logo2.webp" alt="logo" /> </a>
                     </div>
                     <div id="menu" class="text-left">
