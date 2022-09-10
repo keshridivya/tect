@@ -24,7 +24,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="assets/css/lightcase.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/fontawesome.all.min.css"> -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/home/owl.carousel.min.css">
     <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/typed.css"> -->
