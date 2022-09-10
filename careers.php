@@ -205,7 +205,7 @@
 				<!-- Image -->
 				<div class="col-lg-6">
 					<div class="analytics-toll-img">
-						<img src="assets/img/1.png" alt="img">
+						<img src="assets/img/job.png" alt="img">
 						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
 						<div class="vedio-btn-ab">
@@ -269,7 +269,7 @@
 				<div class="col-12 col-lg-5">
 					<div class="usefull-resourses-form" style="background-image: linear-gradient(180deg,#eee 0,#ececec36);">
 						<div class="thum">
-							<img src="assets/img/photo-2.webp" alt="img" style="border-top-right-radius: 20px;border-top-left-radius: 20px;margin-top:20px">
+							<img src="assets\img\photo-2.jpg" alt="img" style="border-top-right-radius: 20px;border-top-left-radius: 20px;margin-top:20px">
 						</div>
 						
 					</div>
