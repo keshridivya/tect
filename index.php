@@ -38,6 +38,7 @@ session_start();
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
     <!-- <link rel="stylesheet" href="assets\css\fontawesome.css"> -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
     <style type="text/css">
     .slide_margin {
         display: none;
@@ -306,7 +307,9 @@ session_start();
 
 <body>
     <link rel="stylesheet" href="assets/css/home/stylesheet.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="assets/css/home/w3.css">
+
     </head>
 
     <body>
