@@ -122,18 +122,18 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="help-desk-img">
-						<img class="thumbnail" src="assets/img/job.jpg" alt="img">
+						<img class="thumbnail" src="assets/img/job.png" alt="img">
 						<div class="hdi-box-text">
 							<i class="fas fa-check"></i>
 							<h2>Found <span class="text-gradient">299+ Jobs</span></h2>
 							<div class="hdi-list">
 								<div class="left">
 									<ul>
-										<li><img src="assets/img/icon/index.png" alt="img"></li>
-										<li><img src="assets/img/icon/index1.png" alt="img"></li>
-										<li><img src="assets/img/icon/index2.png" alt="img"></li>
-										<li><img src="assets/img/icon/index3.png" alt="img"></li>
-										<li><img src="assets/img/icon/index4.png" alt="img"></li>
+										<li><img src="assets/img/icon/index.webp" alt="img"></li>
+										<li><img src="assets/img/icon/index1.webp" alt="img"></li>
+										<li><img src="assets/img/icon/index2.webp" alt="img"></li>
+										<li><img src="assets/img/icon/index3.webp" alt="img"></li>
+										<li><img src="assets/img/icon/index4.webp" alt="img"></li>
 									</ul>
 								</div>
 								<div class="right">
@@ -174,7 +174,7 @@
 							<div class="col-sm-6 mb-30">
 								<div class="info-box-s2">
 									<div class="icon">
-										<img src="assets/img/icon/1.png" alt="icon">
+										<img src="assets/img/icon/1.webp" alt="icon">
 									</div>
 									<div class="content">
 										<h4>Fully Responsive</h4>
@@ -186,7 +186,7 @@
 							<div class="col-sm-6 mb-30">
 								<div class="info-box-s2">
 									<div class="icon">
-										<img src="assets/img/icon/2.png" alt="icon">
+										<img src="assets/img/icon/2.webp" alt="icon">
 									</div>
 									<div class="content">
 										<h4>24/7 Support</h4>
@@ -265,7 +265,7 @@
 				<div class="col-12 col-lg-5">
 					<div class="usefull-resourses-form" style="background-image: linear-gradient(180deg,#eee 0,#ececec36);">
 						<div class="thum">
-							<img src="assets/img/photo-2.jpg" alt="img" style="border-top-right-radius: 20px;border-top-left-radius: 20px;margin-top:20px">
+							<img src="assets/img/photo-2.webp" alt="img" style="border-top-right-radius: 20px;border-top-left-radius: 20px;margin-top:20px">
 						</div>
 						
 					</div>
@@ -277,15 +277,23 @@
 						<p> Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier. Fusce lorem odio, pretium non dui id, vulputate tempor purus.</p>
 						<h4>Stay update with us</h4>
 						<p>Suspendisse fermentum, mi a suscipit iaculis, erat odio faucibus eros, nec aliquet sem augue sagittis orci. Sed aliquam lobortis justo, sit amet finibus tortor molestie sed.</p>
+						<div class="row">
+							<div class="col-md-4">
 						<ul>
 							<li><i class="fas fa-check-circle"></i> Product Development</li>
 							<li><i class="fas fa-check-circle"></i> Product Consultation</li>
 							<li><i class="fas fa-check-circle"></i> Architecture Design</li>
 							<li><i class="fas fa-check-circle"></i> Agile development </li>
+						</ul>
+							</div>
+							<div class="col-md-8">
+							<ul>
 							<li><i class="fas fa-check-circle"></i> Rapid application</li>
 							<li><i class="fas fa-check-circle"></i> Phase management</li>
 							<li><i class="fas fa-check-circle"></i> Team management.</li>
 						</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
