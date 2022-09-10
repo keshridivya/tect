@@ -2,14 +2,15 @@
 include("include/configure.php");
 session_start();
 
-?> 
+?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
+    <meta name="description"
+        content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
     <meta name="keywords"
         content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@ session_start();
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
     <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
     <!-- <link rel="stylesheet" href="assets/css/lightcase.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/fontawesome.all.min.css"> -->
@@ -28,7 +29,7 @@ session_start();
     <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/typed.css"> -->
     <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
-    <link rel="stylesheet" href="assets/css/normalize.css"> 
+    <link rel="stylesheet" href="assets/css/normalize.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" /> -->
@@ -39,170 +40,266 @@ session_start();
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <style type="text/css">
     .slide_margin {
-            display: none;
-        }
-
-        .slide_margin li {
-            margin-right: 50px;
-        }
-
-        .ratingCheck {
-            display: inline-flex;
-            transform: rotateY(180deg);
-        }
-
-        .ratingCheck label {
-            display: block;
-            cursor: pointer;
-            width: 20px;
-            background: transperent;
-        }
-
-        .ratingCheck label:before {
-            content: '\f005';
-            font-family: FontAwesome;
-            position: relative;
-            display: block;
-            font-size: 17px;
-        }
-
-        .ratingCheck label:after {
-            content: "\f005";
-            font-family: FontAwesome;
-            position: absolute;
-            display: block;
-            font-size: 17px;
-            color: #ff344f;
-            top: 0;
-            opacity: 0;
-            transition: .5s;
-            text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-        }
-
-        .ratingCheck input {
-            display: none;
-        }
-
-        .ratingCheck>.fff {
-            color: #ffd31d;
-        }
-
-        .pagination .active .fa-circle {
-            color: #ff344f !important;
-        }
-
-        .span {
-            color: black;
-            font-size: 12px;
-            margin-left: 10px;
-        }
-        .fa,
-.fab,
-.fad,
-.fal,
-.far,
-.fas {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1
-}
-*, *::after, *::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}   
-
-html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-
-
-a {
-  text-decoration: none;
-}
-       
-[class^="bi-"]::before,
-[class*=" bi-"]::before {
-  display: inline-block;
-  font-family: bootstrap-icons !important;
-  font-style: normal;
-  font-weight: normal !important;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  vertical-align: -.125em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-    display: block
-}
-
-body {
-    line-height: 1
-}
-
-ol,ul {
-    list-style: none
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0
-}
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1240px;
+        display: none;
     }
-}
+
+    .slide_margin li {
+        margin-right: 50px;
+    }
+
+    .ratingCheck {
+        display: inline-flex;
+        transform: rotateY(180deg);
+    }
+
+    .ratingCheck label {
+        display: block;
+        cursor: pointer;
+        width: 20px;
+        background: transperent;
+    }
+
+    .ratingCheck label:before {
+        content: '\f005';
+        font-family: FontAwesome;
+        position: relative;
+        display: block;
+        font-size: 17px;
+    }
+
+    .ratingCheck label:after {
+        content: "\f005";
+        font-family: FontAwesome;
+        position: absolute;
+        display: block;
+        font-size: 17px;
+        color: #ff344f;
+        top: 0;
+        opacity: 0;
+        transition: .5s;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    }
+
+    .ratingCheck input {
+        display: none;
+    }
+
+    .ratingCheck>.fff {
+        color: #ffd31d;
+    }
+
+    .pagination .active .fa-circle {
+        color: #ff344f !important;
+    }
+
+    .span {
+        color: black;
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .fa,
+    .fab,
+    .fad,
+    .fal,
+    .far,
+    .fas {
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1
+    }
+
+    *,
+    *::after,
+    *::before {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    html * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+
+
+    a {
+        text-decoration: none;
+    }
+
+    [class^="bi-"]::before,
+    [class*=" bi-"]::before {
+        display: inline-block;
+        font-family: bootstrap-icons !important;
+        font-style: normal;
+        font-weight: normal !important;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        vertical-align: -.125em;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block
+    }
+
+    body {
+        line-height: 1
+    }
+
+    ol,
+    ul {
+        list-style: none
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1240px;
+        }
+    }
     </style>
     <style>
-        .btnReadMore {
-            background-color: #7928ca;
-            border-radius: 4px 4px 4px 4px;
-            padding: 10px 10px 10px 10px;
+    .btnReadMore {
+        background-color: #7928ca;
+        border-radius: 4px 4px 4px 4px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    @keyframes bounce {
+
+        0%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
         }
 
-        @keyframes bounce {
-
-            0%,
-            100% {
-                -webkit-transform: translateY(0);
-                transform: translateY(0);
-            }
-
-            50% {
-                -webkit-transform: translateY(-5px);
-                transform: translateY(-5px);
-            }
+        50% {
+            -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
         }
+    }
 
-        .menu ul .menu-item:hover>a {
-            color: #fff !important;
-            animation: bounce .4s !important;
-            opacity: 0.8 !important;
-            transition: .5s ease !important;
-        }
-       
+    .menu ul .menu-item:hover>a {
+        color: #fff !important;
+        animation: bounce .4s !important;
+        opacity: 0.8 !important;
+        transition: .5s ease !important;
+    }
     </style>
 </head>
 <!--head and body in include file-->
@@ -296,7 +393,8 @@ table {
             <div class="offcanvas_menu">
                 <div class="offcanvas_menu_wrapper">
                     <div class="canvas_close"> <a href="javascript:void(0)"><i class="fas fa-times"></i></a> </div>
-                    <div class="mobile-logo"> <a href="index"> <img src="assets/img/logo2.webp" alt="logo" /> </a> </div>
+                    <div class="mobile-logo"> <a href="index"> <img src="assets/img/logo2.webp" alt="logo" /> </a>
+                    </div>
                     <div id="menu" class="text-left">
                         <ul class="offcanvas_main_menu">
                             <li> <a href="index">Home</a> </li>
@@ -436,22 +534,22 @@ table {
                                             viewBox="0 0 256 317" style="enable-background:new 0 0 256 317"
                                             xml:space="preserve">
                                             <style type="text/css">
-                                                .st0 {
-                                                    fill: #47C5FB;
-                                                }
+                                            .st0 {
+                                                fill: #47C5FB;
+                                            }
 
-                                                .st1 {
-                                                    fill: url(#SVGID_1_);
-                                                    fill-opacity: 0.8;
-                                                }
+                                            .st1 {
+                                                fill: url(#SVGID_1_);
+                                                fill-opacity: 0.8;
+                                            }
 
-                                                .st2 {
-                                                    fill: #00569E;
-                                                }
+                                            .st2 {
+                                                fill: #00569E;
+                                            }
 
-                                                .st3 {
-                                                    fill: #00B5F8;
-                                                }
+                                            .st3 {
+                                                fill: #00B5F8;
+                                            }
                                             </style>
                                             <g>
                                                 <polygon class="st0" points="157.67,0 0,157.67 48.8,206.47 255.27,0">
@@ -595,7 +693,8 @@ table {
                         </div> <!-- Image -->
                         <div class="col-lg-6">
                             <div class="analytics-toll-img"> <img src="assets/img/sections/digital-marketing.webp"
-                                    alt="img"> </div>
+                                    alt="img">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -1124,8 +1223,7 @@ table {
                                 </h3>
                                 <div class="auth">
                                     <ul>
-                                        <li> <img src="assets/img/user.jpg" alt="img"> <span>In </span> <a
-                                                href="#">Sagar bavkar </a> </li>
+                                        <li> <a href="#">Sagar bavkar </a> </li>
                                         <li> <span>In </span> <a href="#"> </a> </li>
                                     </ul>
                                 </div>
@@ -1150,8 +1248,7 @@ table {
                                     </a></h3>
                                 <div class="auth">
                                     <ul>
-                                        <li> <img src="assets/img/user.jpg" alt="img"> <span>In </span> <a
-                                                href="#">Madhur chipkar </a> </li>
+                                        <li><a href="#">Madhur chipkar </a> </li>
                                         <li> <span>In </span> <a href="#"> </a> </li>
                                     </ul>
                                 </div>
@@ -1175,9 +1272,13 @@ table {
                                 <h3><a href="single.html">web design changes that will impact your conversion rate </a>
                                 </h3>
                                 <div class="auth">
-                                    <ul>
+                                    <!-- <ul>
                                         <li> <img src="assets/img/user.jpg" alt="img"> <span>In </span> <a
                                                 href="#">Rohit mhapanka </a> </li>
+                                        <li> <span>In </span> <a href="#"> </a> </li>
+                                    </ul> -->
+                                    <ul>
+                                        <li> <a href="#">Rohit mhapanka </a> </li>
                                         <li> <span>In </span> <a href="#"> </a> </li>
                                     </ul>
                                 </div>
@@ -1297,12 +1398,34 @@ table {
             </div>
         </footer> <!-- End Footer Area -->
         <div class="scroll-area"> <i class="fa fa-arrow-up"></i> </div>
-        <script>function check_empty() { if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") { alert("Fill All Fields !"); } else { document.getElementById('form').submit(); alert("Form Submitted Successfully..."); } }//Function To Display Popup 
-        function div_show() {document.getElementById('abc').style.display = "block";document.getElementsByTagName('body').style.opacity = "0.3";}
+        <script>
+        function check_empty() {
+            if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document
+                .getElementById('msg').value == "") {
+                alert("Fill All Fields !");
+            } else {
+                document.getElementById('form').submit();
+                alert("Form Submitted Successfully...");
+            }
+        } //Function To Display Popup 
+        function div_show() {
+            document.getElementById('abc').style.display = "block";
+            document.getElementsByTagName('body').style.opacity = "0.3";
+        }
         //Function to Hide Popup 
-        function div_hide(){document.getElementById('abc').style.display = "none";}</script>
+        function div_hide() {
+            document.getElementById('abc').style.display = "none";
+        }
+        </script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-        <script> $(".Click-here").on('click', function () { $(".custom-model-main").addClass('model-open'); }); $(".close-btn, .bg-overlay").click(function () { $(".custom-model-main").removeClass('model-open'); });</script>
+        <script>
+        $(".Click-here").on('click', function() {
+            $(".custom-model-main").addClass('model-open');
+        });
+        $(".close-btn, .bg-overlay").click(function() {
+            $(".custom-model-main").removeClass('model-open');
+        });
+        </script>
         <!-- Js File -->
         <script src="assets/js/modernizr.min.js"></script>
         <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -1326,7 +1449,11 @@ table {
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- <script src="assets\js\jquery-3.6.0.js"> -->
         <script src="assets/js/infiniteslidev2.js"></script>
-        <script type="text/javascript"> $(function () { $('.slide_margin').infiniteslide(); });</script>
+        <script type="text/javascript">
+        $(function() {
+            $('.slide_margin').infiniteslide();
+        });
+        </script>
     </body>
 
 </html>
