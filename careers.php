@@ -24,7 +24,11 @@
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="assets/css/responsive.css">
-
+<style>
+	.header{
+		background-image:linear-gradient(#7928ca,#ff0080)
+	}
+</style>
 	<!--head and body in include file-->
 <?php include("include/header.php");?>
 	

@@ -119,7 +119,7 @@ if(isset($_POST['s_ubmit'])){
         <label for="">Resume</label>
         <input class="form-control"  name="file" type="file" />
       </div>
-      <button type="submit" name="s_ubmit">Submit</button>
+      <button type="submit"  name="s_ubmit">Submit</button>
     </form>
   </div>
 </div>
