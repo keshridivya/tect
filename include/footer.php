@@ -58,7 +58,7 @@
 						<div class="f-widgets-item">
 							<h3>Use Full Links</h3>
 							<ul>
-								<li><a href="ceo-govind-bavkar.html">CEO</a></li>
+								<li><a href="ceo-govind-bavkar.php">CEO</a></li>
 								<li><a href="team.php">Team </a></li>
 								<li><a href="#">Terms and Condition </a></li>
 								<li><a href="#">Privacy Policy</a></li>

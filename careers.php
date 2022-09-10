@@ -26,7 +26,7 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 
 	<!--head and body in include file-->
-<?php include("include/header.php"); ?>
+<?php include("include/header.php");?>
 	
 	<!-- Start Hero Section -->
 	<section class="hero-area-4 pt-120">
