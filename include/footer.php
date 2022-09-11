@@ -99,7 +99,8 @@
 	</footer>
 	<!-- End Footer Area -->
 	<div class="scroll-area">
-       <i class="bi bi-arrow-up"></i>
+       <!-- <i class="fa-solid fa-arrow-up"></i> -->
+	   <i class="fa fa-arrow-up"></i>
     </div>
 
 
