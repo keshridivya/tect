@@ -3,434 +3,99 @@ include("include/configure.php");
 session_start();
 
 ?>
-
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html  class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="description"
         content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
-    <meta name="keywords"
-        content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" /> -->
-    <title>Tectignis IT Solutions Website Development Company in India</title>
-    <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
-    <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
-    <link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="assets/css/lightcase.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/fontawesome.all.min.css"> -->
-    <link rel="stylesheet" href="assets/css/home/owl.carousel.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/typed.css"> -->
-    <!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" /> -->
-    <!-- <link rel="stylesheet" href="assets\css\reset.min.css"> -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
-    <!-- <link rel="stylesheet" href="assets\css\fontawesome.css"> -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<meta name="keywords" content="Tectignis IT Solutions Website Development Company in India, Tectignis IT Solutions, website development near me, website desiging in india, website desiging in mumbai, website desiging in thane, website desiging in India, website desiging in sindhudurg, Website Development in mumbai, Website Development in navi mumbai, Website Development in india, best website desiging company in navi mumbai, Website Development in Thane, IT Service Provider in Kamothe,IT Service Provider in navi mumbai, IT Service Provider in mumbai, IT Service Provider in thane, website designing services in India, Web design company, web development company, Social Media Marketing Companies Mumbai ">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Tectignis IT Solutions Website Development Company in India</title>
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
 
-    <style type="text/css">
-    .slide_margin {
-        display: none;
-    }
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+	<link rel="stylesheet" href="assets/css/lightcase.css">
+	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/typed.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+		
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" > -->
+	<link rel="stylesheet" href="assets\css\fontawesome.css">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-    .slide_margin li {
-        margin-right: 50px;
-    }
+	<style type="text/css">
+		.slide_margin {
+			display: none;
+		}
 
-    .ratingCheck {
-        display: inline-flex;
-        transform: rotateY(180deg);
-    }
-
-    .ratingCheck label {
-        display: block;
-        cursor: pointer;
-        width: 20px;
-        background: transperent;
-    }
-
-    .ratingCheck label:before {
-        content: '\f005';
-        font-family: FontAwesome;
-        position: relative;
-        display: block;
-        font-size: 17px;
-    }
-
-    .ratingCheck label:after {
-        content: "\f005";
-        font-family: FontAwesome;
-        position: absolute;
-        display: block;
-        font-size: 17px;
-        color: #ff344f;
-        top: 0;
-        opacity: 0;
-        transition: .5s;
-        text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
-    }
-
-    .ratingCheck input {
-        display: none;
-    }
-
-    .ratingCheck>.fff {
-        color: #ffd31d;
-    }
-
-    .pagination .active .fa-circle {
-        color: #ff344f !important;
-    }
-
-    .span {
-        color: black;
-        font-size: 12px;
-        margin-left: 10px;
-    }
-
-    .fa,
-    .fab,
-    .fad,
-    .fal,
-    .far,
-    .fas {
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing: antialiased;
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        line-height: 1
-    }
-
-    *,
-    *::after,
-    *::before {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-
-    html * {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    html {
-        font-size: 62.5%;
-    }
+		.slide_margin li {
+			margin-right: 50px;
+		}
 
 
 
-    a {
-        text-decoration: none;
-    }
 
-    [class^="bi-"]::before,
-    [class*=" bi-"]::before {
-        display: inline-block;
-        font-family: bootstrap-icons !important;
-        font-style: normal;
-        font-weight: normal !important;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        vertical-align: -.125em;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
+		.ratingCheck{
+display:inline-flex;
+transform: rotateY(180deg);
+}
+.ratingCheck label{
+    display:block;
+    cursor: pointer;
+    width:20px;
+    background:transperent;
+}
+.ratingCheck label:before{
+    content:'\f005';
+    font-family: FontAwesome;
+    position: relative;
+    display: block;
+    font-size:17px;
+}
+.ratingCheck label:after{
+    content:"\f005";
+    font-family: FontAwesome;
+    position: absolute;
+    display: block;
+    font-size:17px;
+    color:#ff344f;
+    top:0;
+    opacity:0;
+    transition:.5s;
+    text-shadow:0 2px 5px rgba(0,0,0,.5);
+}
+.ratingCheck input{
+    display:none;
+}
+.ratingCheck>.fff {
+    color:#ffd31d;
+}
+.pagination .active .fa-circle{
+  color:#ff344f !important;
+}
+.span{
+	color:black;
+	font-size:12px;
+	margin-left:10px;
+}
 
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline
-    }
-
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-        display: block
-    }
-
-    body {
-        line-height: 1
-    }
-
-    ol,
-    ul {
-        list-style: none
-    }
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0
-    }
-
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1240px;
-        }
-    }
-    </style>
-    <style>
-    .btnReadMore {
-        background-color: #7928ca;
-        border-radius: 4px 4px 4px 4px;
-        padding: 10px 10px 10px 10px;
-    }
-
-    @keyframes bounce {
-
-        0%,
-        100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-
-        50% {
-            -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-        }
-    }
-
-    .menu ul .menu-item:hover>a {
-        color: #fff !important;
-        animation: bounce .4s !important;
-        opacity: 0.8 !important;
-        transition: .5s ease !important;
-    }
-    </style>
+	</style>
 </head>
-<!--head and body in include file-->
 
-<body>
-    <link rel="stylesheet" href="assets/css/home/stylesheet.css">
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-    <link rel="stylesheet" href="assets/css/home/w3.css">
-
-    </head>
-
-    <body>
-        <!-- Start Header Area -->
-        <header class="header">
-            <div class="container">
-                <div class="row">
-                    <!-- Logo -->
-                    <div class="col-lg-3 align-self-center">
-                        <div class="logo"> <a href="index"> <img src="assets/img/logo2.webp" alt="img"> </a> </div>
-                        <div class="canvas_open"> <a href="javascript:void(0)"> <span></span> <span></span>
-                                <span></span> </a> </div>
-                    </div> <!-- Right -->
-                    <div class="col-lg-9">
-                        <!-- Header Right Button -->
-                        <div class="hr_btn"> <a class="button-2" id="popup" onclick="div_show()" href="#"
-                                data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Get Quote</a>
-                            <div id="abc">
-                                <!-- Popup Div Starts Here -->
-                                <div id="popupContact">
-                                    <!-- Contact Us Form --> <button id="close" onclick="div_hide()"><i
-                                            class="bi bi-x"></i></button>
-                                    <div class="width:50%"></div>
-                                    <form action="../include/api.php" id="form" method="post" name="form"
-                                        class="w3-center w3-animate-zoom">
-                                        <h2 class="h2">Get quote</h2> <input id="name" name="name"
-                                            placeholder="Your name" class="text" type="text" required> <input id="email"
-                                            name="email" placeholder="Your email" class="text" type="text" required>
-                                        <input type="tel" name="phone" class="text" placeholder="Your phone" required>
-                                        <select class="form-select" id="sel" name="service"
-                                            aria-label="Default select example">
-                                            <option selected>Services</option>
-                                            <option value="1">Website Designing</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                        </select> <textarea id="msg" class="textarea" name="message"
-                                            placeholder="Message" required></textarea> <button class="butn"
-                                            type="submit" onclick="fun()" name="sub" href="javascript:%20check_empty()"
-                                            id="submit">Send</a>
-                                    </form>
-                                </div> <!-- Popup Div Ends Here -->
-                            </div> <!-- Display Popup Button -->
-                        </div> <!-- Menu -->
-                        <div class="menu cont">
-                            <nav>
-                                <ul>
-                                    <li class="menu1 menu-item"> <a href="index">Home</a> </li>
-                                    <li class="menu1 menu-item"> <a href="about">About Us</a>
-                                        <ul>
-                                            <li><a href="ceo-govind-bavkar">CEO</a></li>
-                                            <li><a href="team">Teams</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu1 menu-item"> <a href="All-Services">Services</a>
-                                        <ul>
-                                            <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
-                                            <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
-                                            <li><a href="Services/Software-Development" id="3">Software Development</a>
-                                            </li>
-                                            <li><a href="Services/Mobile-App-Development" id="4">Mobile App
-                                                    Development</a></li>
-                                            <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
-                                            <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
-                                            <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a>
-                                            </li>
-                                            <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
-                                            <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu1 menu-item"> <a href="portfolio">Portfolio</a> </li>
-                                    <li class="menu1 menu-item"> <a href="blog">Blog</a> </li>
-                                    <li class="menu1 menu-item"> <a href="contact">Contact Us</a> </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header> <!-- End Header Area -->
-        <!-- Start Mobile Menu Area -->
-        <div class="mobile-menu-area">
-            <!--offcanvas menu area start-->
-            <div class="off_canvars_overlay"></div>
-            <div class="offcanvas_menu">
-                <div class="offcanvas_menu_wrapper">
-                    <div class="canvas_close"> <a href="javascript:void(0)"><i class="fa fa-times"></i></a> </div>
-                    <div class="mobile-logo"> <a href="index"> <img src="assets/img/logo2.webp" alt="logo" /> </a>
-                    </div>
-                    <div id="menu" class="text-left">
-                        <ul class="offcanvas_main_menu">
-                            <li> <a href="index">Home</a> </li>
-                            <li class="menu-item-has-children"> <a href="about">About Us</a>
-                                <ul class="sub-menu">
-                                    <li><a href="ceo-govind-bavkar">CEO</a></li>
-                                    <li><a href="team">Teams</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item-has-children"> <a href="All-Services">Services</a>
-                                <ul class="sub-menu">
-                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
-                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
-                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
-                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
-                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
-                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
-                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
-                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
-                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
-                                </ul>
-                            </li>
-                            <li> <a href="portfolio">Portfolio</a> </li>
-                            <li> <a href="blog">Blog</a> </li>
-                            <li><a href="contact">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--offcanvas menu area end-->
-        <!-- Start Hero Section -->
-        <section class="hero-area">
+<?php include("include/header.php") ?>
+	<!-- Start Breadcrumb Area -->
+    <section class="hero-area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 text-center">
@@ -449,9 +114,10 @@ session_start();
                         d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
                         class="shape-fill"></path>
                 </svg> </div>
-        </section> <!-- End Hero Section -->
-        <!-- Header Counter Area -->
-        <section class="h_counter_area">
+        </section>
+	<!-- End Breadcrumb Area -->
+	<!-- Start About Area -->
+	<section class="h_counter_area">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
@@ -497,9 +163,10 @@ session_start();
                     </div>
                 </div>
             </div>
-        </section> <!-- Header Counter Area -->
-        <!-- Start Features That Area -->
-        <section class="section-padding-2">
+        </section>
+	<!-- End About Area -->
+	<!-- Start Counter Area -->
+	<section class="section-padding-2">
             <div class="container">
                 <!-- Section Headding -->
                 <div class="row mb-40">
@@ -681,9 +348,9 @@ session_start();
                     </div>
                 </div>
             </div>
-        </section> <!-- End Features That Area -->
-        <!-- Start analytics Area -->
-        <section class="pb-70">
+        </section>
+	<!-- Start Testimonial Area -->
+    <section class="pb-70">
             <div class="container">
                 <div class="row">
                     <div class="row">
@@ -748,7 +415,10 @@ session_start();
                 </div>
             </div>
         </section>
-        <section class="pb-70">
+
+	<!-- End Testimonial Area -->
+    <!-- start  -->
+    <section class="pb-70">
             <div class="container">
                 <div class="row">
                     <div class="row">
@@ -812,26 +482,30 @@ session_start();
                 </div>
             </div>
         </section>
-        <section class="section-padding section-bg">
+    <!-- end  -->
+    <!-- start  -->
+    <section class="section-padding section-bg">
             <div class="container">
                 <div class="row">
                     <!-- Form -->
                     <div class="col-12 col-lg-5">
                         <div class="usefull-resourses-form">
-                            <div class="thum"> <img src="assets/img/index/hw1.webp" alt="img"> </div>
+                            <div class="thum"> 
+                                <img src="assets/img/index/hw1.webp" alt="img">
+                             </div>
                             <div class="use_form">
-                                <form action="include/api.php" method="post"> <input type="text" name="name"
-                                        placeholder="Name" required> <input type="email" name="email"
-                                        placeholder="Email" required> <input type="text" name="message"
-                                        placeholder="Subject" required> <button class="button-1" name="sub1"
-                                        type="submit">Submit Now</button> </form>
+                                <form action="include/api.php" method="post"> 
+                                    <input type="text" name="name" placeholder="Name" required>
+                                    <input type="email" name="email" placeholder="Email" required>
+                                    <input type="text" name="message" placeholder="Subject" required>
+                                    <button class="button-1" name="sub1" type="submit">Submit Now</button>
+                                </form>
                             </div>
                         </div>
                     </div> <!-- Content -->
                     <div class="col-12 col-lg-7 ">
                         <div class="usefull-resourses-content">
-                            <h2 class="text-gradient">Your technology partner for innovative and impactful digital
-                                solutions.</h2>
+                        <h2 class="text-gradient">Your technology partner for innovative and impactful digital solutions.</h2>
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="row">
@@ -848,7 +522,7 @@ session_start();
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 mx-3">
+                                <div class="col-lg-3">
                                     <div class="row">
                                         <h6> Web Development</h6>
                                     </div>
@@ -883,7 +557,9 @@ session_start();
                 </div>
             </div>
         </section>
-        <section class="section-padding-2 pt-0">
+    <!-- end  -->
+    <!-- start  -->
+    <section class="section-padding-2 pt-0">
             <div class="container">
                 <!-- Section Headding -->
                 <div class="row mb-40">
@@ -962,9 +638,10 @@ session_start();
                     </div>
                 </div>
             </div>
-        </section> <!-- End Pricing Plane -->
-        <!-- Start Testimonial Area -->
-        <section class="section-padding pt-0">
+        </section>
+    <!-- end  -->
+    <!-- start  -->
+    <section class="section-padding pt-0">
             <div class="container">
                 <!-- Section Headding -->
                 <div class="row mb-40">
@@ -1179,9 +856,10 @@ session_start();
                     </div>
                 </div>
             </div>
-        </section> <!-- End Testimonial Area -->
-        <!--start our client area-->
-        <section class="section-padding pt-0">
+        </section> 
+    <!-- end  -->
+    <!-- start  -->
+    <section class="section-padding pt-0">
             <div id="ourclients" class=" p-5">
                 <div class="ourclientheader mb-5">
                     <h1 style="color: #ddd;"><b>Our Partners</b> </h1>
@@ -1200,8 +878,10 @@ session_start();
                     </ul>
                 </div>
             </div>
-        </section> <!-- Start Latest blog Area -->
-        <section class="section-padding-2 pt-0">
+        </section>
+    <!-- end  -->
+    <!-- start  -->
+    <section class="section-padding-2 pt-0">
             <div class="container">
                 <!-- Section Headding -->
                 <div class="row mb-40">
@@ -1296,167 +976,36 @@ session_start();
                     </div>
                 </div>
             </div>
-        </section> <!-- End Latest blog Area -->
-        <!-- Start Subscribe Area -->
-        <section class="subscribe-area" style="background-image: url('assets/img/sub.webp');">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="subscribe-content">
-                            <h2>News Letter</h2>
-                            <!--<p>Naff the little rotter have gutted mate James cuppa baking legged. </p>-->
-                            <form action="#" method="post"> <input type="email" name="email"
-                                    placeholder="Email Address"> <button type="submit" name="signup">Sign up
-                                    free</button> </form>
-                            <!--<ul> <li><i class="fas fa-check"></i> 30-day free tria</li> <li><i class="fas fa-check"></i> No credit card required</li> </ul>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> <!-- End Subscribe Area -->
-        <!-- Start Footer Area -->
-        <footer class="footer">
-            <!-- Footer Top -->
-            <div class="footer-top pt-70 pb-20">
-                <div class="container">
-                    <div class="row" style="justify-content: center;">
-                        <!-- Single -->
-                        <div class="col-lg-3 col-sm-6 mb-30">
-                            <div class="f-widgets-item">
-                                <div class="f-logo"> <a href="#"> <img src="assets/img/logo1.webp" alt="logo"> </a>
-                                </div>
-                                <p></p>
-                                <ul>
-                                    <li><a href="http://maps.google.com/?q=https://g.page/Tectignis?share"><i
-                                                class="bi bi-geo-alt-fill"></i> Aashiyana CHS Shop No 05, Sector 11,
-                                            Plot No 29, Kamothe, Navi Mumbai, Maharashtra 410206</a></li>
-                                    <li><a href="tel:9930454816"><i class="bi bi-telephone-inbound"></i>+91
-                                            9930454816</a></li>
-                                </ul>
-                            </div>
-                        </div> <!-- Single -->
-                        <div class="col-lg-3 col-sm-6 mb-30">
-                            <div class="f-widgets-item">
-                                <h3>Services</h3>
-                                <ul>
-                                    <li><a href="services/Website-Designing" id="1">Website Designing</a></li>
-                                    <li><a href="services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
-                                    <li><a href="services/Software-Development" id="3">Software Development</a></li>
-                                    <li><a href="services/Mobile-App-Development" id="4">Mobile App Development</a></li>
-                                    <li><a href="services/Digital-Marketing" id="5">Digital Marketing</a></li>
-                                    <li><a href="services/Graphic-Designing" id="6">Graphic Designing</a></li>
-                                    <li><a href="services/Hardware-Networking" id="7">Hardware Networking</a></li>
-                                    <li><a href="services/CCTV-Camera" id="8">CCTV camera</a></li>
-                                    <li><a href="services/IT-Consulting" id="9">IT Consulting</a></li>
-                                </ul>
-                            </div>
-                        </div> <!-- Single -->
-                        <div class="col-lg-3 col-sm-6 mb-30">
-                            <div class="f-widgets-item">
-                                <h3>Company</h3>
-                                <ul>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="careers.php">Careers <span>We're hiring</span></a></li>
-                                    <li><a href="portfolio.php">Portfolio </a></li>
-                                    <li><a href="contact.php">Contact Us</a></li>
-                                    <li><a href="blog.php">Blog</a></li>
-                                </ul>
-                            </div>
-                        </div> <!-- Single -->
-                        <div class="col-lg-3 col-sm-6 mb-30">
-                            <div class="f-widgets-item">
-                                <h3>Use Full Links</h3>
-                                <ul>
-                                    <li><a href="ceo-govind-bavkar.html">CEO</a></li>
-                                    <li><a href="team.php">Team </a></li>
-                                    <li><a href="#">Terms and Condition </a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Refund Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- Footer Bottom -->
-            <div class="footer-bottom pt-30 pb-30">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 align-self-center">
-                            <div class="copy-f-text">
-                                <p>©2022 <a href="#">Tectignis IT Solutions Private Limited</a>. All Rights Reserved</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="footer_social">
-                                <ul>
-                                    <li><a href="https://www.facebook.com/tectignisofficial/"><i
-                                                class="fa fa-facebook"></i></a></li>
-                                    <li><a href="https://www.instagram.com/tectignisofficial/"><i
-                                                class="fa fa-instagram" style="background: #f9004d;"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer> <!-- End Footer Area -->
-        <div class="scroll-area"> <i class="fa fa-arrow-up"></i> </div>
-        <script>
-        function check_empty() {
-            if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document
-                .getElementById('msg').value == "") {
-                alert("Fill All Fields !");
-            } else {
-                document.getElementById('form').submit();
-                alert("Form Submitted Successfully...");
-            }
-        } //Function To Display Popup 
-        function div_show() {
-            document.getElementById('abc').style.display = "block";
-            document.getElementsByTagName('body').style.opacity = "0.3";
-        }
-        //Function to Hide Popup 
-        function div_hide() {
-            document.getElementById('abc').style.display = "none";
-        }
-        </script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-        <script>
-        $(".Click-here").on('click', function() {
-            $(".custom-model-main").addClass('model-open');
-        });
-        $(".close-btn, .bg-overlay").click(function() {
-            $(".custom-model-main").removeClass('model-open');
-        });
-        </script>
-        <!-- Js File -->
-        <script src="assets/js/modernizr.min.js"></script>
-        <script src="assets/js/jquery-3.6.0.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <!-- <script src="assets/js/jquery.nav.min.js"></script> -->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
-        <script src="assets/js/mixitup.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/lightcase.js"></script>
-        <script src="assets/js/jquery.waypoints.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <script src="assets/js/typed.js"></script>
-        <script src="assets/js/script.js"></script>
-        <script src="assets/js/mobile-menu.js"></script>
-        <script src="assets/js/ajax-form.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!-- <script src="assets\js\jquery.min.js"></script> -->
-        <!-- <script> $(function() {var $clientslider = $('#clientlogo');var clients = $clientslider.children().length;var clientwidth = (clients * 220);$clientslider.css('width', clientwidth);var rotating = true;// var clientspeed = -180000000;var seeclients = setInterval(rotateClients);$(document).on({mouseenter: function() {rotating = false;}, mouseleave: function() {rotating = true;}}, '#ourclients');function rotateClients() {if (rotating != false) {var $first = $('#clientlogo li:first');$first.animate({'margin-left': '-220px' },2000, function() {$first.remove().css({'margin-left': '0px' });$('#clientlogo li:last').after($first);});}}});</script> -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <!-- <script src="assets\js\jquery-3.6.0.js"> -->
-        <script src="assets/js/infiniteslidev2.js"></script>
+        </section>
+    <!-- end  -->
+	<!-- Start Subscribe Area -->
+	<?php include("include/getmail.php") ?>
+	<!-- End Subscribe Area -->
+	<!-- Start Footer Area -->
+<?php include("include/footer.php"); ?>
+    <!-- Js File -->
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.nav.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/lightcase.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="assets/js/infiniteslidev2.js"></script>
         <script type="text/javascript">
         $(function() {
             $('.slide_margin').infiniteslide();
         });
         </script>
-    </body>
-
+</body>
 </html>
