@@ -1,0 +1,42 @@
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+.fa-check-circle:before {
+    content: "\f058"
+}
+.fa-facebook-f:before {
+    content: "\f39e"
+}
+.fa-instagram:before {
+    content: "\f16d"
+}
+.fa-long-arrow-alt-right:before {
+    content: "\f30b"
+}
+.fa-quote-left:before {
+    content: "\f10d"
+}
+
+.fa-quote-right:before {
+    content: "\f10e"
+}
+.fab {
+    font-family: "Font Awesome 5 Brands"
+}
+
+.fab, .far {
+    font-weight: 400
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free"
+}
+
+.fa, .fas {
+    font-weight: 900
+}

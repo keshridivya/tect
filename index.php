@@ -20,7 +20,7 @@ session_start();
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
 	<link rel="stylesheet" href="assets/css/lightcase.css">
-	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
+	<!-- <link rel="stylesheet" href="assets/css/fontawesome.all.min.css"> -->
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
 	<link rel="stylesheet" href="assets/css/animate.css">
