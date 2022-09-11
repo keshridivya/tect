@@ -86,9 +86,9 @@
 							$sql=mysqli_query($conn,"select * from social");
 							$arr=mysqli_fetch_array($sql);
 							?>
-								<li><a href="<?php echo $arr['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="<?php echo $arr['facebook'] ?>"><i class="bi bi-facebook"></i></a></li>
 								
-								<li><a href="<?php echo $arr['instagram'] ?>"><i class="fa fa-instagram" style="background: #f9004d;"></i></a></li>
+								<li><a href="<?php echo $arr['instagram'] ?>"><i class="bi bi-instagram" style="background: #f9004d;"></i></a></li>
 								
 							</ul>
 						</div>

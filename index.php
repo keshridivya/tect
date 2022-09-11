@@ -93,7 +93,167 @@ transform: rotateY(180deg);
 	</style>
 </head>
 
-<?php include("include/header.php") ?>
+<!-- header  -->
+<link rel="stylesheet" href="assets/css/stylesheet.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body>
+
+<!-- Start Header Area -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <!-- Logo -->
+            <div class="col-lg-3 align-self-center">
+                <div class="logo">
+                    <a href="index">
+                        <img src="assets/img/logo2.webp" alt="img">
+                    </a>
+                </div>
+                <div class="canvas_open">
+                    <a href="javascript:void(0)">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <!-- Right -->
+            <div class="col-lg-9">
+                <!-- Header Right Button -->
+                <div class="hr_btn">
+                    <a class="button-2" id="popup" onclick="div_show()" href="#" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">Get Quote</a>
+                    
+                    <div id="abc">
+<!-- Popup Div Starts Here -->
+<div id="popupContact">
+<!-- Contact Us Form -->
+<button id="close"  onclick ="div_hide()"><i class="fa fa-close" style="font-size:28px"></i></button>
+<div class="width:50%"></div>
+<form action="../include/api.php" id="form" method="post" name="form" class="w3-center w3-animate-zoom" >
+<h2 class="h2" >Get quote</h2>
+<input id="name" name="name" placeholder="Your name" class="text" type="text" required>
+<input id="email" name="email" placeholder="Your email" class="text" type="text" required>
+<input type="tel"  name="phone" class="text" placeholder="Your phone" required>
+<select class="form-select" id="sel" name="service" aria-label="Default select example">
+  <option selected>Services</option>
+  <option value="1">Website Designing</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<textarea id="msg" class="textarea" name="message" placeholder="Message" required></textarea>
+<button class="butn" type="submit" onclick="fun()" name="sub" href="javascript:%20check_empty()" id="submit">Send</a>
+
+</form>
+</div>
+<!-- Popup Div Ends Here -->
+</div>
+<!-- Display Popup Button -->
+     </div>
+
+                <!-- Menu --> 
+                <div class="menu cont">
+                    <nav>
+                        <ul>
+                            <li class="menu1  menu-item">
+                                <a href="index">Home</a>
+                            </li>
+                            <li class="menu1  menu-item">
+                                <a href="about">About Us</a>
+                            <ul>
+                                <li><a href="ceo-govind-bavkar">CEO</a></li>
+                                <li><a href="team">Teams</a></li>
+                            </ul>
+                            </li>
+                            <li class="menu1 menu-item">
+                                <a href="All-Services">Services</a>
+                                <ul>
+                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
+                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
+                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
+                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
+                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
+                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
+                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
+                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
+                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu1 menu-item">
+                                <a href="portfolio">Portfolio</a>
+                            </li>								
+                            <li class="menu1 menu-item">
+                                <a href="blog">Blog</a>
+                            </li>								
+                            <li class="menu1 menu-item">
+                                <a href="contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End Header Area -->
+
+<!-- Start Mobile Menu Area -->
+<div class="mobile-menu-area">
+        <!--offcanvas menu area start-->
+        <div class="off_canvars_overlay"></div>
+        <div class="offcanvas_menu">
+            <div class="offcanvas_menu_wrapper">
+                <div class="canvas_close">
+                    <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                </div>
+                <div class="mobile-logo">
+                    <a href="index">
+                        <img src="assets/img/logo2.webp" alt="logo" />
+                    </a>
+                </div>
+                <div id="menu" class="text-left">
+                    <ul class="offcanvas_main_menu">
+								<li>
+									<a href="index">Home</a>
+								</li>
+                        <li class="menu-item-has-children">
+                            <a href="about">About Us</a>
+                            <ul class="sub-menu">
+                                <li><a href="ceo-govind-bavkar">CEO</a></li>
+								<li><a href="team">Teams</a></li>
+                            </ul>
+                        </li>
+								<li class="menu-item-has-children">
+									<a href="All-Services">Services</a>
+									<ul class="sub-menu">
+                                    <li><a href="Services/Website-Designing" id="1">Website Designing</a></li>
+                                    <li><a href="Services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
+                                    <li><a href="Services/Software-Development" id="3">Software Development</a></li>
+                                    <li><a href="Services/Mobile-App-Development" id="4">Mobile App Development</a></li>
+                                    <li><a href="Services/Digital-Marketing" id="5">Digital Marketing</a></li>
+                                    <li><a href="Services/Graphic-Designing" id="6">Graphic Designing</a></li>
+                                    <li><a href="Services/Hardware-Networking" id="7">Hardware Networking</a></li>
+                                    <li><a href="Services/CCTV-Camera" id="8">CCTV camera</a></li>
+                                    <li><a href="Services/IT-Consulting" id="9">IT Consulting</a></li>
+                                </ul>
+								</li>
+								<li>
+									<a href="portfolio">Portfolio</a>
+								</li>								
+								<li>	
+									<a href="blog">Blog</a>
+								</li>
+								<li><a href="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--offcanvas menu area end-->
+<!-- end header  -->
 	<!-- Start Breadcrumb Area -->
     <section class="hero-area">
             <div class="container">
@@ -982,7 +1142,140 @@ transform: rotateY(180deg);
 	<?php include("include/getmail.php") ?>
 	<!-- End Subscribe Area -->
 	<!-- Start Footer Area -->
-<?php include("include/footer.php"); ?>
+<!-- Start Footer Area -->
+<footer class="footer">
+		<!-- Footer Top -->
+		<div class="footer-top pt-70 pb-20">
+			<div class="container">
+				<div class="row" style="justify-content: center;">
+					<!-- Single -->
+					<?php $sql=mysqli_query($conn,"select * from company");
+				while($arr=mysqli_fetch_array($sql)){
+				?>
+					<div class="col-lg-3 col-sm-6 mb-30">
+						<div class="f-widgets-item">
+							<div class="f-logo">
+								<a href="#">
+									<img src="assets/img/logo1.webp" alt="logo">
+								</a>
+							</div>
+							<p><?php echo $arr['shortdesc'] ?></p>
+							<ul>
+								<li><a href="http://maps.google.com/?q=<?php echo $arr['address_link'] ?>"><i class="bi bi-geo-alt-fill"></i> <?php echo $arr['address'] ?></a></li>
+								<li><a href="tel:<?php echo $arr['mobile_no'] ?>"><i class="bi bi-telephone-inbound"></i>+91 <?php echo $arr['mobile_no'] ?></a></li>
+							</ul>
+						</div>
+					</div>
+					<?php } ?>
+					<!-- Single -->
+					<div class="col-lg-3 col-sm-6 mb-30">
+						<div class="f-widgets-item">
+							<h3>Services</h3>
+							<ul>
+                                    <li><a href="services/Website-Designing.php">Website Designing</a></li>
+                                    <li><a href="services/Ecommerce-Website.php">Ecommerce Website</a></li>
+                                    <li><a href="services/Software-Development.php">Software Development</a></li>
+                                    <li><a href="services/Mobile-App-Development.php">Mobile App Development</a></li>
+                                    <li><a href="services/Digital-Marketing.php">Digital Marketing</a></li>
+                                    <li><a href="services/Graphic-Designing.php">Graphic Designing</a></li>
+                                    <li><a href="services/Hardware-Networking.php">Hardware Networking</a></li>
+                                    <li><a href="services/CCTV-Camera.php">CCTV camera</a></li>
+                                    <li><a href="services/IT-Consulting.php">IT Consulting</a></li>
+                                    <!-- <li><a href="services/IT-Consulting" id="9">IT Consulting</a></li> -->
+                                </ul>
+						</div>
+					</div>
+					<!-- Single -->
+					<div class="col-lg-3 col-sm-6 mb-30">
+						<div class="f-widgets-item">
+							<h3>Company</h3>
+							<ul>
+								<li><a href="about.php">About Us</a></li>
+								<li><a href="careers.php">Careers <span>We're hiring</span></a></li>
+								<li><a href="portfolio.php">Portfolio </a></li>
+								<li><a href="contact.php">Contact Us</a></li>
+								<li><a href="blog.php">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Single -->
+					<div class="col-lg-3 col-sm-6 mb-30">
+						<div class="f-widgets-item">
+							<h3>Use Full Links</h3>
+							<ul>
+								<li><a href="ceo-govind-bavkar.php">CEO</a></li>
+								<li><a href="team.php">Team </a></li>
+								<li><a href="#">Terms and Condition </a></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Refund Policy</a></li>	
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer Bottom -->
+		<div class="footer-bottom pt-30 pb-30">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 align-self-center">
+						<div class="copy-f-text">
+							<p>©2022 <a href="#">Tectignis IT Solutions Private Limited</a>. All Rights Reserved</p>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="footer_social">
+							<ul>
+							<?php
+							$sql=mysqli_query($conn,"select * from social");
+							$arr=mysqli_fetch_array($sql);
+							?>
+								<li><a href="<?php echo $arr['facebook'] ?>"><i class="fa fa-facebook"></i></a></li>
+								
+								<li><a href="<?php echo $arr['instagram'] ?>"><i class="fa fa-instagram" style="background: #f9004d;"></i></a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+	<div class="scroll-area">
+       <!-- <i class="fa-solid fa-arrow-up"></i> -->
+	   <i class="fa fa-arrow-up"></i>
+    </div>
+
+
+	<script>function check_empty() {
+	if (document.getElementById('name').value == "" || document.getElementById('email').value == "" || document.getElementById('msg').value == "") {
+	alert("Fill All Fields !");
+	} else {
+	document.getElementById('form').submit();
+	alert("Form Submitted Successfully...");
+	}
+	}
+	//Function To Display Popup
+	function div_show() {
+	document.getElementById('abc').style.display = "block";
+	document.getElementsByTagName('body').style.opacity = "0.3";
+	}
+	//Function to Hide Popup
+	function div_hide(){
+	document.getElementById('abc').style.display = "none";
+	}</script>   
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script>
+    $(".Click-here").on('click', function() {
+      $(".custom-model-main").addClass('model-open');
+    }); 
+    $(".close-btn, .bg-overlay").click(function(){
+      $(".custom-model-main").removeClass('model-open');
+    });
+    </script>
+
     <!-- Js File -->
     <script src="assets/js/modernizr.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>

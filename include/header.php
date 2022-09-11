@@ -34,7 +34,7 @@
 <!-- Popup Div Starts Here -->
 <div id="popupContact">
 <!-- Contact Us Form -->
-<button id="close"  onclick ="div_hide()"><i class="fa fa-close" style="font-size:28px"></i></button>
+<button id="close"  onclick ="div_hide()"><i class="bi bi-x"></i></button>
 <div class="width:50%"></div>
 <form action="../include/api.php" id="form" method="post" name="form" class="w3-center w3-animate-zoom" >
 <h2 class="h2" >Get quote</h2>
