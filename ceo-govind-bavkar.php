@@ -8,10 +8,10 @@ include("include/configure.php");
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>PreeLand - Multipurpose Landing Page Template</title>
-	<link rel="icon" href="assets/img/icon.webp" type="image/gif" sizes="16x16">
-	<link rel="icon" href="assets/img/icon.webp" type="image/gif" sizes="18x18">
-	<link rel="icon" href="assets/img/icon.webp" type="image/gif" sizes="20x20">
+	<title>CEO - Tectignis IT Solutions Website Development Company in India</title>
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="16x16">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="18x18">
+	<link rel="icon" href="assets/img/favicon.webp" type="image/gif" sizes="20x20">
 
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
