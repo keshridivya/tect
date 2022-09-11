@@ -28,15 +28,16 @@
 						<div class="f-widgets-item">
 							<h3>Services</h3>
 							<ul>
-                                    <li><a href="services/Website-Designing" id="1">Website Designing</a></li>
-                                    <li><a href="services/Ecommerce-Website" id="2">Ecommerce Website</a></li>
-                                    <li><a href="services/Software-Development" id="3">Software Development</a></li>
-                                    <li><a href="services/Mobile-App-Development" id="4">Mobile App Development</a></li>
-                                    <li><a href="services/Digital-Marketing" id="5">Digital Marketing</a></li>
-                                    <li><a href="services/Graphic-Designing" id="6">Graphic Designing</a></li>
-                                    <li><a href="services/Hardware-Networking" id="7">Hardware Networking</a></li>
-                                    <li><a href="services/CCTV-Camera" id="8">CCTV camera</a></li>
-                                    <li><a href="services/IT-Consulting" id="9">IT Consulting</a></li>
+                                    <li><a href="services/Website-Designing.php">Website Designing</a></li>
+                                    <li><a href="services/Ecommerce-Website.php">Ecommerce Website</a></li>
+                                    <li><a href="services/Software-Development.php">Software Development</a></li>
+                                    <li><a href="services/Mobile-App-Development.php">Mobile App Development</a></li>
+                                    <li><a href="services/Digital-Marketing.php">Digital Marketing</a></li>
+                                    <li><a href="services/Graphic-Designing.php">Graphic Designing</a></li>
+                                    <li><a href="services/Hardware-Networking.php">Hardware Networking</a></li>
+                                    <li><a href="services/CCTV-Camera.php">CCTV camera</a></li>
+                                    <li><a href="services/IT-Consulting.php">IT Consulting</a></li>
+                                    <!-- <li><a href="services/IT-Consulting" id="9">IT Consulting</a></li> -->
                                 </ul>
 						</div>
 					</div>
