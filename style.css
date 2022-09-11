@@ -3344,7 +3344,7 @@ h2.accordion-header {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	background:#283d50;
+	background:#fff;
 	padding-bottom:30px;
 	/* height:420px; */
 	padding-top: 20px;
@@ -3401,7 +3401,7 @@ h2.accordion-header {
 .module {
 	margin-bottom: 30px;
 	padding-bottom: 30px;
-	border-bottom: 1px solid #ccc;
+	
 }
 .module > p {
 	padding: 0 20px;

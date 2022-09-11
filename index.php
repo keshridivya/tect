@@ -862,8 +862,8 @@ transform: rotateY(180deg);
     <section class="section-padding pt-0">
             <div id="ourclients" class=" p-5">
                 <div class="ourclientheader mb-5">
-                    <h1 style="color: #ddd;"><b>Our Partners</b> </h1>
-                    <p style="color: #ddd;">We are proud to be a part of the following companies</p>
+                    <h1 style="color: #344767;"><b>Our Partners</b> </h1>
+                    <p style="color: #000;">We are proud to be a part of the following companies</p>
                 </div>
                 <div class="module mt-5">
                     <ul class="slide_margin">
