@@ -656,7 +656,7 @@ transform: rotateY(180deg);
                     <div class="col-lg-12">
                         <div class="testimonial-full owl-carousel">
                             <!-- Single -->
-                            <div class="testimonial-item" style="background-color:#f2f2f2;height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff;height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Madhur Chipkar</h4>
@@ -683,7 +683,7 @@ transform: rotateY(180deg);
                                             class="fa fa-quote-right" aria-hidden="true"></i> </p>
                                 </div>
                             </div>
-                            <div class="testimonial-item" style="background-color:#f2f2f2;height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff;height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Sagar Bavkar</h4>
@@ -710,7 +710,7 @@ transform: rotateY(180deg);
                                             class="fa fa-quote-right" aria-hidden="true"></i> </p>
                                 </div>
                             </div>
-                            <div class="testimonial-item" style="background-color:#f2f2f2;height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff;height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Rohit Mhapankar</h4>
@@ -737,7 +737,7 @@ transform: rotateY(180deg);
                                             aria-hidden="true"></i> </p>
                                 </div>
                             </div>
-                            <div class="testimonial-item" style="background-color:#f2f2f2; height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff; height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Lakshadeep Khilari</h4>
@@ -766,7 +766,7 @@ transform: rotateY(180deg);
                                             class="fa fa-quote-right" aria-hidden="true"></i> </p>
                                 </div>
                             </div>
-                            <div class="testimonial-item" style="background-color:#f2f2f2;height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff;height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Aniket Nangare</h4>
@@ -795,7 +795,7 @@ transform: rotateY(180deg);
                                             aria-hidden="true"></i> </p>
                                 </div>
                             </div>
-                            <div class="testimonial-item" style="background-color:#f2f2f2;height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff;height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Abhijeet Tugave</h4>
@@ -824,7 +824,7 @@ transform: rotateY(180deg);
                                             class="fa fa-quote-right" aria-hidden="true"></i> </p>
                                 </div>
                             </div>
-                            <div class="testimonial-item" style="background-color:#f2f2f2;height: 450px;">
+                            <div class="testimonial-item" style="background-color:#fff;height: 450px;">
                                 <div class="testimonial-single-header">
                                     <div class="testimonial-title">
                                         <h4 class="ms-2">Rushikesh Shelar</h4>
