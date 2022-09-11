@@ -206,7 +206,7 @@ transform: rotateY(180deg);
         <div class="offcanvas_menu">
             <div class="offcanvas_menu_wrapper">
                 <div class="canvas_close">
-                    <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                    <a href="javascript:void(0)"><i class="fa fa-close"></i></a>
                 </div>
                 <div class="mobile-logo">
                     <a href="index">
