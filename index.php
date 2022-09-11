@@ -641,7 +641,7 @@ transform: rotateY(180deg);
         </section>
     <!-- end  -->
     <!-- start  -->
-    <section class="section-padding pt-0">
+    <section class="section-padding pt-0" style="background-color: #f2f2f2">
             <div class="container">
                 <!-- Section Headding -->
                 <div class="row mb-40">
@@ -867,21 +867,21 @@ transform: rotateY(180deg);
                 </div>
                 <div class="module mt-5">
                     <ul class="slide_margin">
-                        <li><img src="assets/img/our_client/harmony.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/gobest.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/lic.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/hpcl.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/reliance.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/lo.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/logo.webp" width="225px" height="225px" alt="" /></li>
-                        <li><img src="assets/img/our_client/download.webp" width="225px" height="225px" alt="" /></li>
+                        <li><img src="assets/img/our_client/harmony.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/gobest.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/lic.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/hpcl.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/reliance.webp" width="160px" height="120px" alt="" /></li>
+                        <li><img src="assets/img/our_client/lo.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/logo.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/download.webp" width="100px" height="100px" alt="" /></li>
                     </ul>
                 </div>
             </div>
         </section>
     <!-- end  -->
     <!-- start  -->
-    <section class="section-padding-2 pt-0">
+    <section class="section-padding-2 pt-0" style="background-color: #f2f2f2"> 
             <div class="container">
                 <!-- Section Headding -->
                 <div class="row mb-40">
