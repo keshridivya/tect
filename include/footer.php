@@ -86,9 +86,9 @@
 							$sql=mysqli_query($conn,"select * from social");
 							$arr=mysqli_fetch_array($sql);
 							?>
-								<li><a href="<?php echo $arr['facebook'] ?>"><i class="bi bi-facebook"></i></a></li>
+								<li><a href="<?php echo $arr['facebook'] ?>"><i class="fab fa-facebook-f"></i></a></li>
 								
-								<li><a href="<?php echo $arr['instagram'] ?>"><i class="bi bi-instagram" style="background: #f9004d;"></i></a></li>
+								<li><a href="<?php echo $arr['instagram'] ?>"><i class="fab fa-instagram" style="background: #f9004d;"></i></a></li>
 								
 							</ul>
 						</div>
@@ -99,8 +99,7 @@
 	</footer>
 	<!-- End Footer Area -->
 	<div class="scroll-area">
-       <!-- <i class="fa-solid fa-arrow-up"></i> -->
-	   <i class="fa fa-arrow-up"></i>
+	   <i class="bi bi-arrow-up"></i>
     </div>
 
 
