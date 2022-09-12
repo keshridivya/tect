@@ -23,8 +23,8 @@ session_start();
 	<link rel="stylesheet" href="assets/css/fontawesome.all.min.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<!-- <link rel="stylesheet" href="assets/css/owl.theme.default.min.css"> -->
-	<link rel="stylesheet" href="assets/css/animate.css">
-	<link rel="stylesheet" href="assets/css/typed.css">
+	<!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+	<!-- <link rel="stylesheet" href="assets/css/typed.css"> -->
 	<!-- <link rel="stylesheet" href="assets/css/magnific-popup.css"> -->
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="style.css">
