@@ -88,9 +88,6 @@
 				<div class="col-lg-4 col-sm-6 mb-30">
 					<div class="job-board-item">
 						<div class="top">
-							<div class="img">
-								<img src="admin/images/career_logo/<?php echo $arr['logo']; ?>" alt="job">
-							</div>
 							<div class="con">
 								<a href="#"><?php echo $arr['location']; ?></a>
 							</div>
@@ -104,9 +101,8 @@
 						</div>
 						<div class="btm">
 							<ul>
-								<li><?php echo $arr['time']; ?></li>
 								<li><?php echo $arr['job_type']; ?></li>
-								<li>235 Vacancy</li>
+								<li>No Vacancy</li>
 							</ul>
 						</div>
 					</div>
@@ -126,7 +122,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="help-desk-img">
-						<img class="thumbnail" src="assets/img/job.png" alt="img">
+						<img class="thumbnail" src="assets\img\Tectignis-12-sep-1-1.webp" alt="img">
 						<div class="hdi-box-text">
 							<i class="fas fa-check"></i>
 							<h2>Found <span class="text-gradient">299+ Jobs</span></h2>
@@ -205,105 +201,18 @@
 				<!-- Image -->
 				<div class="col-lg-6">
 					<div class="analytics-toll-img">
-						<img src="assets/img/job.png" alt="img">
-						<?php $sql=mysqli_query($conn,"select * from video where id='8'");
+						<img src="assets\img\Tectignis-12-sep-2-1.webp" alt="img" style="border-radius:10px">
+						<!-- <?php $sql=mysqli_query($conn,"select * from video where id='8'");
 						while($row=mysqli_fetch_array($sql)){ ?>
-						<div class="vedio-btn-ab">
-							<a data-rel="lightcase" href="http://localhost/tectignisUniversity/tectignis/New%20Tectignis/template/videos/<?php echo $row['location'] ?>">
-									<i class="fas fa-play"></i> <span>Check This Vedio</span></a>
-						</div>
-						<?php } ?>
+						
+						<?php } ?> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End analytics Area -->
-	<!-- Start Counter Area -->
-	<section class="counter2-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 offset-lg-2">
-					<div class="row">
-						<!-- Single -->
-						<div class="col-lg-4 col-sm-6 mb-30">
-							<div class="counter2-item">
-								<div class="title">
-                                    <h2 class="counter text-gradient">255</h2>
-                                    <h3 class="text-gradient">K</h3>
-                                </div>
-                                <p>Customers</p>
-							</div>
-						</div>
-						<!-- Single -->
-						<div class="col-lg-4 col-sm-6 mb-30">
-							<div class="counter2-item">
-								<div class="title">
-                                    <h2 class="counter text-gradient">51</h2>
-                                    <h3 class="text-gradient">K</h3>
-                                </div>
-                                <p>Downloads</p>
-							</div>
-						</div>
-						<!-- Single -->
-						<div class="col-lg-4 col-sm-6 mb-30">
-							<div class="counter2-item">
-								<div class="title">
-                                    <h2 class="counter text-gradient">99</h2>
-                                    <h3 class="text-gradient">%</h3>
-                                </div>
-                                <p>Happy users</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Counter Area -->
-	<!-- Start useful resource Area -->
-	<section class="section-padding section-bg">
-		<div class="container">
-			<div class="row">
-				<!-- Form -->
-				<div class="col-12 col-lg-5">
-					<div class="usefull-resourses-form" style="background-image: linear-gradient(180deg,#eee 0,#ececec36);">
-						<div class="thum">
-							<img src="assets\img\photo-2.jpg" alt="img" style="border-top-right-radius: 20px;border-top-left-radius: 20px;margin-top:20px">
-						</div>
-						
-					</div>
-				</div>
-				<!-- Content -->
-				<div class="col-12  col-lg-7 align-self-center">
-					<div class="usefull-resourses-content">
-						<h2 class="text-gradient">The most useful resource ever created for developers.</h2>
-						<p> Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier. Fusce lorem odio, pretium non dui id, vulputate tempor purus.</p>
-						<h4>Stay update with us</h4>
-						<p>Suspendisse fermentum, mi a suscipit iaculis, erat odio faucibus eros, nec aliquet sem augue sagittis orci. Sed aliquam lobortis justo, sit amet finibus tortor molestie sed.</p>
-						<div class="row">
-							<div class="col-md-4">
-						<ul>
-							<li><i class="fas fa-check-circle"></i> Product Development</li>
-							<li><i class="fas fa-check-circle"></i> Product Consultation</li>
-							<li><i class="fas fa-check-circle"></i> Architecture Design</li>
-							<li><i class="fas fa-check-circle"></i> Agile development </li>
-						</ul>
-							</div>
-							<div class="col-md-8">
-							<ul>
-							<li><i class="fas fa-check-circle"></i> Rapid application</li>
-							<li><i class="fas fa-check-circle"></i> Phase management</li>
-							<li><i class="fas fa-check-circle"></i> Team management.</li>
-						</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End useful resource Area -->
+	
 	<!-- Start Subscribe Area -->
 	<?php include("include/getmail.php"); ?>
 	<!-- End Subscribe Area -->
