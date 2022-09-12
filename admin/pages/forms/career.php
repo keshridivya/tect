@@ -100,100 +100,6 @@ include("../../include/configure.php");
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label">Education</label>
-                                            <div class="col-sm-1">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input" value="ssc"
-                                                            name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("ssc",$education)) echo 'checked="checked"'; }?>>
-                                                        SSC
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-1">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input" value="hsc"
-                                                            name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("hsc",$education)) echo 'checked="checked"'; }?>>
-                                                        HSC
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input" value="gradute"
-                                                            name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("gradute",$education)) echo 'checked="checked"'; }?>>
-                                                        Graduate
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            value="under graduate" name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("under graduate",$education)) echo 'checked="checked"'; }?>>
-                                                        Under Graduate
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            value="bsc.it/cs" name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("bsc.it/cs",$education)) echo 'checked="checked"'; }?>>
-                                                        BSC.IT/CS
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-1">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input" value="bca"
-                                                            name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("bca",$education)) echo 'checked="checked"'; }?>>
-                                                        BCA
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-3"></div>
-                                            <div class="col-sm-2">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            value="b.com/bms/bbf" name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("b.com/bms/bbf",$education)) echo 'checked="checked"'; }?>>
-                                                        B.COM/BMS/BBF
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input"
-                                                            value="msc.it/cs" name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("msc.it/cs",$education)) echo 'checked="checked"'; }?>>
-                                                        MSC.IT/CS
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-2">
-                                                <div class="form-check form-check-primary">
-                                                    <label class="form-check-label">
-                                                        <input type="checkbox" class="form-check-input" value="m.com"
-                                                            name="course[ ]"
-                                                            <?php if(isset($_GET['eid'])){if(in_array("m.com",$education)) echo 'checked="checked"'; }?>>
-                                                        M.COM
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
                                             <label class="col-sm-3 col-form-label">Programming Language</label>
                                             <div class="col-sm-1">
                                                 <div class="form-check form-check-primary">
@@ -300,7 +206,6 @@ include("../../include/configure.php");
                                                 <th>Location</th>
                                                 <th>Job Type</th>
                                                 <th>Salary</th>
-                                                <th>Education</th>
                                                 <th>Lang</th>
                                                 <th>Description</th>
                                                 <th>Action</th>
@@ -320,7 +225,6 @@ while($row=mysqli_fetch_array($sql))
                                                 <td><?php echo $row['location']; ?></td>
                                                 <td><?php echo $row['job_type']; ?></td>
                                                 <td><?php echo $row['salary']; ?></td>
-                                                <td><?php echo $row['education']; ?></td>
                                                 <td><?php echo $row['lang']; ?></td>
                                                 <td><?php echo $row['description']; ?></td>
                                                 <td>

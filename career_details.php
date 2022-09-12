@@ -172,19 +172,6 @@ if(isset($_POST['s_ubmit'])){
                                 essentially unchanged</p>
 
                             <div class="row">
-                                <div class="col-lg-12 mb-30">
-                                    <div class="tagcloud">
-                                        <span><b>Education: </b></span>
-                                        <?php $links = array();
-                                            $parts = explode(',', $arr['education']);
-                                            foreach ($parts as $tag)
-                                            {
-                                                $links[] = "<span class='tagcloud' style='border-radius:10px'><a href='#'>".$tag."</a></span>";
-                                            }
-                                            echo implode(" ", $links);
-                                            ;?>
-                                    </div>
-                                </div>
                                 <div class="col-lg-12">
                                     <div class="prject-share">
                                         <?php $sql=mysqli_query($conn,"select * from social");
