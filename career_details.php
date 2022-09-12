@@ -15,7 +15,7 @@ if(isset($_POST['s_ubmit'])){
 
     $sql=mysqli_query($conn,"INSERT INTO `job_enquiry`(`career_id`, `name`, `email`, `phone`, `job_post`, `attachment`) VALUES ('$id','$name','$email','$phone','$post',' $file_size')");
     if($sql==1){
-        echo "<script>alert('successfully Apply');window.location='careers.php';</script>";
+        echo "<script>window.location='careers.php';</script>";
     }
 }
 
@@ -44,14 +44,30 @@ if(isset($_POST['s_ubmit'])){
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-
+<style>
+    .submit {
+    text-decoration: none;
+    width: 50%;
+     text-align: center;
+    display: block;
+    background-image: linear-gradient(310deg,#7928ca,#f9004d);
+    color: #fff;
+    border: 1px solid #79095e;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    }
+</style>
 
     <!--head and body in include file-->
     <?php include("include/header.php"); ?>
 
 
     <!-- Start Breadcrumb Area -->
-    <section class="breadcrumb-area" style="background-image: url('assets/img/breadcrumb.jpg');">
+    <section class="breadcrumb-area" style="background-image: url('assets/img/backgrounds/about.webp');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -103,8 +119,8 @@ if(isset($_POST['s_ubmit'])){
                                             <div class="form-popup-bg">
                                                 <div class="form-container">
                                                     <button id="btnCloseForm" class="close-button">X</button>
-                                                    <h1>Apply Now</h1>
-                                                    <p>For more information. Please complete this form.</p>
+                                                    <h1 class="text-center">Apply Now</h1>
+                                                    <p class="text-center">For more information. Please complete this form.</p>
                                                     <form action="" method="post" enctype="multipart/form-data">
                                                         <div class="form-group">
                                                             <label for="">Name</label>
@@ -129,7 +145,7 @@ if(isset($_POST['s_ubmit'])){
                                                             <label for="">Resume</label>
                                                             <input class="form-control" name="file" type="file" />
                                                         </div>
-                                                        <button type="submit" name="s_ubmit">Submit</button>
+                                                        <button type="submit" name="s_ubmit" class="submit">Submit</button>
                                                     </form>
                                                 </div>
                                             </div>

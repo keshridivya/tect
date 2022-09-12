@@ -93,7 +93,7 @@ if(isset($_POST['sub'])){
 							<i class="bi bi-geo-alt-fill"></i>
 						</div>
 						<h4>Location</h4>
-						<a href="http://maps.google.com/?q=<?php echo $arr['address_link'] ?>"><?php echo $arr['address'] ?></a>
+						<a href="http://maps.google.com/?q=<?php echo $arr['address_link'] ?>" target="_blank"><?php echo $arr['address'] ?></a>
 					</div>
 				</div>
 			</div>
