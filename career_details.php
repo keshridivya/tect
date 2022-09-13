@@ -107,7 +107,7 @@ if(isset($_POST['s_ubmit'])){
                                         </p>
                                         <p style="font-size:20px;color:#344767;letter-spacing:2px"><i
                                                 class="bi bi-geo-alt-fill"
-                                                style="color:red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $arr['salary']; ?>
+                                                style="color:red;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $arr['location']; ?>
                                         </p>
                                     </div>
                                     <div class="col-12 col-lg-6">
