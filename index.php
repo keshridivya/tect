@@ -268,7 +268,7 @@ transform: rotateY(180deg);
                             </div>
                         </div>
                     </div> <!-- Single -->
-                    <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="col-lg-5 col-sm-6 mb-30">
                         <div class="">
                             <div class="content">
                                 <h4 class="fw-bold mb-5" style="color:#7928ca;"><img
@@ -299,7 +299,7 @@ transform: rotateY(180deg);
                             </div>
                         </div>
                     </div> <!-- Single -->
-                    <div class="col-lg-4 col-sm-6 mb-30">
+                    <div class="col-lg-3 col-sm-6 mb-30">
                         <div class="">
                             <div class="content">
                                 <h4 class="fw-bold" style="color:#7928ca;"><span><svg xmlns="http://www.w3.org/2000/svg"
@@ -881,8 +881,8 @@ transform: rotateY(180deg);
                         <li><img src="assets/img/our_client/lic.webp" width="100px" height="100px" alt="" /></li>
                         <li><img src="assets/img/our_client/hpcl.webp" width="100px" height="100px" alt="" /></li>
                         <li><img src="assets/img/our_client/reliance.webp" width="160px" height="120px" alt="" /></li>
-                        <li><img src="assets/img/our_client/lo.webp" width="100px" height="100px" alt="" /></li>
-                        <li><img src="assets/img/our_client/logo.webp" width="100px" height="100px" alt="" /></li>
+                        <!-- <li><img src="assets/img/our_client/lo.webp" width="100px" height="100px" alt="" /></li>
+                        <li><img src="assets/img/our_client/logo.webp" width="100px" height="100px" alt="" /></li> -->
                         <li><img src="assets/img/our_client/download.webp" width="100px" height="100px" alt="" /></li>
                     </ul>
                 </div>

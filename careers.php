@@ -28,6 +28,36 @@
 	.header{
 		background-image:linear-gradient(#7928ca,#ff0080)
 	}
+	#select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    padding-left: 40px;
+    font-size: 16px;
+    font-family: raleway;
+	border:none;
+}
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    vertical-align: middle;
+    background-color: #fff;
+    /* background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e); */
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}	
 </style>
 	<!--head and body in include file-->
 <?php include("include/header.php");?>
@@ -41,27 +71,41 @@
 					<div class="hero-caption-4">
 						<h2>Find the Most Exciting <br> Startup Jobs</h2>
 						<div class="jobs_search_form">
+						
+							
+							<form method="post">
 							<div class="row">
-								<div class="col-sm-5">
-									<div class="single-input border-right">
-										<input type="text" name="name" placeholder="Type Job title, keywords">
-										<i class="bi bi-search"></i>
-									</div>
-								</div>
-								<div class="col-sm-5">
+								<!-- <div class="col-sm-5">
 									<div class="single-input">
 										<input type="text" name="location" placeholder="City, state, or zip">
 										<i class="bi bi-geo-alt"></i>
 									</div>
+								</div> -->
+								<div class="col-sm-10">
+									<div class="single-input border-right">
+										<!-- <input type="text" name="name" placeholder="Type Job title, keywords"> -->
+										<i class="bi bi-search"></i>
+										<select class="form-select" id="select" name="course" aria-label="Default select example">
+											<option selected>Type Job title, keywords</option>
+											<?php
+                                                  $selectquery="select * from career";
+                                                  $portfolio = mysqli_query($conn,$selectquery);
+												while($arr=mysqli_fetch_array($portfolio)){
+                                               ?>
+											<option><?php echo $arr["title"]; ?></option>
+												<?php } ?>
+										</select>
+									</div>
 								</div>
+ 
 								<div class="col-sm-2">
 									<div class="single-input">
-										<button type="submit">Search</button>
+										<button type="submit" name="search">Search</button>
 									</div>
 								</div>
 							</div>
+						</form>
 						</div>
-						<p>Search through over 125,000 listings</p>
 					</div>
 				</div>
 			</div>
@@ -82,7 +126,33 @@
 			</div>
 			<div class="row">
 				<!-- Single -->
-				<?php $sql=mysqli_query($conn,"select * from career");
+				<?php if (isset($_POST['search'])){
+					$course=$_POST['course']; 
+					$sql=mysqli_query($conn,"select * from career where title='$course'");
+	while($arr=mysqli_fetch_array($sql)){?>
+					<div class="col-lg-4 col-sm-6 mb-30">
+					<div class="job-board-item">
+						<div class="top">
+							<div class="con">
+								<a href="#"><?php echo $arr['location']; ?></a>
+							</div>
+						</div>
+						<div class="middle">
+							<h4><a href="career_details.php?id=<?php echo $arr['id']; ?>"><?php echo $arr['title']; ?></a></h4>
+							<p><?php echo $arr['salary']; ?></p>
+							<div class="fjb-f-btn">
+							<a class="jb-btn1"  style="margin-left:55%;" href="career_details.php?id=<?php echo $arr['id']; ?>">View</a>
+							</div>
+						</div>
+						<div class="btm">
+							<ul>
+								<li><?php echo $arr['job_type']; ?></li>
+								<li>No Vacancy</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<?php } } else { $sql=mysqli_query($conn,"select * from career");
 	while($arr=mysqli_fetch_array($sql)){
 	?>
 				<div class="col-lg-4 col-sm-6 mb-30">
@@ -107,7 +177,7 @@
 						</div>
 					</div>
 				</div>
-				<?php } ?>
+				<?php } } ?>
 			<div class="row mt-30">
 				<div class="col-lg-12 text-center">
 					<a class="button-1" href="#">View All Jobs</a>
