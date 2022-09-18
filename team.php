@@ -33,7 +33,7 @@ if (mysqli_num_rows($doctors)>0){
 
 <?php include("include/header.php") ?>
 	<!-- Start Breadcrumb Area -->
-	<section class="breadcrumb-area" style="background-image: url('assets/img/backgrounds/teams.webp');">
+	<section class="breadcrumb-area" style="background-image: url('assets/img/backgrounds/');">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
