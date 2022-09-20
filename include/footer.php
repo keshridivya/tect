@@ -19,6 +19,7 @@
 							<ul>
 								<li><a href="http://maps.google.com/?q=<?php echo $arr['address_link'] ?>" target="_blank"><i class="bi bi-geo-alt-fill"></i> <?php echo $arr['address'] ?></a></li>
 								<li><a href="tel:<?php echo $arr['mobile_no'] ?>"><i class="bi bi-telephone-inbound"></i>+91 <?php echo $arr['mobile_no'] ?></a></li>
+								<li><a href="mailto:<?php echo $arr['email_id'] ?>"><i class="bi bi-envelope"></i> <?php echo $arr['email_id'] ?></a></li>
 							</ul>
 						</div>
 					</div>
@@ -60,8 +61,8 @@
 							<ul>
 								<li><a href="ceo-govind-bavkar.php">CEO</a></li>
 								<li><a href="team.php">Team </a></li>
-								<li><a href="#">Terms and Condition </a></li>
-								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="terms&conditions.php">Terms and Condition </a></li>
+								<li><a href="privacy_policy.php">Privacy Policy</a></li>
 								<li><a href="#">Refund Policy</a></li>	
 							</ul>
 						</div>
