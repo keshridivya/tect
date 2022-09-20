@@ -49,9 +49,11 @@ if (mysqli_num_rows($doctors)>0){
 	<section class="section-padding-2">
 		<div class="container">
         <div class="row">
-				<div class="col-12">
-                <h1>NO REFUND</h1><br>
-
+				<div class="col-12" style="text-align:center;">
+                <h1><b> REFUND POLICY</b></h1><br>
+<ul style="list-style-type:disc">
+    <li><h3>NO REFUND</h3></li>
+</ul>
 				</div>
 			</div>
 			
