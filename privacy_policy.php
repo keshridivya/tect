@@ -38,7 +38,7 @@ if (mysqli_num_rows($doctors)>0){
 			<div class="row">
 				<div class="col-lg-12">
 					<div class="breadcrumb-content">
-						<h2>Privacy Policy</h2>
+						<h2>About Privacy Policy</h2>
 					</div>
 				</div>
 			</div>
@@ -50,81 +50,92 @@ if (mysqli_num_rows($doctors)>0){
 		<div class="container">
         <div class="row">
 				<div class="col-12">
-                <h1>Privacy Policy for Tectignis It Solutions</h1><br>
-
-<p>At Tectignis It Solutions, accessible from http://tec.tectignis.in/, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Tectignis It Solutions and how we use it.</p><br>
-
-<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p><br>
+                <h1>PRIVACY POLICY</h1><br>
 
 
 
-<h2>Consent</h2><br>
+<p>This privacy policy (“Privacy Policy“) explains how we collect, use, share and protect personal information about the Users of the Services. We have created this Privacy Policy to demonstrate our commitment to the protection of your privacy and your personal information. Your use of and access to the Services is subject to this Privacy Policy and our Terms of Use.</p><br>
 
-<p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p><br>
-<h2>Information we collect</h2>
 
-<p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
-<p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
-<p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
-<br><br>
 
-<p>We use the information we collect in various ways, including to:</p><br>
 
-<ul style="list-style-type:disc">
-<li>Provide, operate, and maintain our website</li>
-<li>Improve, personalize, and expand our website</li>
-<li>Understand and analyze how you use our website</li>
+
+<p>By confirming that you are bound by this privacy policy (by the means provided on this website or app), by using the services or by otherwise giving us your information, you agree to the practices and policies outlined in this privacy policy and you hereby consent to our collection, use and sharing of your information as described in this privacy policy. We reserve the right to change, modify, add or delete portions of the terms of this privacy policy, at our sole discretion, at any time. If you do not agree with this privacy policy at any time, do not use any of the services or give us any of your information. If you use the services on behalf of someone else (such as your child) or an entity, you represent that you are authorized by such individual or entity to accept this privacy policy on such individual’s or entity’s behalf.</p><br>
+
+<h2>1. PRIVACY POLICY EXPLAINED</h2>
+
+<p>This Privacy Policy is published in compliance with, inter alia: i. Section 43A of the Information Technology Act, 2000;</p><br>
+<p>a. Regulation 4 of the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011 (the “SPI Rules”); and</p><br>
+<p>b. Regulation 3(1) of the Information Technology (Intermediaries Guidelines) Rules, 2011.</p><br>
+
+
+<p>This Privacy Policy states the following:</p><br>
+
+<ul >
+<li>a. The type of information collected from the Users, including sensitive personal data or information;</li><br>
+<li>b. The purpose, means and modes of usage of such information; and</li><br>
+<li>c. How and to whom we will disclose such information.</li><br>
 <li>Develop new products, services, features, and functionality</li>
-<li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
-<li>Send you emails</li>
-<li>Find and prevent fraud</li>
+
 </ul>
 
-<h2>Log Files</h2><br>
+<h2>2. COLLECTION OF PERSONAL INFORMATION</h2><br>
 
-<p>Tectignis It Solutions follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p><br>
+<p>Information collected by us from you may include (but is not limited to) the following:</p><br>
 
+<ul >
+<li>a. Contact data (such as your email address and phone number);</li><br>
+<li>b.  Demographic data (such as your gender, your date of birth and your pin code);</li><br>
+<li>c. Data regarding your usage of the services and history of the appointments and other transactions made by or with you through the use of Services;</li><br>
+<li>Health or medical data (such as your past medical history and conditions, diagnostic reports, prescriptions and medication history)</li>
+<li>e. Other information that you voluntarily choose to provide to us (such as information shared by you with us through emails or letters, your work details, your family details)</li><br>
+</ul>
+<p>The information collected from you by  Tectignis IT Solutions may constitute ‘personal Information’ or ‘sensitive personal data or Information’ under the SPI Rules. Personal information is defined under the SPI Rules to mean any information that relates to a natural person, which, either directly or indirectly, in combination with other information available or likely to be available with a body corporate, is capable of identifying such person.</p><br>
+<p>Information that is freely available in the public domain or accessible under the Right to Information Act, 2005 or any other law will not be regarded as personal information or sensitive personal data or information.
+</p><br>
 
+<h2>3. PRIVACY STATEMENTS</h2><br>
 
+<p>a. A condition of each User’s use of and access to the Services is their acceptance of the Terms of Use, which also involves acceptance of the terms of this Privacy Policy. Any User that does not agree with any provisions of the same has the option to discontinue the Services provided by Tectignis IT Solutions immediately.</p><br>
+<p>b. All the information provided to us by a User, including sensitive personal information, is voluntary. You understand that Tectignis IT Solutions, either itself or with its Partners, may use certain information of yours, which has been designated as ‘sensitive personal data or Information’ under the SPI Rules, (a) for the purpose of providing you the Services, (b) for commercial purposes and in an aggregated or non- personally identifiable form for research, statistical analysis and business intelligence purposes, for (c) for sale or transfer of such research, statistical or intelligence data in an aggregated or non-personally identifiable form to our Partners.Tectignis IT Solutions also reserves the right to use information provided by or about the User for the following purposes:</p><br>
+<ul>
+	<li>i. Publishing such information on the Website.</li>
+	<li>ii. Contacting Users for offering new products or services.</li>
+	<li>iii. Contacting Users for taking product and Service feedback.</li>
+	<li>iv. Analyzing software usage patterns for improving product design and utility.</li>
+	<li>You hereby consent to such use of such information by Tectignis IT Solutions and our Partner.</li>
+</ul>
+<p>c. Collection of information which has been designated as ‘sensitive personal data or Information’ under the SPI Rules requires your express consent. By affirming your assent to this Privacy Policy, you provide your consent to such collection as required under applicable law. Our Services may be unavailable to you in the event such consent is not given.</p><br>
+<p>d. You are responsible for maintaining the accuracy of the information you submit to us, such as your contact information provided as part of account registration. If your personal information changes, you may correct, delete inaccuracies, or amend information by making the change on your profile information page on the Websites or App or by contacting us at http://tec.tectignis.in/ . We will make good faith efforts to make requested changes in our then active databases as soon as reasonably practicable.</p><br>
+	<p>e. If you wish to cancel your account or request that we no longer use your information to provide you services, contact us through http://tec.tectignis.in/ . We will retain your information for as long as your account with the Services is active and as needed to provide you the Services. We shall not retain such information for longer than is required for the purposes for which the information may lawfully be used or is otherwise required under any other law for the time being in force.</p><br>
+	<p>f. Tectignis IT Solutions may require the User to pay with a credit card, debit card, net banking or other online payment mechanisms for Services for which an amount(s) is/are payable. Tectignis IT Solutions will collect such User’s credit card number and/or other financial institution information such as bank account numbers and will use that information for the billing and payment processes, including but not limited to the use and disclosure of such credit card number and information to third parties as necessary to complete such billing operation.</p><br>
+	<p>g. In order to have access to all the features and benefits on our Website or App, a User must first create an account on our Website or App. To create an account, a User is required to provide the following information, which such User recognizes and expressly acknowledges is personal information allowing others, including Tectignis IT Solutions, to identify the User: name, User ID, email address, address, date of birth, gender, phone number and password chosen by the User. Other optional information may be requested on the registration page. We may, in future, include other optional requests for information from the User to help us to customize the Services to deliver personalized information to the User. However, We assume your consent in relation to various matters, once you complete the registration process.</p><br>
+	<p>h. This Privacy Policy applies to Websites, App and Services that are owned and operated by Tectignis IT Solutions. Tectignis IT Solutions does not make any representations concerning the privacy practices or policies of such third parties or terms of use of such websites, nor does Tectignis IT Solutions guarantee the accuracy, integrity, or quality of the information, data, text, software, sound, photographs, graphics, videos, messages or other materials available on such websites.</p><br>
+	<p>i. The Website may use cookies to store certain data (that is not sensitive personal data or information) that is used by us and our partners for the technical administration of the Website, App, research and development, and for User administration. In the course of serving advertisements or optimizing services to its Users, Tectignis IT Solutions may allow authorized third parties to place or recognize a unique cookie on the User’s browser. The cookies however, do not store any personal information of the User.</p><br>
+	<p>j. Our Websites and the App may include social media Features, such as the Facebook button. These Features may collect your IP address, which page you are visiting on our site, and may set a cookie to enable the Feature to function properly. Your interactions with these Features are governed by the privacy statement of the company providing them.</p><br>
+	<p>k. Tectignis IT Solutions has implemented best international market practices and security policies, rules and technical measures to protect the personal data that it has under its control from unauthorized access, improper use or disclosure, unauthorized modification and unlawful destruction or accidental loss. However, for any data loss or theft due to unauthorized access to the User’s electronic devices through which the User avails the Services, Tectignis IT Solutions or its Partners shall not be held liable for any loss whatsoever incurred by the User.</p><br>
+	<p>l.Tectignis IT Solutions takes your right to privacy very seriously and other than as specifically stated in this privacy Policy, will only disclose your personal information in the event it is required to do so by law, rule, regulation, law enforcement agency, governmental official, legal authority or similar requirements or when Tectignis IT Solutions, in its sole discretion, deems it necessary in order to protect its rights or the rights of others, to prevent harm to persons or property, to fight fraud and credit risk, or to enforce or apply the Terms of Use.</p><br>
 
-<h2>Advertising Partners Privacy Policies</h2><br>
+	<h2>4. CONFIDENTIALITY AND SECURITY</h2><br>
+	<p>a. Your Personal Information is maintained by Tectignis IT Solutions in electronic form on its or its employees and Partners equipment. Such information may also be converted to physical form from time to time. We take necessary precautions to protect your personal information both online and off-line, and implement reasonable security practices and measures including certain managerial, technical, operational and physical security control measures that are commensurate with respect to the information being collected and the nature of Tectignis IT Solutions business.</p><br>
+	<p>b. No administrator at Tectignis IT Solutions will have knowledge of your password. It is important for you to protect against unauthorized access to your password, your computer and your mobile phone or device. Be sure to log off from the Website when finished. Tectignis IT Solutions and its Partners do not undertake any liability for any unauthorized use of your account and password. If you suspect any unauthorized use of your account, you must immediately notify Tectignis IT Solutions by contacting us at http://tec.tectignis.in/ . You shall be liable to indemnify Tectignis IT Solutions, its employees and Partners due to any loss suffered by them due to such unauthorized use of your account and password.</p><br>
+	<p>c. Tectignis IT Solutions makes all User information accessible to its employees only on a need-to-know basis.</p><br>
+	<p>d. Notwithstanding the above, Tectignis IT Solutions is not responsible for the confidentiality, security or distribution of your personal information by our Partners and third parties outside the scope of our agreement with such Partners and third parties. Further, Tectignis IT Solutions and its Partners shall not be responsible for any breach of security or for any actions of any third parties or events that are beyond the reasonable control of Tectignis IT Solutions and its Partners including, acts of government, computer hacking, unauthorized access to computer data and storage device, computer crashes, breach of security and encryption, poor quality of Internet service or telephone service of the User etc.</p><br>
+	<h2>5. CHANGE TO PRIVACY POLICY</h2><br>
 
-<P>You may consult this list to find the Privacy Policy for each of the advertising partners of Tectignis It Solutions.</p><br>
+	<p>Tectignis IT Solutions may update this Privacy Policy at any time, with or without advance notice. If you object to any of the changes to our terms, and you no longer wish to use the Services, you may contact http://tec.tectignis.in/ to deactivate your account. Unless stated otherwise, Tectignis IT Solutions current Privacy Policy applies to all information that Tectignis IT Solutions has about you and your account.</p><br>
+	<p>If a User uses the Services or accesses the Website or uses the App after a notice of changes has been sent to such User or published on the Website, such User hereby provides his/her/its consent to the changed terms.</p><br>
 
-<p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Tectignis It Solutions, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p><br>
+	<h2>6. CONSENT TO THIS POLICY</h2><br>
+	<p>You acknowledge that this Privacy Policy is a part of the Terms of Use of the Website and the other Services, and you unconditionally agree that becoming a User of the Website, the App and its Services signifies your assent to this Privacy Policy. Your visit to the Website, use of the App and use of the Services is subject to this Privacy Policy and the Terms of Use.</p><br>
 
-<p>Note that Tectignis It Solutions has no access to or control over these cookies that are used by third-party advertisers.</p><br>
-
-<h2>Third Party Privacy Policies</h2><br>
-
-<p>Tectignis It Solutions's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p><br>
-
-<p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p><br>
-
-<h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2><br>
-
-<p>Under the CCPA, among other rights, California consumers have the right to:</p><br>
-<p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p><br>
-<p>Request that a business delete any personal data about the consumer that a business has collected.</p><br>
-<p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p><br>
-<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p><br>
-
-<h2>GDPR Data Protection Rights</h2><br>
-
-<p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p><br>
-<p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
-<p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
-<p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
-<p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
-<p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
-<p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
-<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
-<br>
-<h2>Children's Information</h2><br>
-
-<p>Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
-
-<p>Tectignis It Solutions does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+	<h2>7. ADDRESS FOR PRIVACY QUESTIONS</h2><br>
+	<p>Name: Tectignis It Solutions</p><br>
+	<p>Contact No:  +91 8879253568</p><br>
+	<p>Address:</p><br>
+	<p>Aashiyana CHS Shop No 05, Sector 11, </p><br>
+	<p>Plot No 29, Kamothe,</p><br>
+	<p>Navi Mumbai, Maharashtra 410209</p><br>
 				</div>
 			</div>
 			
