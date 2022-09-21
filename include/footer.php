@@ -63,7 +63,7 @@
 								<li><a href="team.php">Team </a></li>
 								<li><a href="terms&conditions.php">Terms and Condition </a></li>
 								<li><a href="privacy_policy.php">Privacy Policy</a></li>
-								<li><a href="#">Refund Policy</a></li>	
+								<li><a href="refund_policy.php">Refund Policy</a></li>	
 							</ul>
 						</div>
 					</div>
